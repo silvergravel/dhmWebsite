@@ -1,0 +1,837 @@
+{
+
+    "light-duty-castors": [
+      {
+        "series": "RD1 Series",
+        "wheelDiameter": {
+          "tag": "wheel diameter",
+          "quantity": "38 - 50 mm"
+        },
+        "treadWidth": {
+          "tag": "tread width",
+          "quantity": "22 mm"
+        },
+        "bracketOptions": {
+          "tag": "bracket options",
+          "options": [
+            "fixed plate",
+            "swivel plate"
+          ],
+          "wheelLock": [
+            "wheel lock"
+          ]
+        },
+        "items": [
+          {
+            "heading": "Cast Iron",
+            "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+            "image": "product-images/best-sellers-temp.png",
+            "loadCapacity": {
+              "tag": "load capacity",
+              "quantity": "Upto 36 kgs"
+            },
+            "redirectUrl": "/ld-rd1-cast-iron"
+          },
+          {
+            "heading": "Nylon",
+            "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+            "image": "product-images/best-sellers-temp.png",
+            "loadCapacity": {
+              "tag": "load capacity",
+              "quantity": "Upto 25 kgs"
+            },
+            "redirectUrl": "/ld-rd1-nylon"
+          },
+          {
+            "heading": "Phenorex (Fibre)",
+            "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+            "image": "product-images/best-sellers-temp.png",
+            "loadCapacity": {
+              "tag": "load capacity",
+              "quantity": "Upto 30 kgs"
+            },
+            "redirectUrl": "/ld-rd1-phenorex"
+          },
+          {
+            "heading": "PU Tyred On Nylon",
+            "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+            "image": "product-images/best-sellers-temp.png",
+            "loadCapacity": {
+              "tag": "load capacity",
+              "quantity": "Upto 30 kgs"
+            },
+            "redirectUrl": "/ld-rd1-pu-on-nylon"
+          },
+          {
+            "heading": "Rubber",
+            "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+            "image": "product-images/best-sellers-temp.png",
+            "loadCapacity": {
+              "tag": "load capacity",
+              "quantity": "Upto 18 kgs"
+            },
+            "redirectUrl": "/ld-rd1-rubber"
+          }
+        ]
+      },
+
+
+
+      {
+        "series": "RD2 Series",
+        "wheelDiameter": {
+          "tag": "wheel diameter",
+          "quantity": "50 - 100 mm"
+        },
+        "treadWidth": {
+          "tag": "tread width",
+          "quantity": "22 mm"
+        },
+        "bracketOptions": {
+          "tag": "bracket options",
+          "options": [
+            "fixed plate",
+            "swivel plate"
+          ],
+          "wheelLock": [
+            "wheel lock"
+          ]
+        },
+        "items":[
+            {
+              "heading": "Cast Iron",
+              "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+              "image": "product-images/best-sellers-temp.png",
+              "loadCapacity": {
+                "tag": "load capacity",
+                "quantity": "Upto 65 kgs"
+              },
+              "redirectUrl": "/ld-rd2-cast-iron"
+            },
+            {
+              "heading": "Nylon",
+              "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+              "image": "product-images/best-sellers-temp.png",
+              "loadCapacity": {
+                "tag": "load capacity",
+                "quantity": "Upto 40 kgs"
+              },
+              "redirectUrl": "/rd2-nylon"
+            },
+            {
+              "heading": "Phenorex (Fibre)",
+              "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+              "image": "product-images/best-sellers-temp.png",
+              "loadCapacity": {
+                "tag": "load capacity",
+                "quantity": "Upto 65 kgs"
+              },
+              "redirectUrl": "/ld-rd2-phenorex"
+            },
+            {
+              "heading": "PU Tyred On Nylon",
+              "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+              "image": "product-images/best-sellers-temp.png",
+              "loadCapacity": {
+                "tag": "load capacity",
+                "quantity": "Upto 45 kgs"
+              },
+              "redirectUrl": "/rd2-pu-on-nylon"
+            },
+            {
+              "heading": "Rubber",
+              "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+              "image": "product-images/best-sellers-temp.png",
+              "loadCapacity": {
+                "tag": "load capacity",
+                "quantity": "Upto 27 kgs"
+              },
+              "redirectUrl": "/ld-rd2-rubber"
+            },
+            {
+              "heading": "Rubber Tyred On Cast Iron",
+              "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+              "image": "product-images/best-sellers-temp.png",
+              "loadCapacity": {
+                "tag": "load capacity",
+                "quantity": "Upto 40 kgs"
+              },
+              "redirectUrl": "/ld-rd2-rubber-on-ci"
+            }
+
+        ]
+      },
+
+
+
+      {
+        "series": "RD3 Series",
+        "wheelDiameter": {
+          "tag": "wheel diameter",
+          "quantity": "63 - 125 mm"
+        },
+        "treadWidth": {
+          "tag": "tread width",
+          "quantity": "28 mm"
+        },
+        "bracketOptions": {
+          "tag": "bracket options",
+          "options": [
+            "fixed plate",
+            "swivel plate"
+          ],
+          "wheelLock": [
+            "wheel lock"
+          ]
+        },
+        "items":[{
+          "heading": "Cast Iron",
+          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+          "image": "product-images/best-sellers-temp.png",
+          "loadCapacity": {
+            "tag": "load capacity",
+            "quantity": "Upto 100 kgs"
+          },
+          "redirectUrl": "/ld-rd3-cast-iron"
+        },
+        {
+          "heading": "Nylon",
+          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+          "image": "product-images/best-sellers-temp.png",
+          "loadCapacity": {
+            "tag": "load capacity",
+            "quantity": "Upto 75 kgs"
+          },
+          "redirectUrl": "/ld-rd3-nylon"
+        },
+        {
+          "heading": "Phenorex (Fibre)",
+          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+          "image": "product-images/best-sellers-temp.png",
+          "loadCapacity": {
+            "tag": "load capacity",
+            "quantity": "Upto 90 kgs"
+          },
+          "redirectUrl": "/rd3-phenorex"
+        },
+        {
+          "heading": "PU Tyred On Nylon",
+          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+          "image": "product-images/best-sellers-temp.png",
+          "loadCapacity": {
+            "tag": "load capacity",
+            "quantity": "Upto 70 kgs"
+          },
+          "redirectUrl": "/ld-rd3-pu-on-nylon"
+        },
+        {
+          "heading": "Rubber",
+          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+          "image": "product-images/best-sellers-temp.png",
+          "loadCapacity": {
+            "tag": "load capacity",
+            "quantity": "Upto 50 kgs"
+          },
+          "redirectUrl": "/ld-rd3-rubber"
+        },
+        {
+          "heading": "Rubber Tyred On Cast Iron",
+          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+          "image": "product-images/best-sellers-temp.png",
+          "loadCapacity": {
+            "tag": "load capacity",
+            "quantity": "Upto 60 kgs"
+          },
+          "redirectUrl": "/ld-rd3-rubber-on-ci"
+        }
+      ]
+    }
+  ],
+
+
+
+
+
+
+
+
+    "medium-duty-castors": [
+      {
+        "series": "RD4 Series",
+        "wheelDiameter": {
+          "tag": "wheel diameter",
+          "quantity": "75 - 125 mm"
+        },
+        "treadWidth": {
+          "tag": "tread width",
+          "quantity": "38 mm"
+        },
+        "bracketOptions": {
+          "tag": "bracket options",
+          "options": [
+            "fixed plate",
+            "swivel plate"
+          ],
+          "wheelLock": [
+            "wheel lock"
+          ]
+        },
+
+          "items": [
+            {
+              "heading": "Cast Iron",
+              "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+              "image": "product-images/best-sellers-temp.png",
+              "loadCapacity": {
+                "tag": "load capacity",
+                "quantity": "Upto 210 kgs"
+              },
+              "redirectUrl": "/md-rd4-cast-iron"
+            },
+            {
+              "heading": "Nylon",
+              "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+              "image": "product-images/best-sellers-temp.png",
+              "loadCapacity": {
+                "tag": "load capacity",
+                "quantity": "Upto 210 kgs"
+              },
+              "redirectUrl": "/md-rd4-nylon"
+            },
+            {
+              "heading": "Phenorex (Fibre)",
+              "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+              "image": "product-images/best-sellers-temp.png",
+              "loadCapacity": {
+                "tag": "load capacity",
+                "quantity": "Upto 210 kgs"
+              },
+              "redirectUrl": "/md-rd4-phenorex"
+            },
+            {
+              "heading": "PU Tyred On Nylon",
+              "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+              "image": "product-images/best-sellers-temp.png",
+              "loadCapacity": {
+                "tag": "load capacity",
+                "quantity": "Upto 160 kgs"
+              },
+              "redirectUrl": "/md-rd4-pu-on-nylon"
+            },
+            {
+              "heading": "PU Tyred On Cast Iron",
+              "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+              "image": "product-images/best-sellers-temp.png",
+              "loadCapacity": {
+                "tag": "load capacity",
+                "quantity": "Upto 170 kgs"
+              },
+              "redirectUrl": "/md-rd4-pu-on-ci"
+            },
+            {
+              "heading": "Rubber Tyred On Cast Iron",
+              "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+              "image": "product-images/best-sellers-temp.png",
+              "loadCapacity": {
+                "tag": "load capacity",
+                "quantity": "Upto 160 kgs"
+              },
+              "redirectUrl": "/md-rd4-rubber-on-ci"
+            }
+          ]
+      }
+    ],
+
+
+
+
+
+
+
+  "heavy-duty-castors": [
+    {
+      "series": "RD5 Series",
+      "wheelDiameter": {
+        "tag": "wheel diameter",
+        "quantity": "150 - 200 mm"
+      },
+      "treadWidth": {
+        "tag": "tread width",
+        "quantity": "45.5 - 50 mm"
+      },
+      "bracketOptions": {
+        "tag": "bracket options",
+        "options": [
+          "fixed plate",
+          "swivel plate"
+        ],
+        "wheelLock": [
+          "wheel lock",
+          "wheel & swivel lock combined"
+        ]
+      },
+      "items":[
+        {
+          "heading": "Cast Iron",
+          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+          "image": "product-images/best-sellers-temp.png",
+          "loadCapacity": {
+            "tag": "load capacity",
+            "quantity": "Upto 410 kgs"
+          },
+          "redirectUrl": "/hd-rd5-cast-iron"
+        },
+        {
+          "heading": "Nylon",
+          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+          "image": "product-images/best-sellers-temp.png",
+          "loadCapacity": {
+            "tag": "load capacity",
+            "quantity": "Upto 310 kgs"
+          },
+          "redirectUrl": "/hd-rd5-nylon"
+        },
+        {
+          "heading": "Phenorex (Fibre)",
+          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+          "image": "product-images/best-sellers-temp.png",
+          "loadCapacity": {
+            "tag": "load capacity",
+            "quantity": "Upto 410 kgs"
+          },
+          "redirectUrl": "/hd-rd5-phenorex"
+        },
+        {
+          "heading": "PU Tyred On Cast Iron",
+          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+          "image": "product-images/best-sellers-temp.png",
+          "loadCapacity": {
+            "tag": "load capacity",
+            "quantity": "Upto 400 kgs"
+          },
+          "redirectUrl": "/hd-rd5-pu-on-ci"
+        },
+        {
+          "heading": "Rubber Tyred On Cast Iron",
+          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+          "image": "product-images/best-sellers-temp.png",
+          "loadCapacity": {
+            "tag": "load capacity",
+            "quantity": "Upto 410 kgs"
+          },
+          "redirectUrl": "/hd-rd5-rubber-on-ci"
+        }
+
+      ]
+    },
+    {
+      "series": "Scafold Series",
+      "wheelDiameter": {
+        "tag": "wheel diameter",
+        "quantity": "150 - 200 mm"
+      },
+      "treadWidth": {
+        "tag": "tread width",
+        "quantity": "50 mm"
+      },
+      "bracketOptions": {
+        "tag": "bracket options",
+        "options": [
+          "swivel plate"
+        ],
+        "wheelLock": [
+          "wheel & swivel lock combined"
+        ]
+      },
+      "items":[
+        {
+          "heading": "Cast Iron",
+          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+          "image": "product-images/best-sellers-temp.png",
+          "loadCapacity": {
+            "tag": "load capacity",
+            "quantity": "Upto 820 kgs"
+          },
+          "redirectUrl": "/hd-scaf-cast-iron"
+        },
+        {
+          "heading": "Nylon",
+          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+          "image": "product-images/best-sellers-temp.png",
+          "loadCapacity": {
+            "tag": "load capacity",
+            "quantity": "Upto 820 kgs"
+          },
+          "redirectUrl": "/hd-scaf-nylon"
+        },
+        {
+          "heading": "Phenorex (Fibre)",
+          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+          "image": "product-images/best-sellers-temp.png",
+          "loadCapacity": {
+            "tag": "load capacity",
+            "quantity": "Upto 820 kgs"
+          },
+          "redirectUrl": "/hd-scaf-phenorex"
+        },
+        {
+          "heading": "PU Tyred On Cast Iron",
+          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+          "image": "product-images/best-sellers-temp.png",
+          "loadCapacity": {
+            "tag": "load capacity",
+            "quantity": "Upto 820 kgs"
+          },
+          "redirectUrl": "/hd-scaf-pu-on-ci"
+        }
+
+      ]
+
+    },
+    {
+      "series": "HSC Series- Track Castors",
+      "wheelDiameter": {
+        "tag": "wheel diameter",
+        "quantity": "100 - 250 mm"
+      },
+      "treadWidth": {
+        "tag": "tread width",
+        "quantity": "51 mm"
+      },
+      "bracketOptions": {
+        "tag": "bracket options",
+        "options": [
+          "fixed plate",
+          "swivel plate"
+        ],
+        "wheelLock": null
+      },
+      "items":[
+        {
+          "heading": "Cast Iron",
+          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+          "image": "product-images/best-sellers-temp.png",
+          "loadCapacity": {
+            "tag": "load capacity",
+            "quantity": "Upto 1000 kgs"
+          },
+          "redirectUrl": "/hd-track-cast-iron"
+        }
+
+      ]
+    },
+    {
+      "series": "HSC Series",
+      "wheelDiameter": {
+        "tag": "wheel diameter",
+        "quantity": "100 - 300 mm"
+      },
+      "treadWidth": {
+        "tag": "tread width",
+        "quantity": "50 - 75 mm"
+      },
+      "bracketOptions": {
+        "tag": "bracket options",
+        "options": [
+          "fixed plate",
+          "swivel plate"
+        ],
+        "wheelLock": [
+          "wheel & swivel lock combined"
+        ]
+      },
+      "items":[
+        {
+          "heading": "Cast Iron",
+          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+          "image": "product-images/best-sellers-temp.png",
+          "loadCapacity": {
+            "tag": "load capacity",
+            "quantity": "Upto 1350 kgs"
+          },
+          "redirectUrl": "/hd-hsc-cast-iron"
+        },
+        {
+          "heading": "Nylon",
+          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+          "image": "product-images/best-sellers-temp.png",
+          "loadCapacity": {
+            "tag": "load capacity",
+            "quantity": "Upto 500 kgs"
+          },
+          "redirectUrl": "/hd-hsc-nylon"
+        },
+        {
+          "heading": "Phenorex (Fibre)",
+          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+          "image": "product-images/best-sellers-temp.png",
+          "loadCapacity": {
+            "tag": "load capacity",
+            "quantity": "Upto 950 kgs"
+          },
+          "redirectUrl": "/hd-hsc-phenorex"
+        },
+        {
+          "heading": "PU Tyred On Cast Iron",
+          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+          "image": "product-images/best-sellers-temp.png",
+          "loadCapacity": {
+            "tag": "load capacity",
+            "quantity": "Upto 1350 kgs"
+          },
+          "redirectUrl": "/hd-hsc-pu-on-ci"
+        },
+        {
+          "heading": "Rubber Tyred On Cast Iron",
+          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+          "image": "product-images/best-sellers-temp.png",
+          "loadCapacity": {
+            "tag": "load capacity",
+            "quantity": "Upto 875 kgs"
+          },
+          "redirectUrl": "/hd-hsc-rubber-on-ci"
+        }
+
+      ]
+    },
+    {
+      "series": "HSC/TW Series",
+      "wheelDiameter": {
+        "tag": "wheel diameter",
+        "quantity": "100 - 200 mm"
+      },
+      "treadWidth": {
+        "tag": "tread width",
+        "quantity": "50 mm"
+      },
+      "bracketOptions": {
+        "tag": "bracket options",
+        "options": [
+          "fixed plate",
+          "swivel plate"
+        ],
+        "wheelLock": [
+          "wheel lock",
+          "swivel lock"
+        ]
+      },
+      "items":[
+        {
+          "heading": "Cast Iron",
+          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+          "image": "product-images/best-sellers-temp.png",
+          "loadCapacity": {
+            "tag": "load capacity",
+            "quantity": "Upto 1800 kgs"
+          },
+          "redirectUrl": "/hd-hsc-tw-cast-iron"
+        },
+        {
+          "heading": "PU Tyred On Cast Iron",
+          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+          "image": "product-images/best-sellers-temp.png",
+          "loadCapacity": {
+            "tag": "load capacity",
+            "quantity": "Upto 1500 kgs"
+          },
+          "redirectUrl": "/hd-hsc-tw-pu-on-ci"
+        }
+
+      ]
+    },
+    {
+      "series": "MRN1 Series",
+      "wheelDiameter": {
+        "tag": "wheel diameter",
+        "quantity": "100 - 150 mm"
+      },
+      "treadWidth": {
+        "tag": "tread width",
+        "quantity": "38 mm"
+      },
+      "bracketOptions": {
+        "tag": "bracket options",
+        "options": [
+          "fixed plate",
+          "swivel plate"
+        ],
+        "wheelLock": [
+          "wheel & swivel lock combined"
+        ]
+      },
+      "items":[
+        {
+          "heading": "Cast Iron",
+          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+          "image": "product-images/best-sellers-temp.png",
+          "loadCapacity": {
+            "tag": "load capacity",
+            "quantity": "Upto 275 kgs"
+          },
+          "redirectUrl": "/hd-mrn1-cast-iron"
+        },
+        {
+          "heading": "Nylon",
+          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+          "image": "product-images/best-sellers-temp.png",
+          "loadCapacity": {
+            "tag": "load capacity",
+            "quantity": "Upto 300 kgs"
+          },
+          "redirectUrl": "/hd-mrn1-nylon"
+        },
+        {
+          "heading": "Phenorex (Fibre)",
+          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+          "image": "product-images/best-sellers-temp.png",
+          "loadCapacity": {
+            "tag": "load capacity",
+            "quantity": "Upto 365 kgs"
+          },
+          "redirectUrl": "/hd-mrn1-phenorex"
+        },
+        {
+          "heading": "PU Tyred On Cast Iron",
+          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+          "image": "product-images/best-sellers-temp.png",
+          "loadCapacity": {
+            "tag": "load capacity",
+            "quantity": "Upto 650 kgs"
+          },
+          "redirectUrl": "/hd-mrn1-pu-on-ci"
+        },
+        {
+          "heading": "PU Tyred On Nylon",
+          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+          "image": "product-images/best-sellers-temp.png",
+          "loadCapacity": {
+            "tag": "load capacity",
+            "quantity": "Upto 275 kgs"
+          },
+          "redirectUrl": "/hd-mrn1-pu-on-nylon"
+        },
+        {
+          "heading": "Rubber Tyred On Cast Iron",
+          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+          "image": "product-images/best-sellers-temp.png",
+          "loadCapacity": {
+            "tag": "load capacity",
+            "quantity": "Upto 200 kgs"
+          },
+          "redirectUrl": "/hd-mrn1-rubber-on-ci"
+        }
+
+      ]
+    },
+    {
+      "series": "MRN2 Series",
+      "wheelDiameter": {
+        "tag": "wheel diameter",
+        "quantity": "100 - 200 mm"
+      },
+      "treadWidth": {
+        "tag": "tread width",
+        "quantity": "50 mm"
+      },
+      "bracketOptions": {
+        "tag": "bracket options",
+        "options": [
+          "fixed plate",
+          "swivel plate"
+        ],
+        "wheelLock": [
+          "wheel & swivel lock combined"
+        ]
+      },
+      "items":[
+        {
+          "heading": "Nylon",
+          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+          "image": "product-images/best-sellers-temp.png",
+          "loadCapacity": {
+            "tag": "load capacity",
+            "quantity": "Upto 400 kgs"
+          },
+          "redirectUrl": "/hd-mrn1-nylon"
+        },
+        {
+          "heading": "Phenorex (Fibre)",
+          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+          "image": "product-images/best-sellers-temp.png",
+          "loadCapacity": {
+            "tag": "load capacity",
+            "quantity": "Upto 450 kgs"
+          },
+          "redirectUrl": "/hd-mrn1-phenorex"
+        },
+        {
+          "heading": "PU Tyred On Cast Iron",
+          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+          "image": "product-images/best-sellers-temp.png",
+          "loadCapacity": {
+            "tag": "load capacity",
+            "quantity": "Upto 650 kgs"
+          },
+          "redirectUrl": "/hd-mrn1-pu-on-ci"
+        },
+        {
+          "heading": "PU Tyred On Nylon",
+          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+          "image": "product-images/best-sellers-temp.png",
+          "loadCapacity": {
+            "tag": "load capacity",
+            "quantity": "Upto 450 kgs"
+          },
+          "redirectUrl": "/hd-mrn1-pu-on-nylon"
+        },
+        {
+          "heading": "Rubber Tyred On Cast Iron",
+          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+          "image": "product-images/best-sellers-temp.png",
+          "loadCapacity": {
+            "tag": "load capacity",
+            "quantity": "Upto 230 kgs"
+          },
+          "redirectUrl": "/hd-mrn1-rubber-on-ci"
+        }
+
+      ]
+    }
+  ],
+
+
+
+
+
+
+
+  "extra-heavy-duty-castors": [
+  ],
+
+
+
+
+
+
+
+  "trolleys": [
+  ],
+
+
+
+
+
+
+
+  "exclusive-products": [
+  ],
+
+
+
+
+
+
+
+  "spare-wheels": [
+  ]
+}

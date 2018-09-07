@@ -1,0 +1,132 @@
+{
+  "content": [
+
+    {
+    "heading": "Light Duty Castors",
+    "subHeading": "For households, hospitality industry and more",
+    "image": "product-images/light-duty-temp.png",
+
+    "loadCapacity":{
+        "tag": "load capacity",
+        "quantity": "Upto 100 kgs"
+      },
+
+    "wheelDiameter":{
+        "tag" :"wheel diameter",
+        "quantity" :"38 - 125 mm"
+      },
+
+    "redirectUrl": "/light-duty-castors",
+    "tip": null
+    },
+
+
+    {
+    "heading": "Medium Duty Castors",
+    "subHeading": "For hospitality industry, hospital equipment and more",
+    "image": "product-images/light-duty-temp.png",
+
+    "loadCapacity":{
+        "tag": "load capacity",
+        "quantity": "Upto 210 kgs"
+      },
+
+      "wheelDiameter":{
+        "tag" :"wheel diameter",
+        "quantity" :"75 - 125 mm"
+      },
+
+    "redirectUrl": "/medium-duty-castors",
+    "tip": null
+    },
+
+
+    {
+    "heading": "Heavy Duty Castors",
+    "subHeading": "For construction sites, warehouses, factories and more",
+    "image": "product-images/light-duty-temp.png",
+
+    "loadCapacity":{
+        "tag": "load capacity",
+        "quantity": "Upto 1,800 kgs"
+      },
+
+    "wheelDiameter":{
+        "tag" :"wheel diameter",
+        "quantity" :"100 - 300 mm"
+      },
+
+    "redirectUrl": "/heavy-duty-castors",
+    "tip": null
+    },
+
+
+    {
+    "heading": "Extra Heavy Duty Castors",
+    "subHeading": "For specialized usage on construction sites, warehouses, oil rigs and a lot more",
+    "image": "product-images/light-duty-temp.png",
+
+    "loadCapacity":{
+        "tag": "load capacity",
+        "quantity": "Upto 10,000 kgs"
+      },
+
+      "wheelDiameter":{
+        "tag" :"wheel diameter",
+        "quantity" :"150 - 400 mm"
+      },
+
+    "redirectUrl": "/extra-heavy-duty-castors",
+    "tip": null
+    },
+
+
+    {
+    "heading": "Trolleys",
+    "subHeading": "Platform trolleys, gas trolleys, drum trolleys and more",
+    "image": "product-images/light-duty-temp.png",
+
+    "loadCapacity":{
+        "tag": "load capacity",
+        "quantity": "Upto 1,000 kgs"
+      },
+
+    "wheelDiameter": null,
+    "redirectUrl": "/trolleys",
+    "tip": "customizations available for heavier loads"
+    },
+
+
+    {
+    "heading": "Exclusive Products",
+    "subHeading": "Ball transfer units, conveyer rollers, sliding door gear system and more",
+    "image": "product-images/light-duty-temp.png",
+    "loadCapacity": null,
+    "wheelDiameter": null,
+    "redirectUrl": "/exclusive-products",
+    "tip": null
+    },
+
+
+    {
+    "heading": "Spare Wheels",
+    "subHeading": "Across a wide range of sizes and materials",
+    "image": "product-images/light-duty-temp.png",
+
+    "loadCapacity":{
+        "tag": "load capacity",
+        "quantity": "Upto 1,000 kgs"
+      },
+
+    "wheelDiameter":{
+      "tag" :"wheel diameter",
+      "quantity" :"100 - 300 mm"
+    },
+
+    "redirectUrl": "/spare-wheels",
+    "tip": null
+    }
+
+
+  ]
+}

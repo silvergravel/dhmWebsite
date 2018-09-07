@@ -1,0 +1,113 @@
+
+.category-page-content{
+    margin-top: 144px;
+
+  .series-block{
+
+    .series-overview{
+      background-color: rgba(181,169,140,0.1);
+      padding: 0 15px 0 15px;
+      height: 110px;
+
+      >h1{
+        display: inline-block;
+        font-family: 'suisse-medium';
+        font-size: 25px;
+        vertical-align: top;
+        margin-top: 16px;
+      }
+
+      > div{
+        display: inline-block;
+        vertical-align: top;
+        margin: 20px 0 0 56px;
+
+        h4{
+          font-family: 'suisse-antique';
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0.01em;
+          text-transform: uppercase;
+          color: $beige;
+        }
+
+        h3{
+          font-family: 'suisse-antique';
+          font-size: 16px;
+          line-height: 24px;
+          color: $black;
+
+          .beige{
+            color: $beige;
+          }
+        }
+      }
+    }
+    .product-tile-block{
+      margin: 0 0 45px 0;
+
+    .product-tile{
+      padding: 15px;
+    //  min-width: 360px;
+
+      .tile-content-area{
+        border: 0.5px solid #B5A98C;
+        border-radius: 5px;
+        height: 276px;
+        padding: 22px 15px 15px 15px;
+
+
+        h1{
+
+          font-family: 'suisse-light';
+          font-size: 32px;
+          line-height: 36px;
+          width: 70%;
+          border-bottom: 0.5px solid $light-beige-2;
+          padding-bottom: 5px;
+
+        }
+
+
+        h2{
+
+        font-family: 'suisse-medium';
+        font-size: 16px;
+        line-height: 22px;
+        width: 160px;
+        margin-top: 9px;
+        }
+
+        .vital-info{
+          position: absolute;
+          top: 226px;
+
+          h5{
+            font-family: 'suisse-medium';
+            color: $beige;
+            text-transform: uppercase;
+            font-size: 12px;
+            line-height: 12px;
+            letter-spacing: 0.03em;
+          }
+
+          h4{
+            font-family: 'suisse-medium';
+            color: $black;
+            font-size: 16px;
+            line-height: 28px;
+          }
+        }
+
+        img{
+          position: absolute;
+          right: 25px;
+          top: 30px;
+          max-width: 144px;
+        }
+
+      }
+    }
+  }
+  }
+}
