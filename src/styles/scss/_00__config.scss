@@ -1,0 +1,63 @@
+//normalize
+h1, h2, h3, h4, h5, h6, body{
+  margin: 0;
+}
+
+//color styles
+$black: #000000;
+$black-shadow: rgba(0,0,0,0.15);
+
+$beige: #B5A98C;
+$light-beige: rgba(181,169,140,0.15);
+$light-beige-2: rgba(181,169,140,0.3);
+
+$yellow: #fff000;
+$white: #ffffff;
+$orange: #FE4E33;
+
+//breakpoints
+$tab_1080: 1080px;
+$tab_960: 960px;
+$tab_800: 800px;
+$tab_767: 767px;
+$tab_640: 640px;
+$mob_480: 480px;
+$mob_400: 400px;
+
+//fonts
+
+@font-face{
+	font-family: 'suisse-light';
+	src: url('../../fonts/suissebpintl-light-webfont.eot');
+	src: url('../../fonts/suissebpintl-light-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../../fonts/suissebpintl-light-webfont.woff') format('woff'),
+	     url('../../fonts/suissebpintl-light-webfont.ttf') format('truetype'),
+	     url('../../fonts/suissebpintl-light-webfont.svg#webfont') format('svg');
+}
+
+@font-face{
+	font-family: 'suisse-regular';
+	src: url('../../fonts/suissebpintl-regular-webfont.eot');
+	src: url('../../fonts/suissebpintl-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../../fonts/suissebpintl-regular-webfont.woff') format('woff'),
+	     url('../../fonts/suissebpintl-regular-webfont.ttf') format('truetype'),
+	     url('../../fonts/suissebpintl-regular-webfont.svg#webfont') format('svg');
+}
+
+@font-face{
+	font-family: 'suisse-medium';
+	src: url('../../fonts/suissebpintl-medium-webfont.eot');
+	src: url('../../fonts/suissebpintl-medium-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../../fonts/suissebpintl-medium-webfont.woff') format('woff'),
+	     url('../../fonts/suissebpintl-medium-webfont.ttf') format('truetype'),
+	     url('../../fonts/suissebpintl-medium-webfont.svg#webfont') format('svg');
+}
+
+@font-face{
+	font-family: 'suisse-antique';
+	src: url('../../fonts/suissebpintl-antique-webfont.eot');
+	src: url('../../fonts/suissebpintl-antique-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../../fonts/suissebpintl-antique-webfont.woff') format('woff'),
+	     url('../../fonts/suissebpintl-antique-webfont.ttf') format('truetype'),
+	     url('../../fonts/suissebpintl-antique-webfont.svg#webfont') format('svg');
+}

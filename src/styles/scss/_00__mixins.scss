@@ -1,0 +1,84 @@
+@mixin drop-shadow{
+  box-shadow: 0px 2px 10px $black-shadow;
+
+}
+
+//transformations
+
+@mixin translateY($val){
+  transform: translateY($val);
+  -moz-transform: translateY($val);
+  -webkit-transform: translateY($val);
+}
+
+@mixin translateX($val){
+  transform: translateX($val);
+  -moz-transform: translateX($val);
+  -webkit-transform: translateX($val);
+}
+
+@mixin translate($val, $val){
+  transform: translate($val, $val);
+  -moz-transform: translate($val, $val);
+  -webkit-transform: translate($val, $val);
+}
+
+//transitions
+
+@mixin transition($val){
+  transition: $val;
+  -moz-transition: $val;
+  -webkit-transition: $val;
+}
+
+@mixin doubleTransition($val, $val2){
+  transition: $val, $val2;
+  -moz-transition: $val, $val2;
+  -webkit-transition: $val, $val2;
+}
+
+@mixin tripleTransition($val, $val2, $val3){
+  transition: $val, $val2, $val3;
+  -moz-transition: $val, $val2, $val3;
+  -webkit-transition: $val, $val2, $val3;
+}
+
+//breakpoints for media queries
+
+@mixin breakpoint($point){
+  @if $point == 400px{
+    @media (max-width: 400px){
+      @content;
+    }
+  }
+  @else if $point == 480px{
+    @media (max-width: 480px){
+      @content;
+    }
+  }
+  @else if $point == 800px{
+    @media (max-width: 800px){
+      @content;
+    }
+  }
+  @else if $point == 767px{
+    @media (max-width: 767px){
+      @content;
+    }
+  }
+  @else if $point == 640px{
+    @media (max-width: 640px){
+      @content;
+    }
+  }
+  @else if $point == 960px{
+    @media (max-width: 960px){
+      @content;
+    }
+  }
+  @else if $point == 1080px{
+    @media (max-width: 1080px){
+      @content;
+    }
+  }
+}

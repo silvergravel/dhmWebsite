@@ -1,0 +1,97 @@
+  h3.primary-categories__title{
+
+  margin-top: 63px;
+
+}
+
+.primary-categories__card-grid{
+
+    .category-card {
+       padding: 15px;
+
+       @include breakpoint($mob_400){
+         padding: 8px 15px 8px 15px;
+       }
+
+       .category-card__content-wrapper{
+          position: relative;
+          height: 384px;
+         	background-color: rgba(181,169,140,0.1);
+          padding: 18px 15px 18px 15px;
+          border-radius: 5px;
+
+          @include breakpoint($mob_480){
+            height: 340px;
+          }
+
+          @include breakpoint($mob_400){
+            height: 220px;
+          }
+
+          .category-data{
+            position: absolute;
+            top: 158px;
+
+            @include breakpoint($mob_400){
+
+              top: 91px;
+
+            }
+
+            .category-data__wheel-diameter{
+              margin-top: 23px;
+
+              @include breakpoint($mob_400){
+
+                margin-top: 15px;
+
+              }
+            }
+          }
+
+          h4.category-data__tag{
+
+            text-transform: uppercase;
+
+          }
+
+          h6.category-data__tip{
+
+            letter-spacing: 0.01em;
+            text-transform: none;
+
+          }
+
+          img.category-card__image{
+            position: absolute;
+            right: 15px;
+            bottom: 0px;
+            max-width: 232px;
+
+            @include breakpoint($tab_960){
+
+            max-width: 190px;
+            }
+
+            @include breakpoint($tab_767){
+
+            max-width: 232px;
+
+
+            }
+
+            @include breakpoint($mob_480){
+
+              max-width: 220px;
+
+            }
+
+            @include breakpoint($mob_400){
+
+              max-width: 142px;
+
+            }
+          }
+       }
+    }
+}

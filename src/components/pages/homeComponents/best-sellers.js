@@ -12,29 +12,31 @@ class BestSellers extends Component {
   }
 
   componentWillMount(){
-    let bestSellersTileContent = data.content.map(content => {
+    let bestSellersTileContent = data.content.map(product => {
         return(
-          <div className = "col-md-3 col-sm-6 best-sellers-tile">
-            <div className="tile-content-area-and-bar" key={content.results}>
-              <div className="category-bar"><h6>{content.superHeading}</h6></div>
-              <div className="tile-content-area">
-                <h1>{content.heading}</h1>
-                <h2>{content.subHeading}</h2>
-                <div className="vital-info">
-                  { content.loadCapacity !== null &&
-                  <div className="load-capacity-content">
-                    <h5>{content.loadCapacity.tag}</h5>
-                    <h4>{content.loadCapacity.quantity}</h4>
+          <div className = "col-md-3 col-sm-6 best-sellers-card">
+            <div className="best-sellers-card-plus-bar" key={product.results}>
+              <div className="best-sellers-card__category-bar">
+                <h4 className="black medium best-sellers-card__category-name">{product.superHeading}</h4>
+              </div>
+              <div className="best-sellers-card__content-wrapper">
+                <h2 className="black light best-sellers-card__title">{product.heading}</h2>
+                <h4 className="black medium best-sellers-card__sub-title">{product.subHeading}</h4>
+                <div className="product-data">
+                  { product.loadCapacity !== null &&
+                  <div className="product-data__load-capacity">
+                    <h5 className="beige medium product-data__tag">{product.loadCapacity.tag}</h5>
+                    <h4 className="black medium product-data__qty">{product.loadCapacity.quantity}</h4>
                   </div>
                   }
-                  { content.wheelDiameter !== null &&
-                  <div className="wheel-diameter-content">
-                    <h5>{content.wheelDiameter.tag}</h5>
-                    <h4>{content.wheelDiameter.quantity}</h4>
+                  { product.wheelDiameter !== null &&
+                  <div className="product-data__wheel-diameter">
+                    <h5 className="beige medium product-data__tag">{product.wheelDiameter.tag}</h5>
+                    <h4 className="black medium product-data__qty">{product.wheelDiameter.quantity}</h4>
                   </div>
                   }
                 </div>
-                <img src={content.image} />
+                <img src={product.image} />
               </div>
             </div>
           </div>
@@ -49,9 +51,9 @@ class BestSellers extends Component {
   render(){
     return(
 
-      <div className="container-fluid">
-        <h1 className="general-sub-title">Best Sellers</h1>
-        <div className="row best-sellers-grid">
+      <div className="container-fluid best-sellers">
+        <h3 className="black medium best-sellers__title">Best Sellers</h3>
+        <div className="row best-sellers__card-grid">
           {this.state.bestSellersTileContent}
         </div>
       </div>

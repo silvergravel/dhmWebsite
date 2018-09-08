@@ -1,0 +1,105 @@
+
+
+
+.best-sellers__card-grid{
+
+  .best-sellers-card{
+      padding: 15px;
+      min-width: 360px;
+
+      @include breakpoint($tab_1080){
+        width: 50%;
+      }
+
+      @include breakpoint($tab_767){
+        width: 100%;
+      }
+
+      .best-sellers-card-plus-bar{
+          height: 372px;
+        	border: 0.5px solid #B5A98C;
+          border-radius: 5px;
+
+          @include breakpoint($mob_400){
+            height: 316px;
+          }
+
+          .best-sellers-card__category-bar{
+            position: relative;
+            background-color: $light-beige;
+            height: 36px;
+
+            @include breakpoint($mob_400){
+              height: 32px;
+            }
+
+            h4.best-sellers-card__category-name{
+              position: absolute;
+              left: 15px;
+              top: 50%;
+              @include translateY(-50%);
+            }
+          }
+
+          .best-sellers-card__content-wrapper{
+
+            padding: 22px 15px 15px 15px;
+            position: relative;
+
+            @include breakpoint($tab_767){
+              padding: 16px 15px 15px 15px;
+            }
+
+            h2.best-sellers-card__title{
+              width: 80%;
+              border-bottom: 0.5px solid $light-beige-2;
+              padding-bottom: 5px;
+            }
+
+            h4.best-sellers-card__sub-title{
+              width: 160px;
+              margin-top: 9px;
+            }
+
+            img{
+              position: absolute;
+              right: 10px;
+              top: 15px;
+              max-width: 144px;
+
+              @include breakpoint($tab_767){
+                max-width: 180px;
+              }
+
+              @include breakpoint($mob_400){
+                max-width: 142px;
+              }
+            }
+
+            .product-data{
+              position: absolute;
+              top: 175px;
+
+              @include breakpoint($mob_400){
+                top: 127px;
+              }
+
+              .product-data__wheel-diameter{
+                margin-top: 23px;
+
+                @include breakpoint($mob_400){
+                  margin-top: 15px;
+                }
+              }
+
+              h5.product-data__tag{
+
+                text-transform: uppercase;
+                letter-spacing: 0.03em;
+
+              }
+            }
+        }
+    }
+  }
+}

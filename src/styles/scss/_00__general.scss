@@ -1,0 +1,159 @@
+//text styles
+
+//h1
+h1.black.light{
+  font-family: 'suisse-light';
+  font-size: 50px;
+  line-height: 60px;
+  color: $black;
+
+}
+
+//h2
+h2.black.light{
+
+  font-family: 'suisse-light';
+  font-size: 32px;
+  line-height: 36px;
+
+  @include breakpoint($mob_400){
+
+    font-size: 20px;
+    line-height: 22px;
+
+  }
+}
+
+h2.black.medium{
+
+  font-family: 'suisse-medium';
+  font-size: 32px;
+  line-height: 36px;
+  color: $black;
+
+  @include breakpoint($mob_400){
+
+    font-size: 20px;
+    line-height: 22px;
+
+  }
+}
+
+//h3
+h3.black.medium{
+
+  font-family: 'suisse-medium';
+  font-size: 25px;
+  color: $black;
+  line-height: 30px;
+
+}
+
+//h4
+h4.plus.black.medium{
+
+  font-family: 'suisse-medium';
+  font-size: 20px;
+  line-height: 24px;
+  color: $black;
+
+  @include breakpoint($mob_400){
+
+    font-size: 16px;
+    line-height: 24px;
+
+  }
+}
+
+h4.beige.regular {
+  font-family: 'suisse-regular';
+  font-size: 16px;
+  line-height: 22px;
+  color: $beige;
+
+  @include breakpoint($mob_400){
+
+    font-size: 12px;
+    line-height: 16px;
+
+  }
+}
+
+h4.beige.medium{
+  font-family: 'suisse-medium';
+  font-size: 16px;
+  line-height: 22px;
+  color: $beige;
+
+  @include breakpoint($mob_400){
+
+    font-size: 12px;
+    line-height: 16px;
+
+  }
+}
+
+h4.black.medium {
+  font-family: 'suisse-medium';
+  font-size: 16px;
+  line-height: 22px;
+  color: $black;
+
+  @include breakpoint($mob_400){
+
+    font-size: 12px;
+    line-height: 16px;
+
+  }
+}
+
+h4.black.antique {
+  font-family: 'suisse-antique';
+  font-size: 16px;
+  line-height: 22px;
+  color: $black;
+
+  @include breakpoint($mob_400){
+
+    font-size: 12px;
+    line-height: 16px;
+
+  }
+}
+
+h4.beige.antique {
+  font-family: 'suisse-antique';
+  font-size: 16px;
+  line-height: 22px;
+  color: $beige;
+
+  @include breakpoint($mob_400){
+
+    font-size: 12px;
+    line-height: 16px;
+
+  }
+}
+
+//h5
+h5.beige.medium{
+  font-family: 'suisse-medium';
+  font-size: 12px;
+  line-height: 12px;
+  color: $beige;
+}
+
+//h6
+h6.light.orange{
+  font-family: 'suisse-light';
+  font-size: 12px;
+  line-height: 14px;
+  color: $orange;
+
+  @include breakpoint($mob_400){
+
+    font-size: 10px;
+    line-height: 12px;
+
+  }
+}
