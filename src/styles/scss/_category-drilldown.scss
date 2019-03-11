@@ -24,7 +24,7 @@
 
           letter-spacing: 0.01em;
           text-transform: uppercase;
-          
+
         }
 
         h4.data__qty{
@@ -45,6 +45,7 @@
 
       .product-card__content-wrapper{
 
+        position: relative;
         border: 0.5px solid $beige;
         border-radius: 5px;
         height: 276px;
@@ -69,7 +70,7 @@
         .product-data{
 
           position: absolute;
-          top: 226px;
+          top: 171px;
 
           h5{
             text-transform: uppercase;
@@ -83,6 +84,23 @@
           top: 30px;
           max-width: 144px;
         }
+
+
+
+
+          button{
+            display: block;
+
+            width: calc(100% - 30px);
+            position: absolute;
+            bottom: 15px;
+
+            h4{
+              line-height: normal;
+            }
+
+        }
+
 
       }
     }

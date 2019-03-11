@@ -37,6 +37,7 @@ class BestSellers extends Component {
                   }
                 </div>
                 <img src={product.image} />
+                <button><h4 className="black antique">BUILD YOUR CASTOR</h4></button>
               </div>
             </div>
           </div>

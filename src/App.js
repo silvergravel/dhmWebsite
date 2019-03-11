@@ -12,6 +12,8 @@ import Home from './components/pages/home'
 import About from './components/pages/about'
 import Footer from './components/footer'
 import CategoryPage from './components/pages/category-page'
+import ConfigureCastor from './components/pages/configure-castor-page'
+
 
 
 //stylesheets
@@ -26,6 +28,7 @@ class App extends Component {
           <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
+          <Route path='/configure/:itemCode' render={props => <ConfigureCastor {...props} /> } />
           <Route path='/:categoryName' render={props => <CategoryPage {...props} /> } />
           </Switch>
         <Footer/>

@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 
+import {
+  Link
+} from 'react-router-dom';
+
 var data = require('../../data/category-page-content.json');
 
 
@@ -15,6 +19,7 @@ class CategoryPage extends Component{
   }
 
   componentWillMount(){
+
     let categoryPageContent = data[this.state.categoryName].map(content => {
         return(
             <div className="series-block">
@@ -57,6 +62,7 @@ class CategoryPage extends Component{
               <div className="row product-cards__card-grid">
               { content.items.map(product =>{
                 return(
+                  <Link to={"/configure" + product.redirectUrl}>
                   <div className = "col-md-3 col-sm-6 product-card">
                       <div className="product-card__content-wrapper">
                         <h2 className="black light product-card__title">{product.heading}</h2>
@@ -70,9 +76,13 @@ class CategoryPage extends Component{
                           }
                         </div>
                         <img className="product-card__image" src={product.image} />
+
+                        <button><h4 className="black antique">BUILD YOUR CASTOR</h4></button>
+
                       </div>
 
                   </div>
+                  </Link>
 
                 )
               })
@@ -89,6 +99,8 @@ class CategoryPage extends Component{
   }
 
   render(){
+
+    console.log(this.state.categoryPageContent);
     return(
 
 

@@ -30,7 +30,7 @@
               "tag": "load capacity",
               "quantity": "Upto 36 kgs"
             },
-            "redirectUrl": "/ld-rd1-cast-iron"
+            "redirectUrl": "/ld-rd1-castIron"
           },
           {
             "heading": "Nylon",
@@ -668,7 +668,7 @@
             "tag": "load capacity",
             "quantity": "Upto 275 kgs"
           },
-          "redirectUrl": "/hd-mrn1-cast-iron"
+          "redirectUrl": "/hd-mrn1-castIron"
         },
         {
           "heading": "Nylon",
@@ -698,7 +698,7 @@
             "tag": "load capacity",
             "quantity": "Upto 650 kgs"
           },
-          "redirectUrl": "/hd-mrn1-pu-on-ci"
+          "redirectUrl": "/hd-mrn1-puOnCi"
         },
         {
           "heading": "PU Tyred On Nylon",
@@ -708,7 +708,7 @@
             "tag": "load capacity",
             "quantity": "Upto 275 kgs"
           },
-          "redirectUrl": "/hd-mrn1-pu-on-nylon"
+          "redirectUrl": "/hd-mrn1-puOnNylon"
         },
         {
           "heading": "Rubber Tyred On Cast Iron",
@@ -718,7 +718,7 @@
             "tag": "load capacity",
             "quantity": "Upto 200 kgs"
           },
-          "redirectUrl": "/hd-mrn1-rubber-on-ci"
+          "redirectUrl": "/hd-mrn1-rubberOnCi"
         }
 
       ]

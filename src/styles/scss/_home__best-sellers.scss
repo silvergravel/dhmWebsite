@@ -1,5 +1,8 @@
 
 
+h3.best-sellers__title{
+  margin-top: 63px;
+}
 
 .best-sellers__card-grid{
 
@@ -45,6 +48,7 @@
 
             padding: 22px 15px 15px 15px;
             position: relative;
+            height: 336px;
 
             @include breakpoint($tab_767){
               padding: 16px 15px 15px 15px;
@@ -99,6 +103,19 @@
 
               }
             }
+
+            button{
+              display: block;
+              width: calc(100% - 30px);
+              position: absolute;
+              bottom: 15px;
+
+              h4{
+                line-height: normal;
+              }
+
+          }
+
         }
     }
   }

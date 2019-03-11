@@ -10,9 +10,16 @@
     "react-scripts": "1.1.1"
   },
   "scripts": {
-    "start": "sass --watch src/styles/scss:src/styles/css | react-scripts start",
-    "build": "react-scripts build",
+    "build-css": "node-sass --include-path ./src --include-path ./node_modules src/styles/scss -o src/styles/css",
+    "watch-css": "npm run build-css && node-sass --include-path ./src --include-path ./node_modules src/styles/scss -o src/styles/css --watch --recursive",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build",
+    "start-js": "react-scripts start",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.4",
+    "npm-run-all": "^4.1.3"
   }
 }

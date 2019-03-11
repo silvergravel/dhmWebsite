@@ -15,6 +15,7 @@ h2.black.light{
   font-family: 'suisse-light';
   font-size: 32px;
   line-height: 36px;
+  color: $black;
 
   @include breakpoint($mob_400){
 
@@ -156,4 +157,44 @@ h6.light.orange{
     line-height: 12px;
 
   }
+}
+
+//label
+label.beige.antique{
+  font-family: 'suisse-antique';
+  font-size: 16px;
+  line-height: 22px;
+  color: $beige;
+
+  @include breakpoint($mob_400){
+
+    font-size: 12px;
+    line-height: 16px;
+
+  }
+}
+
+//button styles
+
+button{
+  height: 36px;
+  border: 2px solid $black;
+}
+
+.dropdown{
+  @include appearance(none);
+  border: 1px solid $light-beige;
+  border-radius: 0px;
+  height: 50px;
+  width: 100%;
+  padding-left: 15px;
+  font-family: 'suisse-light';
+  font-size: 32px;
+  line-height: 36px;
+  color: $light-grey;
+  background-color: $white;
+  background-image: url('../../images/arrows.svg');
+	background-repeat:no-repeat;
+	background-position: right 0px top 0px;
+
 }

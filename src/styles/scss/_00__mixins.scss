@@ -17,10 +17,10 @@
   -webkit-transform: translateX($val);
 }
 
-@mixin translate($val, $val){
-  transform: translate($val, $val);
-  -moz-transform: translate($val, $val);
-  -webkit-transform: translate($val, $val);
+@mixin translate($val, $val2){
+  transform: translate($val, $val2);
+  -moz-transform: translate($val, $val2);
+  -webkit-transform: translate($val, $val2);
 }
 
 //transitions
@@ -41,6 +41,14 @@
   transition: $val, $val2, $val3;
   -moz-transition: $val, $val2, $val3;
   -webkit-transition: $val, $val2, $val3;
+}
+
+//resets
+
+@mixin appearance($val){
+  appearance: $val;
+  -moz-appearance: $val;
+  -webkit-appearance: $val;
 }
 
 //breakpoints for media queries
