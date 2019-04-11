@@ -14,50 +14,53 @@
   background-repeat: no-repeat;
   min-height: 232px;
 
+  .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+  }
+
   @include breakpoint($mob_480){
     height: 229px;
 
   }
 
   h1.banner__caption{
-    position: absolute;
-    left: 135px;
-    top: 50%;
-    @include translateY(-50%);
+
+    // margin-top: 48px;
     text-align: left;
     max-width: 798px;
     color: $black;
 
     @include breakpoint($tab_960){
-      left: 50%;
-      width: 746px;
-      @include translate(-50%, -50%);
+
     }
 
     @include breakpoint($tab_800){
-      left: 15px;
-      @include translateY(-50%);
-      width: 660px;
+
       font-size: 42px;
-      line-height: 52px;
+      line-height: 1.3em;
     }
 
     @include breakpoint($tab_640){
-      width: 450px;
+
       font-size: 40px;
       line-height: 48px;
     }
 
     @include breakpoint($mob_480){
+
       font-size: 32px;
       line-height: 40px;
-      width: 380px;
+
     }
 
     @include breakpoint($mob_400){
+
       font-size: 28px;
-      line-height: 34px;
-      width: 272px;
+      line-height: 36px;
+
     }
 
     //learn more span
@@ -68,13 +71,18 @@
       line-height: 18px;
 
       @include breakpoint($mob_400){
-        display: block;
-        margin: 0;
-        padding-top: 2px;
+        // display: block;
+        // margin: 0;
+        // padding-top: 2px;
       }
 
       a{
         color: $black;
+        @include transition(background-color 0.4s);
+        &:hover{
+          background-color: $orange-extra-trans;
+          text-decoration: none;
+        }
       }
 
       img{

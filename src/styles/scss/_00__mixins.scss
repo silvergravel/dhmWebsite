@@ -1,3 +1,20 @@
+@mixin no-select(){
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@mixin text-render-fix() {
+
+
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
+}
+
+
 @mixin drop-shadow{
   box-shadow: 0px 2px 10px $black-shadow;
 
@@ -81,6 +98,10 @@
   }
   @else if $point == 960px{
     @media (max-width: 960px){
+      @content;
+    }
+  }@else if $point == 991px{
+    @media (max-width: 991px){
       @content;
     }
   }

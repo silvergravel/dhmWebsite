@@ -6,38 +6,60 @@
 
     .overview{
       background-color: rgba(181,169,140,0.1);
-      padding: 0 15px 0 15px;
-      height: 110px;
 
-      h3.overview__title{
-        display: inline-block;
-        vertical-align: top;
-        margin-top: 16px;
-      }
 
-      div{
-        display: inline-block;
-        vertical-align: top;
-        margin: 23px 0 0 56px;
+      .container{
 
-        h4.data__tag{
+        h3.overview__title{
 
-          letter-spacing: 0.01em;
-          text-transform: uppercase;
 
+          margin-top: 16px;
         }
 
-        h4.data__qty{
+        .overview__data__block{
+
+          display: flex;
+          padding-bottom: 15px;
+
+          .overview__data{
+              margin: 23px 36px 0 0;
+              &:last-of-type{
+                margin-right: 0px;
+              }
+          }
 
 
-          .beige{
-            color: $beige;
+          h4.data__tag{
+
+            letter-spacing: 0.01em;
+            text-transform: uppercase;
+
+            @include breakpoint($tab_640){
+              width: 60px;
+            }
+
+          }
+
+          h4.data__qty{
+
+
+            .beige{
+              color: $beige;
+            }
           }
         }
       }
     }
+
+    .container.product-cards{
+      padding: 0px;
+
     .product-cards__card-grid{
       margin: 0 0 45px 0;
+
+      a{
+        text-decoration: none;
+      }
 
     .product-card{
       padding: 15px;
@@ -48,8 +70,22 @@
         position: relative;
         border: 0.5px solid $beige;
         border-radius: 5px;
-        height: 276px;
+        height: 346px;
         padding: 22px 15px 15px 15px;
+        @include transition(background-color 0.4s);
+
+
+        @include breakpoint($mob_400){
+          height: 280px;
+        }
+
+        &:hover{
+          background-color: $light-beige;
+
+          button{
+            background-color: $light-beige-2;
+          }
+        }
 
         h2.product-card__title{
 
@@ -62,7 +98,7 @@
 
         h4.product-card__sub-title{
 
-          width: 160px;
+          width: 50%;
           margin-top: 9px;
 
         }
@@ -70,11 +106,17 @@
         .product-data{
 
           position: absolute;
-          top: 171px;
+          bottom: 63px;
 
           h5{
             text-transform: uppercase;
             letter-spacing: 0.03em;
+          }
+
+          h4.product-data__qty{
+
+            // margin-top: 5px;
+
           }
         }
 
@@ -82,7 +124,11 @@
           position: absolute;
           right: 25px;
           top: 30px;
-          max-width: 144px;
+          max-width: 180px;
+
+          @include breakpoint($mob_400){
+            max-width: 142px;
+          }
         }
 
 
@@ -105,5 +151,6 @@
       }
     }
   }
+}
   }
 }

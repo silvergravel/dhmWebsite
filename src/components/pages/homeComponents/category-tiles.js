@@ -17,11 +17,12 @@ class CategoryTiles extends Component {
   componentWillMount(){
     let categoryTileContent = data.content.map(content => {
         return(
+          <div key={content.heading}>
           <Link to={content.redirectUrl}>
-            <div className = "col-sm-6 col-lg-4 category-card">
-              <div className="category-card__content-wrapper" key={content.results}>
-                <h2 className="black medium category-card__title">{content.heading}</h2>
-                <h4 className="beige regular category-card__sub-title">{content.subHeading}</h4>
+            <div className = "col-md-6 category-card">
+              <div className="category-card__content-wrapper" >
+                <h2 className="black light category-card__title">{content.heading}</h2>
+                <h4 className="beige medium category-card__sub-title">{content.subHeading}</h4>
                 <div className="category-data">
                   {content.loadCapacity !== null &&     //if a value exists for 'load capacity' then...
                   <div className="category-data__load-capacity">
@@ -43,10 +44,11 @@ class CategoryTiles extends Component {
                   </h6>
                   }
                 </div>
-                <img className="category-card__image" src={content.image} />
+                <img className="category-card__image" src={content.image} alt="" />
               </div>
             </div>
           </Link>
+          </div>
         )
       })
 
@@ -58,8 +60,8 @@ class CategoryTiles extends Component {
     return(
 
 
-      <div className="container-fluid primary-categories">
-          <h3 className="black medium primary-categories__title">Explore Our Product Categories</h3>
+      <div className="container primary-categories">
+          <h4 className="black medium section__title">Explore Our Product Categories</h4>
           <div className="row primary-categories__card-grid">
             {this.state.categoryTileContent}
           </div>

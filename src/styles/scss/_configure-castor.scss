@@ -1,74 +1,77 @@
-.configure-castor-wrapper{
 
+.config-castor-wrapper{
   margin-left: 10vw;
   margin-right: 10vw;
+}
 
-    h3.configure-castor__title{
+h3.config-castor__title{
+margin-top: 150px;
+}
 
-    margin-top: 150px;
+div.config-panel{
+  margin-top: 18px;
+  border: 1px solid $beige;
+  height: 648px;
+  border-radius: 5px;
+}
 
-    }
+div.config-panel .series-bar{
+  background-color: $light-beige;
+  height: 36px;
 
-    div.configure-panel{
-      margin-top: 18px;
-      border: 1px solid $beige;
-      height: 648px;
-      border-radius: 5px;
+  h4{
+    padding: 8px 0 0 15px;
+  }
+}
 
+.config-panel__body{
+  display: flex;
+}
 
-      .series-bar{
-        background-color: $light-beige;
-        height: 36px;
+.config-panel__body .image-wrapper{
+  display: inline-block;
+  position: relative;
+  height: 546px;
+  width: 60%;
 
-        h4{
-          padding: 8px 0 0 15px;
-        }
+  img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    @include translate(-50%, -50%);
+    height: 432px;
+  }
+}
+
+.config-fields{
+  position: relative;
+  padding: 15px 15px 0 0;
+  width: 40%;
+}
+
+.config-field-dd-material, .config-field-dd-wheel-dia,
+.config-fields-vitalsMeta-bracket-quantity{
+  position: absolute;
+  right: 15px;
+}
+
+.config-field-dd-material{
+  z-index: 1000;
+}
+
+.config-field-dd-wheel-dia{
+  top: 169px;
+  z-index: 999;
+}
+
+.config-fields-vitalsMeta-bracket-quantity{
+  top: 257px;
+
+  &>div{
+      margin-bottom: 15px;
+
+      &:last-of-type{
+        margin-bottom: 0px;
       }
-
-      .configure-panel__body{
-
-        .image-wrapper{
-          display: inline-block;
-          position: relative;
-          height: 546px;
-          width: 60%;
-
-          img{
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            @include translate(-50%, -50%);
-            height: 432px;
-          }
-
-        }
-
-        .configuration-fields{
-          vertical-align: top;
-          display: inline-block;
-          width: 40%;
-          padding: 15px 15px 0 0;
-
-          .fields__load-capacity{
-
-          }
-
-          h4{
-            text-transform: uppercase;
-          }
-
-          label{
-            text-transform: uppercase;
-          }
-
-        }
-
-        .configure-panel__cta{
-
-        }
-
-      }
-
-    }
-
+  }
 }

@@ -7,7 +7,8 @@ class Banner extends Component {
     return (
       <div>
         <div className="banner">
-          <h1 className="black light banner__caption">
+          <div className="container">
+          <h1 className="black regular banner__caption">
             Reputed stockists of castor wheels and trolleys for your
             domestic and industrial needs. Since 1952.
             <span>
@@ -17,6 +18,7 @@ class Banner extends Component {
               </a>
             </span>
           </h1>
+          </div>
 
         </div>
       </div>

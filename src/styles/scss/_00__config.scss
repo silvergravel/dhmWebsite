@@ -5,21 +5,27 @@ h1, h2, h3, h4, h5, h6, body{
 
 //color styles
 $black: #000000;
+$grey: #838383;
 $black-shadow: rgba(0,0,0,0.15);
 
 $beige: #B5A98C;
+$beige-light: #F4F2EE;
 $light-beige: rgba(181,169,140,0.15);
 $light-beige-2: rgba(181,169,140,0.3);
 
 $yellow: #fff000;
 $white: #ffffff;
 $orange: #FE4E33;
+$orange-trans: rgba(#fe4e33, 0.5);
+$orange-extra-trans: rgba(#fe4e33, 0.25);
 
 $light-grey: #CACACA;
 
 //breakpoints
 $tab_1080: 1080px;
 $tab_960: 960px;
+$tab_991: 991px;
+$tab_800: 800px;
 $tab_800: 800px;
 $tab_767: 767px;
 $tab_640: 640px;

@@ -14,7 +14,7 @@ class BestSellers extends Component {
   componentWillMount(){
     let bestSellersTileContent = data.content.map(product => {
         return(
-          <div className = "col-md-3 col-sm-6 best-sellers-card">
+          <div className = "col-lg-4 col-sm-6 best-sellers-card">
             <div className="best-sellers-card-plus-bar" key={product.results}>
               <div className="best-sellers-card__category-bar">
                 <h4 className="black medium best-sellers-card__category-name">{product.superHeading}</h4>
@@ -36,8 +36,8 @@ class BestSellers extends Component {
                   </div>
                   }
                 </div>
-                <img src={product.image} />
-                <button><h4 className="black antique">BUILD YOUR CASTOR</h4></button>
+                <img src={product.image} alt="" />
+                <button className="secondary"><h4 className="black antique">BUILD YOUR CASTOR</h4></button>
               </div>
             </div>
           </div>
@@ -52,11 +52,12 @@ class BestSellers extends Component {
   render(){
     return(
 
-      <div className="container-fluid best-sellers">
-        <h3 className="black medium best-sellers__title">Best Sellers</h3>
+      <div className="container best-sellers">
+        <h4 className="black medium section__title">Best Sellers</h4>
         <div className="row best-sellers__card-grid">
           {this.state.bestSellersTileContent}
         </div>
+        <div className="custom-gap-63"></div>
       </div>
 
     );

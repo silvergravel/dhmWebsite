@@ -1,10 +1,33 @@
 //text styles
+h1, h2, h2.proj-title, h3, h4, h5, h6, p, p strong, ul, li, figcaption, a {
+  @include text-render-fix();
+
+  letter-spacing: inherit;
+}
+
+
 
 //h1
 h1.black.light{
   font-family: 'suisse-light';
   font-size: 50px;
-  line-height: 60px;
+  line-height: 64px;
+  color: $black;
+
+}
+
+h1.black.medium{
+  font-family: 'suisse-medium';
+  font-size: 50px;
+  line-height: 64px;
+  color: $black;
+
+}
+
+h1.black.regular{
+  font-family: 'suisse-regular';
+  font-size: 50px;
+  line-height: 64px;
   color: $black;
 
 }
@@ -53,14 +76,14 @@ h3.black.medium{
 //h4
 h4.plus.black.medium{
 
-  font-family: 'suisse-medium';
-  font-size: 20px;
-  line-height: 24px;
+  font-family: 'suisse-light';
+  font-size: 24px;
+  line-height: 36px;
   color: $black;
 
   @include breakpoint($mob_400){
 
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
 
   }
@@ -69,13 +92,13 @@ h4.plus.black.medium{
 h4.beige.regular {
   font-family: 'suisse-regular';
   font-size: 16px;
-  line-height: 22px;
+  line-height: 24px;
   color: $beige;
 
   @include breakpoint($mob_400){
 
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 1.4em;
 
   }
 }
@@ -83,13 +106,13 @@ h4.beige.regular {
 h4.beige.medium{
   font-family: 'suisse-medium';
   font-size: 16px;
-  line-height: 22px;
+  line-height: 24px;
   color: $beige;
 
   @include breakpoint($mob_400){
 
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 1.4em;
 
   }
 }
@@ -97,13 +120,27 @@ h4.beige.medium{
 h4.black.medium {
   font-family: 'suisse-medium';
   font-size: 16px;
-  line-height: 22px;
+  line-height: 24px;
   color: $black;
 
   @include breakpoint($mob_400){
 
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 1.4em;
+
+  }
+}
+
+h4.grey.medium {
+  font-family: 'suisse-medium';
+  font-size: 16px;
+  line-height: 24px;
+  color: $grey;
+
+  @include breakpoint($mob_400){
+
+    font-size: 14px;
+    line-height: 1.4em;
 
   }
 }
@@ -111,13 +148,13 @@ h4.black.medium {
 h4.black.antique {
   font-family: 'suisse-antique';
   font-size: 16px;
-  line-height: 22px;
+  line-height: 24px;
   color: $black;
 
   @include breakpoint($mob_400){
 
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 1.4em;
 
   }
 }
@@ -125,13 +162,13 @@ h4.black.antique {
 h4.beige.antique {
   font-family: 'suisse-antique';
   font-size: 16px;
-  line-height: 22px;
+  line-height: 24px;
   color: $beige;
 
   @include breakpoint($mob_400){
 
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 1.4em;
 
   }
 }
@@ -139,8 +176,15 @@ h4.beige.antique {
 //h5
 h5.beige.medium{
   font-family: 'suisse-medium';
-  font-size: 12px;
-  line-height: 12px;
+  font-size: 14px;
+  line-height: 1.4em;
+  color: $beige;
+}
+
+h5.beige.antique{
+  font-family: 'suisse-antique';
+  font-size: 14px;
+  line-height: 1.4em;
   color: $beige;
 }
 
@@ -148,28 +192,46 @@ h5.beige.medium{
 h6.light.orange{
   font-family: 'suisse-light';
   font-size: 12px;
-  line-height: 14px;
+  line-height: 16px;
   color: $orange;
 
-  @include breakpoint($mob_400){
-
-    font-size: 10px;
-    line-height: 12px;
-
-  }
+  // @include breakpoint($mob_400){
+  //
+  //   font-size: 10px;
+  //   line-height: 12px;
+  //
+  // }
 }
 
 //label
+label{
+  font-weight: 100;
+}
+
 label.beige.antique{
   font-family: 'suisse-antique';
   font-size: 16px;
-  line-height: 22px;
+  line-height: 24px;
   color: $beige;
 
   @include breakpoint($mob_400){
 
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 1.4em;
+
+  }
+}
+
+label.black.medium{
+  font-family: 'suisse-medium';
+  font-size: 16px;
+  line-height: 24px;
+  color: $black;
+
+  @include breakpoint($mob_400){
+
+    font-size: 14px;
+    line-height: 1.4em;
 
   }
 }
@@ -178,7 +240,25 @@ label.beige.antique{
 
 button{
   height: 36px;
-  border: 2px solid $black;
+  border-radius: 5px;
+
+  &.secondary{
+    border: 2px solid $black;
+    @include transition(background-color 0.4s);
+
+    &:hover{
+      background-color: $light-beige-2;
+    }
+  }
+
+  h4.black.antique{
+    @include breakpoint($mob_400){
+
+      font-size: 16px;
+      line-height: 24px;
+
+    }
+  }
 }
 
 .dropdown{
@@ -197,4 +277,8 @@ button{
 	background-repeat:no-repeat;
 	background-position: right 0px top 0px;
 
+}
+
+.custom-gap-63{
+  height: 63px;
 }

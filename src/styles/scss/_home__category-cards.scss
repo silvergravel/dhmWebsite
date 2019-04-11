@@ -1,10 +1,14 @@
-  h3.primary-categories__title{
+  h4.section__title{
 
+  text-transform: uppercase;
   margin-top: 63px;
+  padding-top: 4px;
+  border-top: 1px solid $beige-light;
 
 }
 
 .primary-categories__card-grid{
+
 
     .category-card {
        padding: 15px;
@@ -13,12 +17,16 @@
          padding: 8px 15px 8px 15px;
        }
 
+
+
        .category-card__content-wrapper{
           position: relative;
           height: 384px;
-         	background-color: rgba(181,169,140,0.1);
+         	background-color: $light-beige;
           padding: 18px 15px 18px 15px;
           border-radius: 5px;
+          @include transition(background-color 0.4s);
+
 
           @include breakpoint($mob_480){
             height: 340px;
@@ -59,6 +67,8 @@
 
             letter-spacing: 0.01em;
             text-transform: none;
+            width: 130px;
+            margin-top: 4px;
 
           }
 
@@ -70,7 +80,7 @@
 
             @include breakpoint($tab_960){
 
-            max-width: 190px;
+            // max-width: 190px;
             }
 
             @include breakpoint($tab_767){
@@ -93,5 +103,27 @@
             }
           }
        }
+
+       //hover settings
+       &:hover{
+
+         .category-card__content-wrapper{
+            background-color: $light-beige-2;
+         }
+
+         h2.black.medium{
+
+           text-decoration: none !important;
+         }
+
+       }
+
     }
+
+    a:hover{
+      text-decoration: none;
+    }
+
+
+
 }

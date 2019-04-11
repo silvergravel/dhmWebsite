@@ -13,7 +13,7 @@ class Home extends Component{
         <Banner/>
         <CategoryTiles/>
         <BestSellers/>
-
+        
       </div>
 
     );
