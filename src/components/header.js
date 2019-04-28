@@ -16,7 +16,7 @@ class Header extends Component {
   constructor(props) {
     super(props);
 
-    
+
 
     this.state = {
       pathname: this.props.location.pathname,
@@ -61,7 +61,7 @@ class Header extends Component {
       primLinks.push("expand");
     }
 
-    console.log("the current pathname is: "+ matchId);
+    // console.log("the current pathname is: "+ matchId);
 
 
 
@@ -94,13 +94,15 @@ class Header extends Component {
             <li className="reg">
               <a href="#">Contact</a>
             </li>
-            <li className="cart active">
-              <div className="cart-icon">
-                <img src={CartWithItems} alt="cartIcon"/>
-                <span className="items-in-cart">4</span>
-              </div>
-              <a href="#">Quote Cart</a>
-            </li>
+            <Link to="/my-quote-cart">
+              <li className={this.props.itemsInCart > 0 ? 'cart active' : 'cart inactive'}>
+                <div className="cart-icon">
+                  <img src={CartWithItems} alt="cartIcon"/>
+                  <span className="items-in-cart">{this.props.itemsInCart}</span>
+                </div>
+                <span>Quote Cart</span>
+              </li>
+            </Link>
           </ul>
           <Link to="/">
             <div className="logo-small">
@@ -111,7 +113,7 @@ class Header extends Component {
           <div className="mobile-header-icons">
             <div className="cart-icon cart-icon-mobile">
               <img src={CartWithItems} alt="cartIcon"/>
-              <span className="items-in-cart">4</span>
+              <span className="items-in-cart">{this.props.itemsInCart}</span>
             </div>
             {hamburgerElement}
           </div>

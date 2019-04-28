@@ -11,9 +11,6 @@ class Radio extends Component{
 
     }
 
-
-
-
     this.activateOption = this.activateOption.bind(this);
   }
 
@@ -21,7 +18,6 @@ class Radio extends Component{
 
     this.props.updateWheelConfig(evt,id,key); //update wheel configuration in parent
     this.updateActiveOptionId(id,key); //update the active option being displayed in dd
-    // this.setState({listOpen:false}); //shut the dropdown
   }
 
   updateActiveOptionId(id){
@@ -37,7 +33,7 @@ class Radio extends Component{
     return(
 
       <div>
-        <label for="radio-list-bracket" className="beige antique radio-label">{label}</label>
+        <label htmlFor="radio-list-bracket" className="beige antique radio-label">{label}</label>
                  <ul id="radio-list-bracket" className="radio-list">
                   {list.map((option) => (
                    <li className={list[activeOptionId].plateType === option.plateType ? 'radio-list-item plate-type active' : 'radio-list-item plate-type'}

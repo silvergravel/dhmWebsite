@@ -20,14 +20,14 @@ class InputField extends Component{
 
 
 
-    const{updateInput, label, type, name} = this.props
+    const{updateInput, label, type, name, min} = this.props
 
 
     return(
       <div>
-        <label for="input" className="beige antique input-label">{label}</label>
+        <label htmlFor="input" className="beige antique input-label">{label}</label>
         <div className="input-block">
-          <input id="input" type={type} name={name} onChange={(evt) => this.activateOption(evt)} />
+          <input id="input" type={type} name={name} min={min} onChange={(evt) => this.activateOption(evt)} />
         </div>
       </div>
     );

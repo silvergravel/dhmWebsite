@@ -329,30 +329,30 @@ header {
       header ul li a {
         text-decoration: none;
         color: #000000; }
-      header ul li.cart.active {
+      header ul li.cart {
         margin-right: 0; }
-        header ul li.cart.active a {
-          transition: background-color 0.4s;
-          -moz-transition: background-color 0.4s;
-          -webkit-transition: background-color 0.4s; }
-        header ul li.cart.active:hover {
-          cursor: pointer; }
-          header ul li.cart.active:hover a {
-            background-color: rgba(181, 169, 140, 0.3); }
-        header ul li.cart.active .cart-icon {
+        header ul li.cart .cart-icon {
           display: inline-block;
           position: relative;
           margin-right: 6px; }
-          header ul li.cart.active .cart-icon span {
+          header ul li.cart .cart-icon span {
             position: absolute;
             right: 12px;
             top: 2px;
             font-family: 'suisse-regular';
             color: #FE4E33;
             font-size: 14px; }
-        header ul li.cart.active a {
+        header ul li.cart span {
           color: #FE4E33;
           text-decoration: none; }
+      header ul li.cart.active span {
+        transition: background-color 0.4s;
+        -moz-transition: background-color 0.4s;
+        -webkit-transition: background-color 0.4s; }
+        header ul li.cart.active span:hover {
+          cursor: pointer; }
+        header ul li.cart.active span:hover span {
+          background-color: rgba(181, 169, 140, 0.3); }
 
 .logo-small {
   display: none;
@@ -857,6 +857,16 @@ div.config-panel .series-bar {
     height: 2px;
     box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
     transform: rotate(45deg); }
+
+.checkbox-block.disabled label {
+  color: #CACACA;
+  cursor: default; }
+
+.checkbox-block.disabled label:before {
+  display: none !important; }
+
+.checkbox-block.disabled label:after {
+  display: none !important; }
 
 .wheel-config-meta {
   display: flex; }

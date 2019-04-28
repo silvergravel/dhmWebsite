@@ -180,6 +180,22 @@ background-color: $light-beige-2;
   }
 }
 
+//disabled checkbox styling
+
+.checkbox-block.disabled label{
+  color: $light-grey;
+  cursor: default;
+}
+
+.checkbox-block.disabled label:before{
+  display: none !important;
+  
+}
+
+.checkbox-block.disabled label:after{
+  display: none !important;
+
+}
 
 //wheel-config-meta
 

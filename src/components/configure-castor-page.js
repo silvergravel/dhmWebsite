@@ -27,16 +27,22 @@ class ConfigureCastor extends Component{
       activevitalsOptionsId: 0,
       activebracketOptionsId: 0,
       braking: false,
-      quantity: ''
+      quantity: 0
 
 
     }
     this.updateWheelConfig = this.updateWheelConfig.bind(this);
     this.updateInput = this.updateInput.bind(this);
+    this.validateAndAddToCart = this.validateAndAddToCart.bind(this);
+
   }
 
   updateWheelConfig(evt, id, key){
     this.setState({["active"+key+"Id"]:evt.currentTarget.dataset.id});
+    console.log("key is "+key);
+    console.log("id "+evt.currentTarget.dataset.id);
+    key === "bracketOptions" && evt.currentTarget.dataset.id === "0" &&
+    this.setState({braking: false})
   }
 
   updateInput(evt){
@@ -44,9 +50,17 @@ class ConfigureCastor extends Component{
     this.setState({[evt.target.name]: value});
   }
 
+  validateAndAddToCart(wheelConfig){
+    this.state.quantity > 0 ? this.props.updateCart(wheelConfig) : alert("you need to select a quantity to add this item to cart");
+  }
+
+
+
+
   render(){
 
     const{activeDutyId, activeSeriesId, activematerialOptionsId, activevitalsOptionsId, activebracketOptionsId, braking, quantity} = this.state;
+
 
     const activeSeries = data[activeDutyId][activeSeriesId];
     const activeSeriesName = activeSeries.series;
@@ -55,7 +69,9 @@ class ConfigureCastor extends Component{
     const vitalsOptions = materialOptions[activematerialOptionsId].vitalsOptions;
     const activeProductImage = materialOptions[activematerialOptionsId].image;
 
-
+    console.log("activeDuty: " +activeDutyId);
+    console.log("activeSeries: " +activeSeriesId);
+    console.log("activeMaterial: " +materialOptions[activematerialOptionsId].material);
     console.log("activeMaterial: " +materialOptions[activematerialOptionsId].material);
     console.log("activeWheelDia: " +vitalsOptions[activevitalsOptionsId].wheelDiameter);
     console.log("activeLoadCap: " +vitalsOptions[activevitalsOptionsId].loadCapacity);
@@ -118,13 +134,13 @@ class ConfigureCastor extends Component{
                   <div className="config-fields-bracket-braking">
                     <Checkbox
                     label={bracketOptions[activebracketOptionsId].brakingDescp}
-                    blockClass={bracketOptions[activebracketOptionsId].brakingOptions !== null && "disabled"}
+                    disabledClass={bracketOptions[activebracketOptionsId].brakingOptions === null && "disabled"}
                     checked={braking}
                     name="braking"
                     updateInput ={this.updateInput}
                     />
                   </div>
-                  
+
                 </div>
 
                 <div className="config-fields-quantity">
@@ -133,6 +149,7 @@ class ConfigureCastor extends Component{
                   type="number"
                   name="quantity"
                   updateInput ={this.updateInput}
+                  min="1"
                   />
                 </div>
               </div>
@@ -142,7 +159,7 @@ class ConfigureCastor extends Component{
             <button><h4 className="black antique">DOWNLOAD TECHNICAL SPECIIFCATIONS</h4></button>
             <button><h4 className="black antique">SHARE</h4></button>
             <button><h4 className="black antique">REQUEST QUOTE NOW</h4></button>
-            <button><h4 className="black antique">ADD TO QUOTE CART</h4></button>
+            <button onClick={() => this.validateAndAddToCart(this.state)}><h4 className="black antique">ADD TO QUOTE CART</h4></button>
           </div>
         </div>
       </div>

@@ -54,7 +54,7 @@ class DropdownWheelDia extends Component{
     return(
 
       <div className="dd-wrapper dd-wheel-dia">
-        <label for="dd-select-wheel-dia" className="beige antique dd-label">{label}</label>
+        <label htmlFor="dd-select-wheel-dia" className="beige antique dd-label">{label}</label>
           <div id="dd-select-wheel-dia" className="dd-select dd-wheel-dia" onClick={() => this.toggleList()}>
 
                 <div className="dd-activeOption dd-flex-wrapper dd-wheel-dia">

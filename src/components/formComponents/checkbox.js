@@ -7,9 +7,6 @@ class Checkbox extends Component{
 
   constructor(props){
     super(props)
-
-
-
   }
 
   activateOption(evt){
@@ -19,22 +16,31 @@ class Checkbox extends Component{
 
   render(){
 
+    const{updateInput, label, checked, disabledClass, name} = this.props
+    // console.log(disabledClass);
 
+    var disabledAttr = {};
 
-    const{updateInput, label, checked, blockClass, name} = this.props
-
+    //condition to toggle the disabled attribute on nthe checkbox input
+    if(disabledClass === "disabled"){
+      // console.log("we have a disabled");
+      disabledAttr['disabled'] = 'disabled';
+    } else{
+      // console.log("nop!");
+    }
 
     return(
-      <div className={'checkbox-block '+ blockClass}>
+      <div className={'checkbox-block '+ disabledClass}>
         <input
           id="brakingCheckbox"
           className="checkbox"
           name={name}
           type="checkbox"
           checked={checked}
-          onChange={(evt) => this.activateOption(evt)} />
+          onChange={(evt) => this.activateOption(evt)}
+          {...disabledAttr}/>
 
-         <label for="brakingCheckbox" className="black medium" >{label}</label>
+         <label htmlFor="brakingCheckbox" className="black medium " >{label}</label>
       </div>
     );
   }

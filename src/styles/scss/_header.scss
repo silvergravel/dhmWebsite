@@ -150,25 +150,13 @@ header{
         }
       }
 
-      &.cart.active{
+      &.cart{
         margin-right: 0;
-
-        a{
-          @include transition(background-color 0.4s);
-        }
-
-        &:hover {
-          cursor: pointer;
-          a{
-            background-color: $light-beige-2;
-          }
-        }
 
         .cart-icon{
           display: inline-block;
           position: relative;
           margin-right: 6px;
-
 
           span{
             position: absolute;
@@ -180,17 +168,30 @@ header{
           }
         }
 
-        a{
+        span{
           color: $orange;
           text-decoration: none;
-
-
         }
+      }
+
+        &.cart.active span{
+          @include transition(background-color 0.4s);
+
+          &:hover{
+            cursor: pointer;
+          }
+
+          &:hover span{
+              background-color: $light-beige-2;
+          }
+        }
+
+
       }
 
     }
   }
-}
+
 
 
 .logo-small{
