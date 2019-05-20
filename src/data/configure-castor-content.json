@@ -1,267 +1,246 @@
-{
-  "hd":
+  {
+  "md":{
+    "duty": "medium duty",
+    "rd4":{
+      "series":"RD4 Series",
+      "bracketOptions":[
 
-    {
-      
-      "mrn1":
+      ],
+      "materialOptions":[
 
+      ]
+    }
+  },
+  "hd":{
+    "duty": "heavy duty",
+    "mrn":{
+      "series":"MRN Series",
+      "bracketOptions": [
         {
-        "series":"MRN1 Series",
-
-        "bracketOptions": [
+        "id": 0,
+        "key": "bracketOptions",
+        "plateType" : "Fixed",
+        "brakingOptions" : null,
+        "brakingDescp" : "No braking options available for fixed bracket" ,
+        "brakingType" : null,
+        "image" : "/product-images/best-sellers-temp.png"
+        },
+        {
+        "id": 1,
+        "key": "bracketOptions",
+        "plateType" : "Swivel",
+        "brakingOptions" : "available",
+        "brakingDescp" : "Add Braking System ( Wheel + Swivel Lock )",
+        "brakingType" : "Wheel + Swivel Lock",
+        "image" : "/product-images/best-sellers-temp.png"
+        }
+      ],
+      "materialOptions": [
+        {
+        "id": 0,
+        "active": false,
+        "key": "materialOptions",
+        "material": "Cast Iron",
+        "materialDescp": "It offers superior resistance to most oils, chemicals and acids.",
+        "image": "/product-images/best-sellers-temp.png",
+        "vitalsOptions": [
           {
           "id": 0,
-          "key": "bracketOptions",
-          "plateType" : "Fixed",
-          "brakingOptions" : null,
-          "brakingDescp" : "No braking options available for fixed bracket" ,
-          "image" : "/product-images/best-sellers-temp.png"
-
+          "key": "vitalsOptions",
+          "wheelDiameter": "100 mm",
+          "totalHeight": "144 mm",
+          "treadWidth": "38 mm",
+          "loadCapacity": "230 kgs"
           },
           {
           "id": 1,
-          "key": "bracketOptions",
-          "plateType" : "Swivel",
-          "brakingOptions" : "available",
-          "brakingDescp" : "Add Braking System ( Wheel Lock + Swivel Lock )",
-          "image" : "/product-images/best-sellers-temp.png"
-          }
-        ],
-
-        "materialOptions": [
-          {
-            "id": 0,
-            "active": false,
-            "key": "materialOptions",
-            "material": "Cast Iron",
-            "materialDescp": "It offers superior resistance to most oils, chemicals and acids.",
-            "image": "/product-images/best-sellers-temp.png",
-
-            "vitalsOptions": [{
-
-                "id": 0,
-                "key": "vitalsOptions",
-                "wheelDiameter": "100 mm",
-                "totalHeight": "144 mm",
-                "treadWidth": "38 mm",
-                "loadCapacity": "230 kgs"
-
-              },
-              {
-
-                "id": 1,
-                "key": "vitalsOptions",
-                "wheelDiameter": "125 mm",
-                "totalHeight": "166 mm",
-                "treadWidth": "38 mm",
-                "loadCapacity": "275 kgs"
-
-              },
-              {
-
-                "id": 2,
-                "key": "vitalsOptions",
-                "wheelDiameter": "150 mm",
-                "totalHeight": "192 mm",
-                "treadWidth": "38 mm",
-                "loadCapacity": "275 kgs"
-
-              }
-            ]
+          "key": "vitalsOptions",
+          "wheelDiameter": "125 mm",
+          "totalHeight": "166 mm",
+          "treadWidth": "38 mm",
+          "loadCapacity": "275 kgs"
           },
           {
-
-            "id": 1,
-            "active": false,
-            "key": "materialOptions",
-            "material": "Nylon",
-            "materialDescp": "lorem Ipsum dolor set amet",
-            "image": "/product-images/best-sellers-temp.png",
-
-            "vitalsOptions": [{
-
-                "id": 0,
-                "key": "vitalsOptions",
-                "wheelDiameter": "100 mm",
-                "totalHeight": "144 mm",
-                "treadWidth": "38 mm",
-                "loadCapacity": "150 kgs"
-
-              },
-              {
-                "id": 1,
-                "key": "vitalsOptions",
-                "wheelDiameter": "125 mm",
-                "totalHeight": "166 mm",
-                "treadWidth": "38 mm",
-                "loadCapacity": "150 kgs"
-
-              },
-              {
-                "id": 2,
-                "key": "vitalsOptions",
-                "wheelDiameter": "150 mm",
-                "totalHeight": "192 mm",
-                "treadWidth": "38 mm",
-                "loadCapacity": "300 kgs"
-
-              }
-            ]
-          },
-          {
-
-            "id": 2,
-            "active": false,
-            "key": "materialOptions",
-            "material": "Phenorex (Fibre)",
-            "materialDescp": "lorem Ipsum dolor set amet",
-            "image": "/product-images/best-sellers-temp.png",
-
-            "vitalsOptions": [{
-
-                "id": 0,
-                "key": "vitalsOptions",
-                "wheelDiameter": "100 mm",
-                "totalHeight": "144 mm",
-                "treadWidth": "38 mm",
-                "loadCapacity": "275 kgs"
-
-              },
-              {
-                "id": 1,
-                "key": "vitalsOptions",
-                "wheelDiameter": "125 mm",
-                "totalHeight": "166 mm",
-                "treadWidth": "38 mm",
-                "loadCapacity": "275 kgs"
-
-              },
-              {
-                "id": 2,
-                "key": "vitalsOptions",
-                "wheelDiameter": "150 mm",
-                "totalHeight": "192 mm",
-                "treadWidth": "38 mm",
-                "loadCapacity": "365 kgs"
-
-              }
-            ]
-          },
-          {
-
-            "id": 3,
-            "active": false,
-            "key": "materialOptions",
-            "material": "PU Tyred On Cast Iron",
-            "materialDescp": "lorem Ipsum dolor set amet",
-            "image": "/product-images/best-sellers-temp.png",
-
-            "vitalsOptions": [{
-
-                "id": 0,
-                "key": "vitalsOptions",
-                "wheelDiameter": "100 mm",
-                "totalHeight": "144 mm",
-                "treadWidth": "38 mm",
-                "loadCapacity": "225 kgs"
-
-              },
-              {
-                "id": 1,
-                "key": "vitalsOptions",
-                "wheelDiameter": "125 mm",
-                "totalHeight": "166 mm",
-                "treadWidth": "38 mm",
-                "loadCapacity": "325 kgs"
-
-              },
-              {
-                "id": 2,
-                "key": "vitalsOptions",
-                "wheelDiameter": "150 mm",
-                "totalHeight": "192 mm",
-                "treadWidth": "38 mm",
-                "loadCapacity": "650 kgs"
-
-              }
-            ]
-          }, {
-
-            "id": 4,
-            "active": false,
-            "key": "materialOptions",
-            "material": "PU Tyred On Nylon",
-            "materialDescp": "lorem Ipsum dolor set amet",
-            "image": "/product-images/best-sellers-temp.png",
-
-            "vitalsOptions": [{
-                "id": 0,
-                "key": "vitalsOptions",
-                "wheelDiameter": "100 mm",
-                "totalHeight": "144 mm",
-                "treadWidth": "38 mm",
-                "loadCapacity": "185 kgs"
-
-              },
-              {
-                "id": 1,
-                "key": "vitalsOptions",
-                "wheelDiameter": "125 mm",
-                "totalHeight": "166 mm",
-                "treadWidth": "38 mm",
-                "loadCapacity": "230 kgs"
-
-              },
-              {
-                "id": 2,
-                "key": "vitalsOptions",
-                "wheelDiameter": "150 mm",
-                "totalHeight": "192 mm",
-                "treadWidth": "38 mm",
-                "loadCapacity": "275 kgs"
-
-              }
-            ]
-          },
-          {
-
-            "id": 5,
-            "active": false,
-            "key": "materialOptions",
-            "material": "Rubber Tyred On Cast Iron",
-            "materialDescp": "lorem Ipsum dolor set amet",
-            "image": "/product-images/best-sellers-temp.png",
-
-            "vitalsOptions": [{
-                "id": 0,
-                "key": "vitalsOptions",
-                "wheelDiameter": "100 mm",
-                "totalHeight": "144 mm",
-                "treadWidth": "38 mm",
-                "loadCapacity": "125 kgs"
-
-              },
-              {
-                "id": 1,
-                "key": "vitalsOptions",
-                "wheelDiameter": "125 mm",
-                "totalHeight": "166 mm",
-                "treadWidth": "38 mm",
-                "loadCapacity": "125 kgs"
-
-              },
-              {
-                "id": 2,
-                "key": "vitalsOptions",
-                "wheelDiameter": "150 mm",
-                "totalHeight": "192 mm",
-                "treadWidth": "38 mm",
-                "loadCapacity": "200 kgs"
-
-              }
-            ]
+          "id": 2,
+          "key": "vitalsOptions",
+          "wheelDiameter": "150 mm",
+          "totalHeight": "192 mm",
+          "treadWidth": "38 mm",
+          "loadCapacity": "275 kgs"
           }
         ]
-      }
+        },
+        {
+        "id": 1,
+        "active": false,
+        "key": "materialOptions",
+        "material": "Nylon",
+        "materialDescp": "lorem Ipsum dolor set amet",
+        "image": "/product-images/best-sellers-temp.png",
+        "vitalsOptions": [
+          {
+          "id": 0,
+          "key": "vitalsOptions",
+          "wheelDiameter": "100 mm",
+          "totalHeight": "144 mm",
+          "treadWidth": "38 mm",
+          "loadCapacity": "150 kgs"
+          },
+          {
+          "id": 1,
+          "key": "vitalsOptions",
+          "wheelDiameter": "125 mm",
+          "totalHeight": "166 mm",
+          "treadWidth": "38 mm",
+          "loadCapacity": "150 kgs"
+          },
+          {
+          "id": 2,
+          "key": "vitalsOptions",
+          "wheelDiameter": "150 mm",
+          "totalHeight": "192 mm",
+          "treadWidth": "38 mm",
+          "loadCapacity": "300 kgs"
+          }
+        ]
+        },
+        {
+        "id": 2,
+        "active": false,
+        "key": "materialOptions",
+        "material": "Phenorex (Fibre)",
+        "materialDescp": "lorem Ipsum dolor set amet",
+        "image": "/product-images/best-sellers-temp.png",
+        "vitalsOptions": [
+          {
+          "id": 0,
+          "key": "vitalsOptions",
+          "wheelDiameter": "100 mm",
+          "totalHeight": "144 mm",
+          "treadWidth": "38 mm",
+          "loadCapacity": "275 kgs"
+          },
+          {
+          "id": 1,
+          "key": "vitalsOptions",
+          "wheelDiameter": "125 mm",
+          "totalHeight": "166 mm",
+          "treadWidth": "38 mm",
+          "loadCapacity": "275 kgs"
+          },
+          {
+          "id": 2,
+          "key": "vitalsOptions",
+          "wheelDiameter": "150 mm",
+          "totalHeight": "192 mm",
+          "treadWidth": "38 mm",
+          "loadCapacity": "365 kgs"
+          }
+        ]
+        },
+        {
+        "id": 3,
+        "active": false,
+        "key": "materialOptions",
+        "material": "PU Tyred On Cast Iron",
+        "materialDescp": "lorem Ipsum dolor set amet",
+        "image": "/product-images/best-sellers-temp.png",
+        "vitalsOptions": [
+          {
+          "id": 0,
+          "key": "vitalsOptions",
+          "wheelDiameter": "100 mm",
+          "totalHeight": "144 mm",
+          "treadWidth": "38 mm",
+          "loadCapacity": "225 kgs"
+          },
+          {
+          "id": 1,
+          "key": "vitalsOptions",
+          "wheelDiameter": "125 mm",
+          "totalHeight": "166 mm",
+          "treadWidth": "38 mm",
+          "loadCapacity": "325 kgs"
+          },
+          {
+          "id": 2,
+          "key": "vitalsOptions",
+          "wheelDiameter": "150 mm",
+          "totalHeight": "192 mm",
+          "treadWidth": "38 mm",
+          "loadCapacity": "650 kgs"
+          }
+        ]
+        },
+        {
+        "id": 4,
+        "active": false,
+        "key": "materialOptions",
+        "material": "PU Tyred On Nylon",
+        "materialDescp": "lorem Ipsum dolor set amet",
+        "image": "/product-images/best-sellers-temp.png",
+        "vitalsOptions": [
+          {
+          "id": 0,
+          "key": "vitalsOptions",
+          "wheelDiameter": "100 mm",
+          "totalHeight": "144 mm",
+          "treadWidth": "38 mm",
+          "loadCapacity": "185 kgs"
+          },
+          {
+          "id": 1,
+          "key": "vitalsOptions",
+          "wheelDiameter": "125 mm",
+          "totalHeight": "166 mm",
+          "treadWidth": "38 mm",
+          "loadCapacity": "230 kgs"
+          },
+          {
+          "id": 2,
+          "key": "vitalsOptions",
+          "wheelDiameter": "150 mm",
+          "totalHeight": "192 mm",
+          "treadWidth": "38 mm",
+          "loadCapacity": "275 kgs"
+          }
+        ]
+        },
+        {
+        "id": 5,
+        "active": false,
+        "key": "materialOptions",
+        "material": "Rubber Tyred On Cast Iron",
+        "materialDescp": "lorem Ipsum dolor set amet",
+        "image": "/product-images/best-sellers-temp.png",
+        "vitalsOptions": [
+          {
+          "id": 0,
+          "key": "vitalsOptions",
+          "wheelDiameter": "100 mm",
+          "totalHeight": "144 mm",
+          "treadWidth": "38 mm",
+          "loadCapacity": "125 kgs"
+          },
+          {
+          "id": 1,
+          "key": "vitalsOptions",
+          "wheelDiameter": "125 mm",
+          "totalHeight": "166 mm",
+          "treadWidth": "38 mm",
+          "loadCapacity": "125 kgs"
+          },
+          {
+          "id": 2,
+          "key": "vitalsOptions",
+          "wheelDiameter": "150 mm",
+          "totalHeight": "192 mm",
+          "treadWidth": "38 mm",
+          "loadCapacity": "200 kgs"
+          }
+        ]
+        }
+      ]
     }
+  }
 }

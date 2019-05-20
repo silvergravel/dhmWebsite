@@ -27,7 +27,7 @@ class Radio extends Component{
 
   render(){
 
-    const{list, updateWheelConfig, label} = this.props
+    const{list, label} = this.props
     const{activeOptionId} = this.state
 
     return(

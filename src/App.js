@@ -32,6 +32,7 @@ class App extends Component {
     }
 
     this.updateCart = this.updateCart.bind(this);
+    this.deleteCartItem = this.deleteCartItem.bind(this);
 
   }
 
@@ -39,15 +40,18 @@ class App extends Component {
     var currentItemsInCart = this.state.itemsInCart;
     currentItemsInCart++;
     this.setState({itemsInCart:currentItemsInCart});
+    localStorage.setItem("itemsInCart", currentItemsInCart);
   }
 
   updateCartComponent(configObject){
     this.setState({
       cartItems:[
-        ...this.state.cartItems,
-        configObject
+        configObject,
+        ...this.state.cartItems
       ]
     })
+    var cartItemsConfig = [...this.state.cartItems,configObject];
+    localStorage.setItem("cartItems", JSON.stringify(cartItemsConfig));
   }
 
   updateCart(configObject){
@@ -70,6 +74,45 @@ class App extends Component {
     (this.updateItemsInCartIcon(), this.updateCartComponent(configObject))
   }
 
+  deleteCartItem(id){
+    // let arrayIndex = e.target.id;
+    console.log('request to delete item');
+    console.log(this.state.cartItems);
+    console.log(id);
+    var array = [...this.state.cartItems]; // make a separate copy of the array
+    array.splice([id], 1);
+    this.setState({cartItems: array});
+    localStorage.setItem("cartItems", JSON.stringify(array));
+
+    let itemsInCart = this.state.itemsInCart;
+    itemsInCart !== 0 && itemsInCart--;
+    this.setState({itemsInCart: itemsInCart});
+    localStorage.setItem("itemsInCart", itemsInCart);
+  }
+
+  hydrateStateWithLocalStorage() {
+    // for all items in state
+    for (let key in this.state) {
+      // if the key exists in localStorage
+      if (localStorage.hasOwnProperty(key)) {
+        // get the key's value from localStorage
+        let value = localStorage.getItem(key);
+
+        // parse the localStorage string and setState
+        try {
+          value = JSON.parse(value);
+          this.setState({ [key]: value });
+        } catch (e) {
+          // handle empty string
+          this.setState({ [key]: value });
+        }
+      }
+    }
+  }
+
+  componentDidMount() {
+    this.hydrateStateWithLocalStorage();
+ }
 
 
   render() {
@@ -84,7 +127,7 @@ class App extends Component {
               <Switch>
                 <Route exact path='/' component={Home} />
                 <Route exact path='/about' component={About} />
-                <Route exact path='/my-quote-cart' render={() => <Cart cartItems={this.state.cartItems} /> } />
+                <Route exact path='/my-quote-cart' render={() => <Cart cartItems={this.state.cartItems} deleteCartItem={this.deleteCartItem} /> } />
                 <Route
                   path='/configure/:itemCode'
                   render={props => <ConfigureCastor {...props} updateCart={this.updateCart} /> }

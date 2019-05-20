@@ -48,7 +48,7 @@ class DropdownMaterial extends Component{
 
 
 
-    const{list, updateWheelConfig, label} = this.props
+    const{list, label} = this.props
     const{listOpen, activeOptionId} = this.state
 
     return(

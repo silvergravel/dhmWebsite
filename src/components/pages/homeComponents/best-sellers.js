@@ -12,9 +12,9 @@ class BestSellers extends Component {
   }
 
   componentWillMount(){
-    let bestSellersTileContent = data.content.map(product => {
+    let bestSellersTileContent = data.content.map((product, index) => {
         return(
-          <div className = "col-lg-4 col-sm-6 best-sellers-card">
+          <div key={index} className = "col-lg-4 col-sm-6 best-sellers-card">
             <div className="best-sellers-card-plus-bar" key={product.results}>
               <div className="best-sellers-card__category-bar">
                 <h4 className="black medium best-sellers-card__category-name">{product.superHeading}</h4>

@@ -266,12 +266,6 @@
   ],
 
 
-
-
-
-
-
-
     "medium-duty-castors": [
       {
         "series": "RD4 Series",
@@ -364,11 +358,6 @@
           ]
       }
     ],
-
-
-
-
-
 
 
   "heavy-duty-castors": [
@@ -680,14 +669,14 @@
       ]
     },
     {
-      "series": "MRN1 Series",
+      "series": "MRN Series",
       "wheelDiameter": {
         "tag": "wheel diameter",
-        "quantity": "100 - 150 mm"
+        "quantity": "100 - 200 mm"
       },
       "treadWidth": {
         "tag": "tread width",
-        "quantity": "38 mm"
+        "quantity": "38 - 50 mm"
       },
       "bracketOptions": {
         "tag": "bracket options",
@@ -696,7 +685,7 @@
           "swivel plate"
         ],
         "wheelLock": [
-          "wheel & swivel lock combined"
+          "wheel + swivel lock"
         ]
       },
       "items":[
@@ -709,7 +698,7 @@
             "tag": "load capacity",
             "quantity": "Upto 275 kgs"
           },
-          "redirectUrl": "/hd-mrn1"
+          "redirectUrl": "/hd-mrn"
         },
         {
           "id": 1,
@@ -720,7 +709,7 @@
             "tag": "load capacity",
             "quantity": "Upto 300 kgs"
           },
-          "redirectUrl": "/hd-mrn1"
+          "redirectUrl": "/hd-mrn"
         },
         {
           "id": 2,
@@ -731,7 +720,7 @@
             "tag": "load capacity",
             "quantity": "Upto 365 kgs"
           },
-          "redirectUrl": "/hd-mrn1"
+          "redirectUrl": "/hd-mrn"
         },
         {
           "id": 3,
@@ -742,7 +731,7 @@
             "tag": "load capacity",
             "quantity": "Upto 650 kgs"
           },
-          "redirectUrl": "/hd-mrn1"
+          "redirectUrl": "/hd-mrn"
         },
         {
           "id": 4,
@@ -753,7 +742,7 @@
             "tag": "load capacity",
             "quantity": "Upto 275 kgs"
           },
-          "redirectUrl": "/hd-mrn1"
+          "redirectUrl": "/hd-mrn"
         },
         {
           "id": 5,
@@ -764,95 +753,7 @@
             "tag": "load capacity",
             "quantity": "Upto 200 kgs"
           },
-          "redirectUrl": "/hd-mrn1"
-        }
-
-      ]
-    },
-    {
-      "series": "MRN2 Series",
-      "wheelDiameter": {
-        "tag": "wheel diameter",
-        "quantity": "100 - 200 mm"
-      },
-      "treadWidth": {
-        "tag": "tread width",
-        "quantity": "50 mm"
-      },
-      "bracketOptions": {
-        "tag": "bracket options",
-        "options": [
-          "fixed plate",
-          "swivel plate"
-        ],
-        "wheelLock": [
-          "wheel & swivel lock combined"
-        ]
-      },
-      "items":[
-        { "id": 0,
-          "heading": "Cast Iron",
-          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-          "image": "product-images/best-sellers-temp.png",
-          "loadCapacity": {
-            "tag": "load capacity",
-            "quantity": "Upto 450 kgs"
-          },
-          "redirectUrl": "/hd-mrn2"
-        },
-        { "id": 1,
-          "heading": "Nylon",
-          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-          "image": "product-images/best-sellers-temp.png",
-          "loadCapacity": {
-            "tag": "load capacity",
-            "quantity": "Upto 400 kgs"
-          },
-          "redirectUrl": "/hd-mrn2"
-        },
-        {
-          "id": 2,
-          "heading": "Phenorex (Fibre)",
-          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-          "image": "product-images/best-sellers-temp.png",
-          "loadCapacity": {
-            "tag": "load capacity",
-            "quantity": "Upto 450 kgs"
-          },
-          "redirectUrl": "/hd-mrn2"
-        },
-        {
-          "id": 3,
-          "heading": "PU Tyred On Cast Iron",
-          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-          "image": "product-images/best-sellers-temp.png",
-          "loadCapacity": {
-            "tag": "load capacity",
-            "quantity": "Upto 650 kgs"
-          },
-          "redirectUrl": "/hd-mrn2"
-        },
-        {
-          "id": 4,
-          "heading": "PU Tyred On Nylon",
-          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-          "image": "product-images/best-sellers-temp.png",
-          "loadCapacity": {
-            "tag": "load capacity",
-            "quantity": "Upto 450 kgs"
-          },
-          "redirectUrl": "/hd-mrn2"
-        },
-        {
-          "id": 5,
-          "heading": "Rubber Tyred On Cast Iron",
-          "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-          "image": "product-images/best-sellers-temp.png",
-          "loadCapacity": {
-            "tag": "load capacity",
-            "quantity": "Upto 230 kgs"
-          },
-          "redirectUrl": "/hd-mrn2"
+          "redirectUrl": "/hd-mrn"
         }
 
       ]

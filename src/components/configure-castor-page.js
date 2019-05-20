@@ -81,7 +81,7 @@ class ConfigureCastor extends Component{
     return(
 
       <div className="config-castor-wrapper">
-        <h3 className="black medium config-castor__title">Build Your Castor</h3>
+        <h4 className="black medium section__title">Build Your Castor</h4>
         <div className="config-panel">
           <div className="series-bar">
             <h4 className="black antique">{this.state.activeSeries}</h4>

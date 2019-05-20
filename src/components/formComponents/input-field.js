@@ -20,7 +20,7 @@ class InputField extends Component{
 
 
 
-    const{updateInput, label, type, name, min} = this.props
+    const{label, type, name, min} = this.props
 
 
     return(

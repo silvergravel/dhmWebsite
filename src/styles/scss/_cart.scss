@@ -1,0 +1,85 @@
+.cartItemsListWrapper{
+  margin-top: 150px;
+  margin-bottom: 60px;
+}
+
+h4.section__title--quoteCart{
+  margin-top: 0;
+}
+
+
+.cartItemBlock{
+  // height: 204px;
+  margin: 15px 0;
+  border: 0.5px solid $beige;
+  border-radius: 5px;
+}
+
+//cart item HEADER
+.cartItemBlock__header{
+    background-color: $light-beige;
+}
+
+.cartItemBlock__header .seriesName{
+    padding: 4px 15px;
+}
+
+
+//cart item BODY
+.cartItemBlock__body{
+  display: flex;
+  height: 172px;
+}
+
+.cartItemBlock__body .body__element{
+  margin: 15px 15px;
+}
+
+.cartItemBlock__body .itemConfigAndActionsWrapper{
+  flex: 1 1 auto;
+}
+
+.cartItemBlock__body .itemImgWrapper img{
+  height: 100%;
+}
+
+.cartItemBlock__body .itemConfig{
+  display: flex;
+}
+
+.cartItemBlock__body .itemActions{
+  display: flex;
+  align-items: center;
+}
+
+.cartItemBlock__body .itemActions .divider{
+  height: 20px;
+  border-left: 1px solid $beige;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.cartItemBlock__body .itemActions{
+  margin: 15px;
+  border-top: 1px solid $beige-light;
+  padding-top: 10px;
+
+  h4{
+    line-height: normal;
+  }
+}
+
+.itemConfig .config{
+  flex: 1 1 130px;
+  max-width: 130px;
+  margin: 0 15px;
+}
+
+.itemConfig .BracketConfig{
+  max-width: 200px;
+}
+
+.confirmCartBtn{
+  margin: 0 auto;
+  display: block;
+}
