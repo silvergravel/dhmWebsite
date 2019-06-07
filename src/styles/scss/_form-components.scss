@@ -1,3 +1,5 @@
+// main: App.scss
+
 .dd-wrapper{
   @include no-select();
 
@@ -189,7 +191,7 @@ background-color: $light-beige-2;
 
 .checkbox-block.disabled label:before{
   display: none !important;
-  
+
 }
 
 .checkbox-block.disabled label:after{

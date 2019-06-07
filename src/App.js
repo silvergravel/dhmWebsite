@@ -67,11 +67,15 @@ class App extends Component {
       item.activeSeriesId === configObject.activeSeriesId &&
       item.activematerialOptionsId === configObject.activematerialOptionsId &&
       repeat++;
-    })
+    });
 
-    repeat > 0 ?
-    alert("this item already exists in the cart") :
-    (this.updateItemsInCartIcon(), this.updateCartComponent(configObject))
+    
+    if(repeat > 0){
+      alert("this item already exists in the cart");
+    }else{
+      this.updateItemsInCartIcon();
+      this.updateCartComponent(configObject)
+    }
   }
 
   deleteCartItem(id){
