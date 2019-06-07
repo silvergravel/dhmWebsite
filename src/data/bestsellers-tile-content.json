@@ -14,7 +14,11 @@
       "tag" :"wheel diameter",
       "quantity": "80 - 100 mm"
       },
-    "redirectUrl": null
+    "redirectUrl": null,
+    "meta":{
+      "configurable": true,
+      "groupType": "series"
+    }
   },
 
   {
@@ -30,7 +34,11 @@
       "tag" :"wheel diameter",
       "quantity": "80 - 100 mm"
       },
-    "redirectUrl": null
+    "redirectUrl": null,
+    "meta":{
+      "configurable": true,
+      "groupType": "series"
+    }
   },
 
   {
@@ -43,7 +51,11 @@
       "quantity": "Upto 120 kgs"
       } ,
     "wheelDiameter": null,
-    "redirectUrl": null
+    "redirectUrl": null,
+    "meta":{
+      "configurable": false,
+      "groupType": "single"
+    }
   }
 ]
 }

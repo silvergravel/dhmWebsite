@@ -39,8 +39,17 @@ h4.section__title--quoteCart{
   flex: 1 1 auto;
 }
 
+.cartItemBlock__body .itemImgWrapper{
+  flex: 0 1 auto;
+}
+
+.cartItemBlock__body .itemQtyWrapper{
+  flex: 0 1 auto;
+}
+
 .cartItemBlock__body .itemImgWrapper img{
   height: 100%;
+  max-width: 117px;
 }
 
 .cartItemBlock__body .itemConfig{

@@ -21,20 +21,21 @@ class CategoryTiles extends Component {
           <Link to={content.redirectUrl}>
             <div className = "col-md-6 category-card">
               <div className="category-card__content-wrapper" >
-                <h2 className="black light category-card__title">{content.heading}</h2>
+                <h2 className="black antique category-card__title">{content.heading}</h2>
                 <h4 className="beige medium category-card__sub-title">{content.subHeading}</h4>
-                <div className="category-data">
-                  {content.loadCapacity !== null &&     //if a value exists for 'load capacity' then...
-                  <div className="category-data__load-capacity">
-                    <h4 className="beige medium category-data__tag">{content.loadCapacity.tag}</h4>
-                    <h4 className="plus black medium category-data__qty">{content.loadCapacity.quantity}</h4>
-                  </div>
-                  }
+                <div className="category-data">  
 
                   {content.wheelDiameter !== null &&     //if a value exists for 'wheel diameter' then...
                   <div className="category-data__wheel-diameter">
                     <h4 className="beige medium category-data__tag">{content.wheelDiameter.tag}</h4>
-                    <h4 className="plus black medium category-data__qty">{content.wheelDiameter.quantity}</h4>
+                    <h4 className="plus black antique category-data__qty">{content.wheelDiameter.quantity}</h4>
+                  </div>
+                  }
+
+                  {content.loadCapacity !== null &&     //if a value exists for 'load capacity' then...
+                  <div className="category-data__load-capacity">
+                    <h4 className="beige medium category-data__tag">{content.loadCapacity.tag}</h4>
+                    <h4 className="plus black antique category-data__qty">{content.loadCapacity.quantity}</h4>
                   </div>
                   }
 

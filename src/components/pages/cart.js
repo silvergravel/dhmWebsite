@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 
 var data = require('../../data/configure-castor-content.json');
+var productImgPath = require('../../data/product-img-path.json');
 
 class Cart extends Component{
 
@@ -20,14 +21,18 @@ class Cart extends Component{
             <h4 className="black medium section__title section__title--quoteCart">Quote Cart</h4>
         {this.props.cartItems.map((item, index) => {
 
+          const selectedDuty = data[item.activeDutyId];
           const selectedSeries = data[item.activeDutyId][item.activeSeriesId];
           const selectedSeriesName = selectedSeries.series;
+          const materialOptions = selectedSeries.materialOptions;
           const selectedMaterial = selectedSeries.materialOptions[item.activematerialOptionsId].material;
           const selectedWheelDia = selectedSeries.materialOptions[item.activematerialOptionsId].vitalsOptions[item.activevitalsOptionsId].wheelDiameter;
           const selectedLoadCap = selectedSeries.materialOptions[item.activematerialOptionsId].vitalsOptions[item.activevitalsOptionsId].loadCapacity;
+          const bracketOptions = selectedSeries.bracketOptions;
           const selectedBracket = selectedSeries.bracketOptions[item.activebracketOptionsId].plateType;
           const selectedBraking = selectedSeries.bracketOptions[item.activebracketOptionsId].brakingType;
-          const selectedProductImageUrl = selectedSeries.materialOptions[item.activematerialOptionsId].image;
+          //const selectedProductImageUrl = selectedSeries.materialOptions[item.activematerialOptionsId].image;
+          const selectedProductImageUrl = productImgPath[selectedDuty.code][selectedSeries.code][materialOptions[item.activematerialOptionsId].code][bracketOptions[item.activebracketOptionsId].code];
 
           return(
             <div key={index} className="cartItemBlock">
@@ -55,7 +60,7 @@ class Cart extends Component{
                     <div className="BracketConfig config">
                     <h4 className="beige antique">BRACKET TYPE</h4>
                     <h4 className="black medium">{selectedBracket}</h4>
-                    {selectedBraking !== null && <h4 class="black medium"><span class="regular">with </span>{selectedBraking}</h4>}
+                    {selectedBraking !== null && <h4 className="black medium"><span className="regular">with </span>{selectedBraking}</h4>}
                     </div>
                   </div>
                   <div className="itemActions">
@@ -68,16 +73,16 @@ class Cart extends Component{
                     </button>
                   </div>
                 </div>
-                <div class="itemQtyWrapper body__element">
-                  <h4 class="beige antique">QUANTITY</h4>
-                  <h2 class="black light">{item.quantity}</h2>
+                <div className="itemQtyWrapper body__element">
+                  <h4 className="beige antique">QUANTITY</h4>
+                  <h2 className="black light">{item.quantity}</h2>
                 </div>
               </div>
             </div>
           )
 
         })}
-        <button class="primary confirmCartBtn"><h4 class="black antique">CONFIRM AND PROCEED TO REQUEST QUOTE</h4></button>
+        <button className="primary confirmCartBtn"><h4 className="black antique">CONFIRM AND PROCEED TO REQUEST QUOTE</h4></button>
         </div>
 
       </div>

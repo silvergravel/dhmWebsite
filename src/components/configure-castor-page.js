@@ -7,6 +7,7 @@ import Radio from './formComponents/radio';
 import Checkbox from './formComponents/checkbox';
 
 var data = require('../data/configure-castor-content.json');
+var productImgPath = require('../data/product-img-path.json');
 
 class ConfigureCastor extends Component{
 
@@ -28,8 +29,6 @@ class ConfigureCastor extends Component{
       activebracketOptionsId: 0,
       braking: false,
       quantity: 0
-
-
     }
     this.updateWheelConfig = this.updateWheelConfig.bind(this);
     this.updateInput = this.updateInput.bind(this);
@@ -61,13 +60,15 @@ class ConfigureCastor extends Component{
 
     const{activeDutyId, activeSeriesId, activematerialOptionsId, activevitalsOptionsId, activebracketOptionsId, braking, quantity} = this.state;
 
-
+    const activeDuty = data[activeDutyId];
     const activeSeries = data[activeDutyId][activeSeriesId];
     const activeSeriesName = activeSeries.series;
     const bracketOptions = activeSeries.bracketOptions;
     const materialOptions = activeSeries.materialOptions;
     const vitalsOptions = materialOptions[activematerialOptionsId].vitalsOptions;
-    const activeProductImage = materialOptions[activematerialOptionsId].image;
+    // const activeProductImage = materialOptions[activematerialOptionsId].image+bracketOptions[activebracketOptionsId].code+".png";
+    // const activeProductImage = "/product-images/"+activeSeries.code+"/"+activeSeries.code+"_"+materialOptions[activematerialOptionsId].code+"_"+bracketOptions[activebracketOptionsId].code+".png";
+    const activeProductImage = productImgPath[activeDuty.code][activeSeries.code][materialOptions[activematerialOptionsId].code][bracketOptions[activebracketOptionsId].code];
 
     console.log("activeDuty: " +activeDutyId);
     console.log("activeSeries: " +activeSeriesId);
@@ -134,7 +135,7 @@ class ConfigureCastor extends Component{
                   <div className="config-fields-bracket-braking">
                     <Checkbox
                     label={bracketOptions[activebracketOptionsId].brakingDescp}
-                    disabledClass={bracketOptions[activebracketOptionsId].brakingOptions === null && "disabled"}
+                    disabledClass={bracketOptions[activebracketOptionsId].brakingType === null && "disabled"}
                     checked={braking}
                     name="braking"
                     updateInput ={this.updateInput}

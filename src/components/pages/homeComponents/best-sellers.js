@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 var data = require('../../../data/bestsellers-tile-content.json');
+var websiteCopy = require('../../../data/website-copy.json');
 
 class BestSellers extends Component {
 
@@ -23,21 +24,28 @@ class BestSellers extends Component {
                 <h2 className="black light best-sellers-card__title">{product.heading}</h2>
                 <h4 className="black medium best-sellers-card__sub-title">{product.subHeading}</h4>
                 <div className="product-data">
-                  { product.loadCapacity !== null &&
-                  <div className="product-data__load-capacity">
-                    <h5 className="beige medium product-data__tag">{product.loadCapacity.tag}</h5>
-                    <h4 className="black medium product-data__qty">{product.loadCapacity.quantity}</h4>
-                  </div>
-                  }
                   { product.wheelDiameter !== null &&
                   <div className="product-data__wheel-diameter">
                     <h5 className="beige medium product-data__tag">{product.wheelDiameter.tag}</h5>
                     <h4 className="black medium product-data__qty">{product.wheelDiameter.quantity}</h4>
                   </div>
                   }
+                  { product.loadCapacity !== null &&
+                  <div className="product-data__load-capacity">
+                    <h5 className="beige medium product-data__tag">{product.loadCapacity.tag}</h5>
+                    <h4 className="black medium product-data__qty">{product.loadCapacity.quantity}</h4>
+                  </div>
+                  }
                 </div>
                 <img src={product.image} alt="" />
-                <button className="secondary"><h4 className="black antique">BUILD YOUR CASTOR</h4></button>
+                <button className="secondary"><h4 className="black antique">
+                { product.meta.groupType === "series" ?
+                  websiteCopy.productCardCta.explore :
+                  product.meta.configurable === true ?
+                  websiteCopy.productCardCta.build :
+                  websiteCopy.productCardCta.view
+                }
+                </h4></button>
               </div>
             </div>
           </div>

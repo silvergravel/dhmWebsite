@@ -14,9 +14,9 @@ class CategoryPage extends Component{
 
     return(
       <div className="category-page-content">
-        { data[this.props.match.params.categoryName].map(content => {
+        { data[this.props.match.params.categoryName].map((content, index) => {
             return(
-                  <div className="series-block">
+                  <div className="series-block" key={index}>
                     <div className="overview">
                       <div className="container">
                       <div className="row">
@@ -35,7 +35,7 @@ class CategoryPage extends Component{
                           <h4 className="black antique data__qty">
                             { content.bracketOptions.options.map((options, i) =>{
                                 return(
-                                  <span>
+                                  <span key={i}>
                                     {options}
                                     <span className="beige">
                                     { i  !== content.bracketOptions.options.length-1 ? " | " : ""}
@@ -52,9 +52,9 @@ class CategoryPage extends Component{
                      </div>
                      <div className="container product-cards">
                       <div className="row product-cards__card-grid">
-                      { content.items.map(product =>{
+                      { content.items.map((product, index) =>{
                           return(
-                            <Link to={{
+                            <Link key={index} to={{
                               pathname: "/configure" + product.redirectUrl,
                               state: {
                                 activeMaterialId: product.id

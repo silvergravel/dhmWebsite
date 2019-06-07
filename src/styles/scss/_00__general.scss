@@ -63,6 +63,21 @@ h2.black.medium{
   }
 }
 
+h2.black.antique{
+
+  font-family: 'suisse-antique';
+  font-size: 32px;
+  line-height: 36px;
+  color: $black;
+
+  @include breakpoint($mob_400){
+
+    font-size: 20px;
+    line-height: 22px;
+
+  }
+}
+
 //h3
 h3.black.medium{
 
@@ -74,9 +89,9 @@ h3.black.medium{
 }
 
 //h4
-h4.plus.black.medium{
+h4.plus.black.antique{
 
-  font-family: 'suisse-light';
+  font-family: 'suisse-antique';
   font-size: 24px;
   line-height: 36px;
   color: $black;
@@ -311,6 +326,7 @@ button{
   }
 
   &.secondary{
+    text-transform: uppercase;
     border: 2px solid $black;
     background-color: rgba(0,0,0,0);
     @include transition(background-color 0.4s);

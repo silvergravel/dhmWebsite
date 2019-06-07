@@ -106,7 +106,7 @@ h3.best-sellers__title{
                 top: 131px;
               }
 
-              .product-data__wheel-diameter{
+              .product-data__load-capacity:nth-child(2){
                 margin-top: 10px;
 
                 @include breakpoint($mob_400){

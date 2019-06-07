@@ -71,7 +71,10 @@ class DropdownWheelDia extends Component{
               {listOpen &&
                  <ul className="dd-list dd-wheel-dia">
                   {list.map((option) => (
-                   <li className={list[activeOptionId].wheelDiameter === option.wheelDiameter ? 'dd-list-item dd-flex-wrapper dd-wheel-dia active' : 'dd-list-item dd-flex-wrapper dd-wheel-dia'}
+                   <li className={list[activeOptionId].wheelDiameter === option.wheelDiameter &&
+                                  list[activeOptionId].loadCapacity === option.loadCapacity ?
+                                  'dd-list-item dd-flex-wrapper dd-wheel-dia active' :
+                                  'dd-list-item dd-flex-wrapper dd-wheel-dia'}
                        key={option.wheelDiameter}
                        data-id={option.id}
                        onClick={(evt) => this.activateOption(evt, option.id, option.key)} >
