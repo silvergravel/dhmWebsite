@@ -671,7 +671,7 @@ header ul li.cart.active span:hover span {
 }
 
 .banner h1.banner__caption {
-  text-align: right;
+  text-align: left;
   max-width: 798px;
   color: #000000;
 }
