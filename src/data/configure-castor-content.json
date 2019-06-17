@@ -13,8 +13,8 @@
         "code": "s",
         "plateType" : "Swivel",
         "brakingDescp" : "Add Braking System ( Wheel Lock )",
-        "brakingType" : "Wheel Lock",
-        "image" : "/product-images/swivel-plate.png"
+        "brakingType" : "Wheel Lock"
+
         },
         {
         "id": 1,
@@ -22,8 +22,8 @@
         "code": "f",
         "plateType" : "Fixed",
         "brakingDescp" : "No braking options available for fixed bracket" ,
-        "brakingType" : null,
-        "image" : "/product-images/fixed-plate.png"
+        "brakingType" : null
+
         }
       ],
       "materialOptions":[
@@ -33,7 +33,7 @@
           "code": "ci",
           "material": "Cast Iron",
           "materialDescp": "It offers superior resistance to most oils, chemicals and acids.",
-          "image": "/product-images/rd1/rd1_ci_",
+
           "vitalsOptions":[
             {
             "id": 0,
@@ -59,7 +59,7 @@
           "code": "n",
           "material": "Nylon",
           "materialDescp": "It offers superior resistance to most oils, chemicals and acids.",
-          "image": "/product-images/best-sellers-temp.png",
+
           "vitalsOptions":[
             {
             "id": 0,
@@ -948,6 +948,888 @@
   "hd":{
     "duty": "heavy duty",
     "code":"hd",
+    "rd5":{
+      "series": "RD5 Series",
+      "code":"rd5",
+      "configurable": true,
+      "bracketOptions": [
+        {
+        "id": 0,
+        "key": "bracketOptions",
+        "code": "s",
+        "plateType" : "Swivel",
+        "brakingDescp" : "Add Braking System ( Wheel + Swivel Lock )",
+        "brakingType" : "Wheel + Swivel Lock"
+        },
+        {
+        "id": 1,
+        "key": "bracketOptions",
+        "code": "f",
+        "plateType" : "Fixed",
+        "brakingDescp" : "No braking options available for fixed bracket" ,
+        "brakingType" : null
+        }
+      ],
+      "materialOptions": [
+        {
+        "id": 0,
+        "key": "materialOptions",
+        "code": "ci",
+        "material": "Cast Iron",
+        "materialDescp": "It offers superior resistance to most oils, chemicals and acids.",
+
+        "vitalsOptions": [
+          {
+          "id": 0,
+          "key": "vitalsOptions",
+          "wheelDiameter": "150 mm",
+          "totalHeight": "204 mm",
+          "treadWidth": "44.5 mm",
+          "loadCapacity": "410 kgs"
+          },
+          {
+          "id": 1,
+          "key": "vitalsOptions",
+          "wheelDiameter": "200 mm",
+          "totalHeight": "250 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "410 kgs"
+          }
+        ]
+        },
+        {
+        "id": 1,
+        "key": "materialOptions",
+        "code": "n",
+        "material": "Nylon",
+        "materialDescp": "lorem Ipsum dolor set amet",
+        "vitalsOptions": [
+          {
+          "id": 0,
+          "key": "vitalsOptions",
+          "wheelDiameter": "150 mm",
+          "totalHeight": "204 mm",
+          "treadWidth": "44.5 mm",
+          "loadCapacity": "410 kgs"
+          },
+          {
+          "id": 1,
+          "key": "vitalsOptions",
+          "wheelDiameter": "200 mm",
+          "totalHeight": "250 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "410 kgs"
+          }
+        ]
+        },
+        {
+        "id": 2,
+        "key": "materialOptions",
+        "code": "p",
+        "material": "Phenorex (Fibre)",
+        "materialDescp": "lorem Ipsum dolor set amet",
+        "vitalsOptions": [
+          {
+          "id": 0,
+          "key": "vitalsOptions",
+          "wheelDiameter": "150 mm",
+          "totalHeight": "204 mm",
+          "treadWidth": "44.5 mm",
+          "loadCapacity": "410 kgs"
+          },
+          {
+          "id": 1,
+          "key": "vitalsOptions",
+          "wheelDiameter": "200 mm",
+          "totalHeight": "250 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "410 kgs"
+          }
+        ]
+        },
+        {
+        "id": 3,
+        "key": "materialOptions",
+        "code": "puci",
+        "material": "PU Tyred On Cast Iron",
+        "materialDescp": "lorem Ipsum dolor set amet",
+        "image": "/product-images/best-sellers-temp.png",
+        "vitalsOptions": [
+          {
+          "id": 0,
+          "key": "vitalsOptions",
+          "wheelDiameter": "150 mm",
+          "totalHeight": "204 mm",
+          "treadWidth": "44.5 mm",
+          "loadCapacity": "410 kgs"
+          },
+          {
+          "id": 1,
+          "key": "vitalsOptions",
+          "wheelDiameter": "200 mm",
+          "totalHeight": "250 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "410 kgs"
+          }
+        ]
+        },
+        {
+        "id": 4,
+        "key": "materialOptions",
+        "code": "rci",
+        "material": "Rubber Tyred On Cast Iron",
+        "materialDescp": "lorem Ipsum dolor set amet",
+        "image": "/product-images/best-sellers-temp.png",
+        "vitalsOptions": [
+          {
+          "id": 0,
+          "key": "vitalsOptions",
+          "wheelDiameter": "150 mm",
+          "totalHeight": "204 mm",
+          "treadWidth": "44.5 mm",
+          "loadCapacity": "410 kgs"
+          },
+          {
+          "id": 1,
+          "key": "vitalsOptions",
+          "wheelDiameter": "200 mm",
+          "totalHeight": "250 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "410 kgs"
+          }
+        ]
+        }
+      ]
+    },
+    "scaf":{
+      "series": "Scafold Series",
+      "code":"scaf",
+      "configurable": true,
+      "bracketOptions": [
+        {
+        "id": 0,
+        "key": "bracketOptions",
+        "code": "s",
+        "plateType" : "Swivel",
+        "brakingDescp" : "Add Braking System ( Wheel + Swivel Lock )",
+        "brakingType" : "Wheel + Swivel Lock"
+        }
+      ],
+      "materialOptions": [
+        {
+        "id": 0,
+        "key": "materialOptions",
+        "code": "ci",
+        "material": "Cast Iron",
+        "materialDescp": "It offers superior resistance to most oils, chemicals and acids.",
+        "vitalsOptions": [
+          {
+          "id": 0,
+          "key": "vitalsOptions",
+          "wheelDiameter": "150 mm",
+          "totalHeight": "197 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "820 kgs"
+          },
+          {
+          "id": 1,
+          "key": "vitalsOptions",
+          "wheelDiameter": "200 mm",
+          "totalHeight": "243 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "820 kgs"
+          }
+        ]
+        },
+        {
+        "id": 1,
+        "key": "materialOptions",
+        "code": "n",
+        "material": "Nylon",
+        "materialDescp": "lorem Ipsum dolor set amet",
+        "vitalsOptions": [
+          {
+          "id": 0,
+          "key": "vitalsOptions",
+          "wheelDiameter": "150 mm",
+          "totalHeight": "197 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "820 kgs"
+          },
+          {
+          "id": 1,
+          "key": "vitalsOptions",
+          "wheelDiameter": "200 mm",
+          "totalHeight": "243 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "820 kgs"
+          }
+        ]
+        },
+        {
+        "id": 2,
+        "key": "materialOptions",
+        "code": "p",
+        "material": "Phenorex (Fibre)",
+        "materialDescp": "lorem Ipsum dolor set amet",
+        "vitalsOptions": [
+          {
+          "id": 0,
+          "key": "vitalsOptions",
+          "wheelDiameter": "150 mm",
+          "totalHeight": "197 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "820 kgs"
+          },
+          {
+          "id": 1,
+          "key": "vitalsOptions",
+          "wheelDiameter": "200 mm",
+          "totalHeight": "243 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "820 kgs"
+          }
+        ]
+        },
+        {
+        "id": 3,
+        "key": "materialOptions",
+        "code": "puci",
+        "material": "PU Tyred On Cast Iron",
+        "materialDescp": "lorem Ipsum dolor set amet",
+
+        "vitalsOptions": [
+          {
+          "id": 0,
+          "key": "vitalsOptions",
+          "wheelDiameter": "150 mm",
+          "totalHeight": "197 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "820 kgs"
+          },
+          {
+          "id": 1,
+          "key": "vitalsOptions",
+          "wheelDiameter": "200 mm",
+          "totalHeight": "243 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "820 kgs"
+          }
+        ]
+        },
+        {
+        "id": 4,
+        "key": "materialOptions",
+        "code": "rci",
+        "material": "Rubber Tyred On Cast Iron",
+        "materialDescp": "lorem Ipsum dolor set amet",
+        "image": "/product-images/best-sellers-temp.png",
+        "vitalsOptions": [
+          {
+          "id": 0,
+          "key": "vitalsOptions",
+          "wheelDiameter": "150 mm",
+          "totalHeight": "204 mm",
+          "treadWidth": "44.5 mm",
+          "loadCapacity": "410 kgs"
+          },
+          {
+          "id": 1,
+          "key": "vitalsOptions",
+          "wheelDiameter": "200 mm",
+          "totalHeight": "250 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "410 kgs"
+          }
+        ]
+        }
+      ]
+    },
+    "track":{
+      "series": "HSC Series : Track Castors",
+      "code":"track",
+      "configurable": true,
+      "bracketOptions": [
+        {
+        "id": 0,
+        "key": "bracketOptions",
+        "code": "s",
+        "plateType" : "Swivel",
+        "brakingDescp" : "No braking options available",
+        "brakingType" : null
+        },
+        {
+        "id": 1,
+        "key": "bracketOptions",
+        "code": "f",
+        "plateType" : "Fixed",
+        "brakingDescp" : "No braking options available" ,
+        "brakingType" : null
+        }
+      ],
+      "grooveOptions": [
+        {
+        "id": 0,
+        "key": "grooveOptions",
+        "code": "t",
+        "grooveType" : "Track Groove"
+        },
+        {
+        "id": 1,
+        "key": "grooveOptions",
+        "code": "v",
+        "plateType" : "V Groove"
+        }
+      ],
+      "materialOptions": [
+        {
+        "id": 0,
+        "key": "materialOptions",
+        "code": "ci",
+        "material": "Cast Iron",
+        "materialDescp": "It offers superior resistance to most oils, chemicals and acids.",
+        "vitalsOptions": [
+          {
+          "id": 0,
+          "key": "vitalsOptions",
+          "wheelDiameter": "100 mm",
+          "totalHeight": "152 mm",
+          "treadWidth": "51 mm",
+          "loadCapacity": "300 kgs"
+          },
+          {
+          "id": 1,
+          "key": "vitalsOptions",
+          "wheelDiameter": "150 mm",
+          "totalHeight": "203 mm",
+          "treadWidth": "51 mm",
+          "loadCapacity": "900 kgs"
+          },
+          {
+          "id": 2,
+          "key": "vitalsOptions",
+          "wheelDiameter": "200 mm",
+          "totalHeight": "254 mm",
+          "treadWidth": "51 mm",
+          "loadCapacity": "900 kgs"
+          },
+          {
+          "id": 3,
+          "key": "vitalsOptions",
+          "wheelDiameter": "250 mm",
+          "totalHeight": "305 mm",
+          "treadWidth": "51 mm",
+          "loadCapacity": "1000 kgs"
+          }
+        ]
+        }
+      ]
+    },
+    "hsc":{
+      "series": "HSC Series",
+      "code":"hsc",
+      "configurable": true,
+      "bracketOptions": [
+        {
+        "id": 0,
+        "key": "bracketOptions",
+        "code": "s",
+        "plateType" : "Swivel",
+        "brakingDescp" : "Add Braking System ( Wheel + Swivel Lock )",
+        "brakingType" : "Wheel + Swivel Lock"
+        },
+        {
+        "id": 1,
+        "key": "bracketOptions",
+        "code": "f",
+        "plateType" : "Fixed",
+        "brakingDescp" : "No braking options available for fixed bracket" ,
+        "brakingType" : null
+        }
+      ],
+      "materialOptions": [
+        {
+        "id": 0,
+        "key": "materialOptions",
+        "code": "ci",
+        "material": "Cast Iron",
+        "materialDescp": "It offers superior resistance to most oils, chemicals and acids.",
+        "vitalsOptions": [
+          {
+          "id": 0,
+          "key": "vitalsOptions",
+          "wheelDiameter": "100 mm",
+          "totalHeight": "152 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "225 kgs"
+          },
+          {
+          "id": 1,
+          "key": "vitalsOptions",
+          "wheelDiameter": "125 mm",
+          "totalHeight": "178 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "600 kgs"
+          },
+          {
+          "id": 2,
+          "key": "vitalsOptions",
+          "wheelDiameter": "150 mm",
+          "totalHeight": "203 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "600 kgs"
+          },
+          {
+          "id": 3,
+          "key": "vitalsOptions",
+          "wheelDiameter": "150 mm",
+          "totalHeight": "210 mm",
+          "treadWidth": "75 mm",
+          "loadCapacity": "850 kgs"
+          },
+          {
+          "id": 4,
+          "key": "vitalsOptions",
+          "wheelDiameter": "200 mm",
+          "totalHeight": "254 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "1000 kgs"
+          },
+          {
+          "id": 5,
+          "key": "vitalsOptions",
+          "wheelDiameter": "200 mm",
+          "totalHeight": "260 mm",
+          "treadWidth": "75 mm",
+          "loadCapacity": "1250 kgs"
+          },
+          {
+          "id": 6,
+          "key": "vitalsOptions",
+          "wheelDiameter": "250 mm",
+          "totalHeight": "305 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "1150 kgs"
+          },
+          {
+          "id": 7,
+          "key": "vitalsOptions",
+          "wheelDiameter": "250 mm",
+          "totalHeight": "311 mm",
+          "treadWidth": "75 mm",
+          "loadCapacity": "1300 kgs"
+          },
+          {
+          "id": 8,
+          "key": "vitalsOptions",
+          "wheelDiameter": "300 mm",
+          "totalHeight": "356 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "1225 kgs"
+          },
+          {
+          "id": 9,
+          "key": "vitalsOptions",
+          "wheelDiameter": "300 mm",
+          "totalHeight": "362 mm",
+          "treadWidth": "75 mm",
+          "loadCapacity": "1350 kgs"
+          }
+        ]
+        },
+        {
+        "id": 0,
+        "key": "materialOptions",
+        "code": "n",
+        "material": "Nylon",
+        "materialDescp": "It offers superior resistance to most oils, chemicals and acids.",
+        "vitalsOptions": [
+          {
+          "id": 0,
+          "key": "vitalsOptions",
+          "wheelDiameter": "100 mm",
+          "totalHeight": "152 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "200 kgs"
+          },
+          {
+          "id": 1,
+          "key": "vitalsOptions",
+          "wheelDiameter": "150 mm",
+          "totalHeight": "203 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "400 kgs"
+          },
+          {
+          "id": 2,
+          "key": "vitalsOptions",
+          "wheelDiameter": "200 mm",
+          "totalHeight": "254 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "500 kgs"
+          }
+        ]
+        },
+        {
+        "id": 0,
+        "key": "materialOptions",
+        "code": "p",
+        "material": "Phenorex (Fibre)",
+        "materialDescp": "It offers superior resistance to most oils, chemicals and acids.",
+        "vitalsOptions": [
+          {
+          "id": 0,
+          "key": "vitalsOptions",
+          "wheelDiameter": "100 mm",
+          "totalHeight": "152 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "300 kgs"
+          },
+          {
+          "id": 1,
+          "key": "vitalsOptions",
+          "wheelDiameter": "125 mm",
+          "totalHeight": "178 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "350 kgs"
+          },
+          {
+          "id": 2,
+          "key": "vitalsOptions",
+          "wheelDiameter": "150 mm",
+          "totalHeight": "203 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "500 kgs"
+          },
+          {
+          "id": 3,
+          "key": "vitalsOptions",
+          "wheelDiameter": "150 mm",
+          "totalHeight": "210 mm",
+          "treadWidth": "75 mm",
+          "loadCapacity": "650 kgs"
+          },
+          {
+          "id": 4,
+          "key": "vitalsOptions",
+          "wheelDiameter": "200 mm",
+          "totalHeight": "254 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "720 kgs"
+          },
+          {
+          "id": 5,
+          "key": "vitalsOptions",
+          "wheelDiameter": "200 mm",
+          "totalHeight": "260 mm",
+          "treadWidth": "75 mm",
+          "loadCapacity": "850 kgs"
+          },
+          {
+          "id": 6,
+          "key": "vitalsOptions",
+          "wheelDiameter": "250 mm",
+          "totalHeight": "305 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "820 kgs"
+          },
+          {
+          "id": 7,
+          "key": "vitalsOptions",
+          "wheelDiameter": "250 mm",
+          "totalHeight": "311 mm",
+          "treadWidth": "75 mm",
+          "loadCapacity": "900 kgs"
+          },
+          {
+          "id": 8,
+          "key": "vitalsOptions",
+          "wheelDiameter": "300 mm",
+          "totalHeight": "356 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "950 kgs"
+          },
+          {
+          "id": 9,
+          "key": "vitalsOptions",
+          "wheelDiameter": "300 mm",
+          "totalHeight": "362 mm",
+          "treadWidth": "75 mm",
+          "loadCapacity": "1000 kgs"
+          }
+        ]
+        },
+        {
+        "id": 0,
+        "key": "materialOptions",
+        "code": "puci",
+        "material": "PU Tyred On Cast Iron",
+        "materialDescp": "It offers superior resistance to most oils, chemicals and acids.",
+        "vitalsOptions": [
+          {
+          "id": 0,
+          "key": "vitalsOptions",
+          "wheelDiameter": "100 mm",
+          "totalHeight": "152 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "330 kgs"
+          },
+          {
+          "id": 1,
+          "key": "vitalsOptions",
+          "wheelDiameter": "125 mm",
+          "totalHeight": "178 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "400 kgs"
+          },
+          {
+          "id": 2,
+          "key": "vitalsOptions",
+          "wheelDiameter": "150 mm",
+          "totalHeight": "203 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "500 kgs"
+          },
+          {
+          "id": 3,
+          "key": "vitalsOptions",
+          "wheelDiameter": "150 mm",
+          "totalHeight": "210 mm",
+          "treadWidth": "75 mm",
+          "loadCapacity": "650 kgs"
+          },
+          {
+          "id": 4,
+          "key": "vitalsOptions",
+          "wheelDiameter": "200 mm",
+          "totalHeight": "254 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "900 kgs"
+          },
+          {
+          "id": 5,
+          "key": "vitalsOptions",
+          "wheelDiameter": "200 mm",
+          "totalHeight": "260 mm",
+          "treadWidth": "75 mm",
+          "loadCapacity": "1150 kgs"
+          },
+          {
+          "id": 6,
+          "key": "vitalsOptions",
+          "wheelDiameter": "250 mm",
+          "totalHeight": "305 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "1050 kgs"
+          },
+          {
+          "id": 7,
+          "key": "vitalsOptions",
+          "wheelDiameter": "250 mm",
+          "totalHeight": "311 mm",
+          "treadWidth": "75 mm",
+          "loadCapacity": "1200 kgs"
+          },
+          {
+          "id": 8,
+          "key": "vitalsOptions",
+          "wheelDiameter": "300 mm",
+          "totalHeight": "356 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "1200 kgs"
+          },
+          {
+          "id": 9,
+          "key": "vitalsOptions",
+          "wheelDiameter": "300 mm",
+          "totalHeight": "362 mm",
+          "treadWidth": "75 mm",
+          "loadCapacity": "1350 kgs"
+          }
+        ]
+        },
+        {
+        "id": 0,
+        "key": "materialOptions",
+        "code": "rci",
+        "material": "Rubber Tyred On Cast Iron",
+        "materialDescp": "It offers superior resistance to most oils, chemicals and acids.",
+        "vitalsOptions": [
+          {
+          "id": 0,
+          "key": "vitalsOptions",
+          "wheelDiameter": "100 mm",
+          "totalHeight": "152 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "225 kgs"
+          },
+          {
+          "id": 1,
+          "key": "vitalsOptions",
+          "wheelDiameter": "125 mm",
+          "totalHeight": "178 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "230 kgs"
+          },
+          {
+          "id": 2,
+          "key": "vitalsOptions",
+          "wheelDiameter": "150 mm",
+          "totalHeight": "203 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "280 kgs"
+          },
+          {
+          "id": 3,
+          "key": "vitalsOptions",
+          "wheelDiameter": "150 mm",
+          "totalHeight": "210 mm",
+          "treadWidth": "75 mm",
+          "loadCapacity": "420 kgs"
+          },
+          {
+          "id": 4,
+          "key": "vitalsOptions",
+          "wheelDiameter": "200 mm",
+          "totalHeight": "254 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "500 kgs"
+          },
+          {
+          "id": 5,
+          "key": "vitalsOptions",
+          "wheelDiameter": "200 mm",
+          "totalHeight": "260 mm",
+          "treadWidth": "75 mm",
+          "loadCapacity": "750 kgs"
+          },
+          {
+          "id": 6,
+          "key": "vitalsOptions",
+          "wheelDiameter": "250 mm",
+          "totalHeight": "305 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "650 kgs"
+          },
+          {
+          "id": 7,
+          "key": "vitalsOptions",
+          "wheelDiameter": "250 mm",
+          "totalHeight": "311 mm",
+          "treadWidth": "75 mm",
+          "loadCapacity": "825 kgs"
+          },
+          {
+          "id": 8,
+          "key": "vitalsOptions",
+          "wheelDiameter": "300 mm",
+          "totalHeight": "356 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "700 kgs"
+          },
+          {
+          "id": 9,
+          "key": "vitalsOptions",
+          "wheelDiameter": "300 mm",
+          "totalHeight": "362 mm",
+          "treadWidth": "75 mm",
+          "loadCapacity": "875 kgs"
+          }
+        ]
+        }
+      ]
+    },
+    "hsc":{
+      "series": "HSC/TW Series",
+      "code":"hsctw",
+      "configurable": true,
+      "bracketOptions": [
+        {
+        "id": 0,
+        "key": "bracketOptions",
+        "code": "s",
+        "plateType" : "Swivel",
+        "brakingDescp" : "Add Braking System ( Wheel + Swivel Lock )",
+        "brakingType" : "Wheel + Swivel Lock"
+        },
+        {
+        "id": 1,
+        "key": "bracketOptions",
+        "code": "f",
+        "plateType" : "Fixed",
+        "brakingDescp" : "No braking options available for fixed bracket" ,
+        "brakingType" : null
+        }
+      ],
+      "materialOptions": [
+        {
+        "id": 0,
+        "key": "materialOptions",
+        "code": "ci",
+        "material": "Cast Iron",
+        "materialDescp": "It offers superior resistance to most oils, chemicals and acids.",
+        "vitalsOptions": [
+          {
+          "id": 0,
+          "key": "vitalsOptions",
+          "wheelDiameter": "100 mm",
+          "totalHeight": "168 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "450 kgs"
+          },
+          {
+          "id": 1,
+          "key": "vitalsOptions",
+          "wheelDiameter": "150 mm",
+          "totalHeight": "194 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "1350 kgs"
+          },
+          {
+          "id": 2,
+          "key": "vitalsOptions",
+          "wheelDiameter": "200 mm",
+          "totalHeight": "270 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "1800 kgs"
+          }
+        ]
+        },
+        {
+        "id": 0,
+        "key": "materialOptions",
+        "code": "puci",
+        "material": "PU Tyred On Cast Iron",
+        "materialDescp": "It offers superior resistance to most oils, chemicals and acids.",
+        "vitalsOptions": [
+          {
+          "id": 0,
+          "key": "vitalsOptions",
+          "wheelDiameter": "100 mm",
+          "totalHeight": "168 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "400 kgs"
+          },
+          {
+          "id": 1,
+          "key": "vitalsOptions",
+          "wheelDiameter": "150 mm",
+          "totalHeight": "194 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "1000 kgs"
+          },
+          {
+          "id": 2,
+          "key": "vitalsOptions",
+          "wheelDiameter": "200 mm",
+          "totalHeight": "270 mm",
+          "treadWidth": "50 mm",
+          "loadCapacity": "1500 kgs"
+          }
+        ]
+        }
+      ]
+    },
     "mrn":{
       "series": "MRN Series",
       "code":"mrn",

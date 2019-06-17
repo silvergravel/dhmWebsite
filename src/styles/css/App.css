@@ -1245,7 +1245,12 @@ div.config-panel .series-bar h4 {
 }
 
 .dd-list.dd-material {
-  height: 345px;
+  max-height: 345px;
+  overflow-y: scroll;
+}
+
+.dd-list.dd-wheel-dia {
+  max-height: 345px;
   overflow-y: scroll;
 }
 

@@ -68,7 +68,9 @@ class ConfigureCastor extends Component{
     const vitalsOptions = materialOptions[activematerialOptionsId].vitalsOptions;
     // const activeProductImage = materialOptions[activematerialOptionsId].image+bracketOptions[activebracketOptionsId].code+".png";
     // const activeProductImage = "/product-images/"+activeSeries.code+"/"+activeSeries.code+"_"+materialOptions[activematerialOptionsId].code+"_"+bracketOptions[activebracketOptionsId].code+".png";
-    const activeProductImage = productImgPath[activeDuty.code][activeSeries.code][materialOptions[activematerialOptionsId].code][bracketOptions[activebracketOptionsId].code];
+    const activeProductImage = productImgPath[activeDuty.code][activeSeries.code][materialOptions[activematerialOptionsId].code][bracketOptions[activebracketOptionsId].code]["712"];
+    // const activeProductImage = "";
+    console.log("active product img: "+activeProductImage);
 
     console.log("activeDuty: " +activeDutyId);
     console.log("activeSeries: " +activeSeriesId);

@@ -26,7 +26,7 @@
             "id": 0,
             "heading": "Cast Iron",
             "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-            "image": "product-images/rd1/rd1_ci_s.png",
+            "image": "product-images/00_rd1/swivel/464/rd1_ci_s__464.png",
             "loadCapacity": {
               "tag": "load capacity",
               "quantity": "Upto 36 kgs"
@@ -37,7 +37,7 @@
             "id": 1,
             "heading": "Nylon",
             "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-            "image": "product-images/rd1/rd1_n_s.png",
+            "image": "product-images/00_rd1/swivel/464/rd1_n_s__464.png",
             "loadCapacity": {
               "tag": "load capacity",
               "quantity": "Upto 25 kgs"
@@ -48,7 +48,7 @@
             "id": 2,
             "heading": "Phenorex (Fibre)",
             "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-            "image": "product-images/rd1/rd1_p_s.png",
+            "image": "product-images/00_rd1/swivel/464/rd1_p_s__464.png",
             "loadCapacity": {
               "tag": "load capacity",
               "quantity": "Upto 30 kgs"
@@ -59,7 +59,7 @@
             "id": 3,
             "heading": "PU Tyred On Nylon",
             "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-            "image": "product-images/rd1/rd1_pun_s.png",
+            "image": "product-images/00_rd1/swivel/464/rd1_pun_s__464.png",
             "loadCapacity": {
               "tag": "load capacity",
               "quantity": "Upto 30 kgs"
@@ -70,7 +70,7 @@
             "id": 4,
             "heading": "Rubber",
             "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-            "image": "product-images/rd1/rd1_r_s.png",
+            "image": "product-images/00_rd1/swivel/464/rd1_r_s__464.png",
             "loadCapacity": {
               "tag": "load capacity",
               "quantity": "Upto 18 kgs"
@@ -107,7 +107,7 @@
               "id": 0,
               "heading": "Cast Iron",
               "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-              "image": "product-images/rd2/FAKE_rd1_ci_s.png",
+              "image": "product-images/01_rd2/swivel/464/FAKE_rd1_ci_s__464.png",
               "loadCapacity": {
                 "tag": "load capacity",
                 "quantity": "Upto 65 kgs"
@@ -118,7 +118,7 @@
               "id": 1,
               "heading": "Nylon",
               "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-              "image": "product-images/rd2/FAKE_rd1_n_s.png",
+              "image": "product-images/01_rd2/swivel/464/FAKE_rd1_n_s__464.png",
               "loadCapacity": {
                 "tag": "load capacity",
                 "quantity": "Upto 40 kgs"
@@ -129,7 +129,7 @@
               "id": 2,
               "heading": "Phenorex (Fibre)",
               "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-              "image": "product-images/rd2/FAKE_rd1_p_s.png",
+              "image": "product-images/01_rd2/swivel/464/FAKE_rd1_p_s__464.png",
               "loadCapacity": {
                 "tag": "load capacity",
                 "quantity": "Upto 65 kgs"
@@ -140,7 +140,7 @@
               "id": 3,
               "heading": "PU Tyred On Nylon",
               "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-              "image": "product-images/rd2/FAKE_rd1_pun_s.png",
+              "image": "product-images/01_rd2/swivel/464/FAKE_rd1_pun_s__464.png",
               "loadCapacity": {
                 "tag": "load capacity",
                 "quantity": "Upto 45 kgs"
@@ -151,7 +151,7 @@
               "id": 4,
               "heading": "Rubber",
               "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-              "image": "product-images/rd2/FAKE_rd1_r_s.png",
+              "image": "product-images/01_rd2/swivel/464/FAKE_rd1_r_s__464.png",
               "loadCapacity": {
                 "tag": "load capacity",
                 "quantity": "Upto 27 kgs"
@@ -162,7 +162,7 @@
               "id": 5,
               "heading": "Rubber Tyred On Cast Iron",
               "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-              "image": "",
+              "image": "product-images/01_rd2/swivel/464/FAKE_rd1_rci_s__464.png",
               "loadCapacity": {
                 "tag": "load capacity",
                 "quantity": "Upto 40 kgs"
@@ -172,9 +172,6 @@
 
         ]
       },
-
-
-
       {
         "series": "RD3 Series",
         "wheelDiameter": {
@@ -199,7 +196,7 @@
           "id": 0,
           "heading": "Cast Iron",
           "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-          "image": "product-images/rd3/FAKE_rd1_ci_s.png",
+          "image": "product-images/02_rd3/swivel/464/FAKE_rd1_ci_s__464.png",
           "loadCapacity": {
             "tag": "load capacity",
             "quantity": "Upto 100 kgs"
@@ -210,7 +207,7 @@
           "id": 1,
           "heading": "Nylon",
           "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-          "image": "product-images/rd3/FAKE_rd1_n_s.png",
+          "image": "product-images/02_rd3/swivel/464/FAKE_rd1_n_s__464.png",
           "loadCapacity": {
             "tag": "load capacity",
             "quantity": "Upto 75 kgs"
@@ -221,7 +218,7 @@
           "id": 2,
           "heading": "Phenorex (Fibre)",
           "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-          "image": "product-images/rd3/FAKE_rd1_p_s.png",
+          "image": "product-images/02_rd3/swivel/464/FAKE_rd1_p_s__464.png",
           "loadCapacity": {
             "tag": "load capacity",
             "quantity": "Upto 90 kgs"
@@ -232,7 +229,7 @@
           "id": 3,
           "heading": "PU Tyred On Nylon",
           "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-          "image": "product-images/rd3/FAKE_rd1_pun_s.png",
+          "image": "product-images/02_rd3/swivel/464/FAKE_rd1_pun_s__464.png",
           "loadCapacity": {
             "tag": "load capacity",
             "quantity": "Upto 70 kgs"
@@ -243,7 +240,7 @@
           "id": 4,
           "heading": "Rubber",
           "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-          "image": "product-images/rd3/FAKE_rd1_r_s.png",
+          "image": "product-images/02_rd3/swivel/464/FAKE_rd1_r_s__464.png",
           "loadCapacity": {
             "tag": "load capacity",
             "quantity": "Upto 50 kgs"
@@ -254,7 +251,7 @@
           "id": 5,
           "heading": "Rubber Tyred On Cast Iron",
           "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-          "image": "",
+          "image": "product-images/02_rd3/swivel/464/FAKE_rd1_rci_s__464.png",
           "loadCapacity": {
             "tag": "load capacity",
             "quantity": "Upto 60 kgs"
@@ -264,8 +261,6 @@
       ]
     }
   ],
-
-
     "medium-duty-castors": [
       {
         "series": "RD4 Series",
@@ -358,8 +353,6 @@
           ]
       }
     ],
-
-
   "heavy-duty-castors": [
     {
       "series": "RD5 Series",

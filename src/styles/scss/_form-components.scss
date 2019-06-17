@@ -62,7 +62,12 @@
   width: 435px;
 
   &.dd-material{
-    height: 345px;
+    max-height: 345px;
+    overflow-y: scroll;
+  }
+
+  &.dd-wheel-dia{
+    max-height: 345px;
     overflow-y: scroll;
   }
 }
