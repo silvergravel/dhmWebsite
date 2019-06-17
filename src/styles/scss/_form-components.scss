@@ -8,12 +8,14 @@
   &.dd-material{
     right: 50px;
     z-index: 1000;
+    margin-right: 15px;
   }
 
   &.dd-wheel-dia{
     right: 50px;
     top: 300px;
     z-index: 999;
+    margin-right: 15px;
   }
 }
 
@@ -23,7 +25,7 @@
 
 .dd-select{
   border: 0.5px solid $beige;
-  width: 435px;
+  width: 100%;
 
   &:hover{
     cursor: pointer;
@@ -101,8 +103,9 @@ background-color: $light-beige-2;
 .radio-list{
   list-style-type: none;
   padding-left: 0px;
-  width: 435px;
+  // width: 435px;
   display: flex;
+  margin-right: 15px;
 }
 
 .radio-list-item{
@@ -224,4 +227,23 @@ background-color: $light-beige-2;
 
 .wheel-config-meta h4{
   margin-top: 6px;
+}
+
+.input-block{
+  margin-right: 15px;
+}
+
+input{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  box-shadow: none;
+  border-style: none;
+  border: 0.5px solid $beige ;
+  outline: none;
+  height: 50px;
+  font-family: 'suisse-light';
+  font-size: 32px;
+  line-height: 36px;
+  padding-left: 10px;
+  width: 100%
 }

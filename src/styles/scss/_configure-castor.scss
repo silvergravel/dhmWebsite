@@ -13,7 +13,7 @@ margin-top: 150px;
 div.config-panel{
   margin-top: 18px;
   border: 1px solid $beige;
-  height: 648px;
+  // height: 648px;
   border-radius: 5px;
 }
 
@@ -22,39 +22,40 @@ div.config-panel .series-bar{
   height: 36px;
 
   h4{
-    padding: 8px 0 0 15px;
+    padding: 6px 0 0 15px;
   }
 }
 
 .config-panel__body{
-  display: flex;
+  // display: flex;
 }
 
 .config-panel__body .image-wrapper{
-  display: inline-block;
+  display: flex;
   position: relative;
   height: 546px;
-  width: 60%;
+  // width: 60%;
 
   img{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    @include translate(-50%, -50%);
-    height: 432px;
+    display: block;
+    margin: auto;
+    // height: 432px;
+    width: 50%;
   }
 }
 
 .config-fields{
   position: relative;
   padding: 15px 15px 0 0;
-  width: 40%;
+  height: 546px;
+  // width: 40%;
 }
 
 .config-field-dd-material, .config-field-dd-wheel-dia,
 .config-fields-vitalsMeta-bracket-quantity{
   position: absolute;
   right: 15px;
+  width: 100%;
 }
 
 .config-field-dd-material{

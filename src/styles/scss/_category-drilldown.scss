@@ -5,6 +5,7 @@
     margin-top: 144px;
 
   .series-block{
+    position: relative; 
 
     .overview{
       background-color: rgba(181,169,140,0.1);
@@ -154,5 +155,10 @@
     }
   }
 }
+  }
+
+  .series-block-anchor{
+    position: absolute;
+    top: -144px;
   }
 }

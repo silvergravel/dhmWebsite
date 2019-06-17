@@ -69,7 +69,7 @@ class App extends Component {
       repeat++;
     });
 
-    
+
     if(repeat > 0){
       alert("this item already exists in the cart");
     }else{

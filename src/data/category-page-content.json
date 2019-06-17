@@ -3,6 +3,8 @@
     "light-duty-castors": [
       {
         "series": "RD1 Series",
+        "code": "rd1",
+        "configurable": true,
         "wheelDiameter": {
           "tag": "wheel diameter",
           "quantity": "38 - 50 mm"
@@ -84,6 +86,8 @@
 
       {
         "series": "RD2 Series",
+        "code":"rd2",
+        "configurable": true,
         "wheelDiameter": {
           "tag": "wheel diameter",
           "quantity": "50 - 100 mm"
@@ -174,6 +178,8 @@
       },
       {
         "series": "RD3 Series",
+        "code":"rd3",
+        "configurable": true,
         "wheelDiameter": {
           "tag": "wheel diameter",
           "quantity": "63 - 125 mm"
@@ -264,6 +270,8 @@
     "medium-duty-castors": [
       {
         "series": "RD4 Series",
+        "code": "rd4",
+        "configurable": true,
         "wheelDiameter": {
           "tag": "wheel diameter",
           "quantity": "75 - 125 mm"
@@ -356,6 +364,8 @@
   "heavy-duty-castors": [
     {
       "series": "RD5 Series",
+      "code": "rd5",
+      "configurable": true,
       "wheelDiameter": {
         "tag": "wheel diameter",
         "quantity": "150 - 200 mm"
@@ -436,6 +446,8 @@
     },
     {
       "series": "Scafold Series",
+      "code":"scaf",
+      "configurable": true,
       "wheelDiameter": {
         "tag": "wheel diameter",
         "quantity": "150 - 200 mm"
@@ -504,6 +516,8 @@
     },
     {
       "series": "HSC Series- Track Castors",
+      "code":"track",
+      "configurable": true,
       "wheelDiameter": {
         "tag": "wheel diameter",
         "quantity": "100 - 250 mm"
@@ -537,6 +551,8 @@
     },
     {
       "series": "HSC Series",
+      "code":"hsc",
+      "configurable": true,
       "wheelDiameter": {
         "tag": "wheel diameter",
         "quantity": "100 - 300 mm"
@@ -616,6 +632,8 @@
     },
     {
       "series": "HSC/TW Series",
+      "code":"hsctw",
+      "configurable": true,
       "wheelDiameter": {
         "tag": "wheel diameter",
         "quantity": "100 - 200 mm"
@@ -663,6 +681,8 @@
     },
     {
       "series": "MRN Series",
+      "code":"mrn",
+      "configurable": true,
       "wheelDiameter": {
         "tag": "wheel diameter",
         "quantity": "100 - 200 mm"

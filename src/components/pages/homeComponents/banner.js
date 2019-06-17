@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { HashLink as Link } from "react-router-hash-link";
 
 import Arrows from '../../../images/arrows.svg'
 
@@ -12,10 +13,10 @@ class Banner extends Component {
             Reputed stockists of castor wheels and trolleys for your
             domestic and industrial needs. Since 1952.
             <span>
-              <a href="#">
+              <Link smooth to="/heavy-duty-castors#mrn">
                 Learn More
                 <img src={Arrows} alt="arrows"/>
-              </a>
+              </Link>
             </span>
           </h1>
           </div>

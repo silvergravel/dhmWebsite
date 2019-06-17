@@ -87,13 +87,13 @@ class ConfigureCastor extends Component{
         <h4 className="black medium section__title">Build Your Castor</h4>
         <div className="config-panel">
           <div className="series-bar">
-            <h4 className="black antique">{this.state.activeSeries}</h4>
+            <h4 className="black medium">{activeSeriesName}</h4>
           </div>
-          <div className="config-panel__body">
-            <div className="image-wrapper">
+          <div className="config-panel__body row">
+            <div className="image-wrapper col-lg-7 col-md-6 col-sm-6 col-12">
               <img src={process.env.PUBLIC_URL + activeProductImage} alt="" />
             </div>
-            <div className="config-fields">
+            <div className="config-fields col-lg-5 col-md-6 col-sm-6 col-12">
               <div className="config-field-dd-material">
                 <DropdownMaterial
                   activeOptionId= {materialOptions[activematerialOptionsId].id} //this will become a state variable
@@ -158,7 +158,7 @@ class ConfigureCastor extends Component{
               </div>
             </div>
           </div>
-          <div className= "configure-panel__cta">
+          <div className= "configure-panel__cta row">
             <button><h4 className="black antique">DOWNLOAD TECHNICAL SPECIIFCATIONS</h4></button>
             <button><h4 className="black antique">SHARE</h4></button>
             <button><h4 className="black antique">REQUEST QUOTE NOW</h4></button>

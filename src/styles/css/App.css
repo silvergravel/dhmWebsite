@@ -33,6 +33,10 @@ h1, h2, h2.proj-title, h3, h4, h5, h6, p, p strong, ul, li, figcaption, a {
   letter-spacing: inherit;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 h1.black.light {
   font-family: 'suisse-light';
   font-size: 50px;
@@ -979,6 +983,10 @@ h3.best-sellers__title {
   margin-top: 144px;
 }
 
+.category-page-content .series-block {
+  position: relative;
+}
+
 .category-page-content .series-block .overview {
   background-color: rgba(181, 169, 140, 0.1);
 }
@@ -1101,6 +1109,11 @@ h3.best-sellers__title {
   line-height: normal;
 }
 
+.category-page-content .series-block-anchor {
+  position: absolute;
+  top: -144px;
+}
+
 .config-castor-wrapper {
   margin-left: 10vw;
   margin-right: 10vw;
@@ -1114,7 +1127,6 @@ h3.config-castor__title {
 div.config-panel {
   margin-top: 18px;
   border: 1px solid #B5A98C;
-  height: 648px;
   border-radius: 5px;
 }
 
@@ -1124,40 +1136,32 @@ div.config-panel .series-bar {
 }
 
 div.config-panel .series-bar h4 {
-  padding: 8px 0 0 15px;
-}
-
-.config-panel__body {
-  display: flex;
+  padding: 6px 0 0 15px;
 }
 
 .config-panel__body .image-wrapper {
-  display: inline-block;
+  display: flex;
   position: relative;
   height: 546px;
-  width: 60%;
 }
 
 .config-panel__body .image-wrapper img {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  height: 432px;
+  display: block;
+  margin: auto;
+  width: 50%;
 }
 
 .config-fields {
   position: relative;
   padding: 15px 15px 0 0;
-  width: 40%;
+  height: 546px;
 }
 
 .config-field-dd-material, .config-field-dd-wheel-dia,
 .config-fields-vitalsMeta-bracket-quantity {
   position: absolute;
   right: 15px;
+  width: 100%;
 }
 
 .config-field-dd-material {
@@ -1192,12 +1196,14 @@ div.config-panel .series-bar h4 {
 .dd-wrapper.dd-material {
   right: 50px;
   z-index: 1000;
+  margin-right: 15px;
 }
 
 .dd-wrapper.dd-wheel-dia {
   right: 50px;
   top: 300px;
   z-index: 999;
+  margin-right: 15px;
 }
 
 .radio-label, .dd-label, .input-label {
@@ -1206,7 +1212,7 @@ div.config-panel .series-bar h4 {
 
 .dd-select {
   border: 0.5px solid #B5A98C;
-  width: 435px;
+  width: 100%;
 }
 
 .dd-select:hover {
@@ -1281,8 +1287,8 @@ div.config-panel .series-bar h4 {
 .radio-list {
   list-style-type: none;
   padding-left: 0px;
-  width: 435px;
   display: flex;
+  margin-right: 15px;
 }
 
 .radio-list-item {
@@ -1385,6 +1391,25 @@ div.config-panel .series-bar h4 {
 
 .wheel-config-meta h4 {
   margin-top: 6px;
+}
+
+.input-block {
+  margin-right: 15px;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  box-shadow: none;
+  border-style: none;
+  border: 0.5px solid #B5A98C;
+  outline: none;
+  height: 50px;
+  font-family: 'suisse-light';
+  font-size: 32px;
+  line-height: 36px;
+  padding-left: 10px;
+  width: 100%;
 }
 
 .cartItemsListWrapper {

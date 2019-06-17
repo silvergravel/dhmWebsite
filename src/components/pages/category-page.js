@@ -5,6 +5,7 @@ import {
 } from 'react-router-dom';
 
 var data = require('../../data/category-page-content.json');
+var websiteCopy = require('../../data/website-copy.json');
 
 
 class CategoryPage extends Component{
@@ -12,11 +13,15 @@ class CategoryPage extends Component{
 
   render(){
 
+    var categoryNameString = this.props.match.params.categoryName.split("#");
+    var categoryName = categoryNameString[0];
+
     return(
       <div className="category-page-content">
-        { data[this.props.match.params.categoryName].map((content, index) => {
+        { data[categoryName].map((content, index) => {
             return(
                   <div className="series-block" key={index}>
+                    <div id={content.code+"-anchor"} class="series-block-anchor"></div>
                     <div className="overview">
                       <div className="container">
                       <div className="row">
@@ -73,7 +78,14 @@ class CategoryPage extends Component{
                                     }
                                   </div>
                                   <img className="product-card__image" src={product.image} alt="" />
-                                  <button className="secondary"><h4 className="black antique">BUILD YOUR CASTOR</h4></button>
+                                  <button className="secondary">
+                                    <h4 className="black antique">
+                                    { content.configurable === true ?
+                                      websiteCopy.productCardCta.build :
+                                      websiteCopy.productCardCta.view
+                                    }
+                                    </h4>
+                                  </button>
                                 </div>
                               </div>
                             </Link>
