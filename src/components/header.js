@@ -52,14 +52,18 @@ class Header extends Component {
   }
 
   render() {
-    let primLinks = ["primaryLinks"];
-    let headerHeight = [""];
+    // let primLinks = ["primaryLinks"];
+    // let headerHeight = [""];
+    //using the below two lines, as a quick roll back on the 'hide/show header that i had implemented earlier'
+    let primLinks = ["primaryLinks expand"];
+    let headerHeight = ["expand"];
+    
     let matchId = this.state.pathname.replace('/','');
 
-    if(this.state.pathname !== '/') {
-      headerHeight.push("expand");
-      primLinks.push("expand");
-    }
+    // if(this.state.pathname !== '/') {
+    //   headerHeight.push("expand");
+    //   primLinks.push("expand");
+    // }
 
     // console.log("the current pathname is: "+ matchId);
 
@@ -139,14 +143,14 @@ class Header extends Component {
           <li>
           |
           </li>
-          <li>
-          Trolleys
+          <li className={matchId === "trolleys" ? 'active' : ''}>
+          <Link to="/trolleys">Trolleys</Link>
           </li>
-          <li>
-          Exclusive Products
+          <li className={matchId === "exclusive-products" ? 'active' : ''}>
+          <Link to="/exclusive-products">Exclusive Products</Link>
           </li>
-          <li>
-          Spare Wheels
+          <li className={matchId === "spare-wheels" ? 'active' : ''}>
+          <Link to="/spare-wheels">Spare Wheels</Link>
           </li>
 
           </ul>

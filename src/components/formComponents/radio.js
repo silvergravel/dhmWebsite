@@ -29,7 +29,8 @@ class Radio extends Component{
 
     const{list, label} = this.props
     const{activeOptionId} = this.state
-
+    //i have wrongly used the terminology 'plattype' when actually, the 'type' here is agnostic to plate OR groove.
+    //but i aint changing it now.
     return(
 
       <div>
@@ -40,7 +41,9 @@ class Radio extends Component{
                        key={option.plateType}
                        data-id={option.id}
                        onClick={(evt) => this.activateOption(evt, option.id, option.key)} >
+                       <div>
                           <h2 className="black light">{option.plateType}</h2>
+                       </div>
                    </li>
                   ))}
                 </ul>

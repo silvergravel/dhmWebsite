@@ -1272,7 +1272,7 @@
         "id": 0,
         "key": "grooveOptions",
         "code": "t",
-        "grooveType" : "Track Groove"
+        "plateType" : "Track Groove"
         },
         {
         "id": 1,

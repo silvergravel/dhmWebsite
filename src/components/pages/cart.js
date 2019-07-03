@@ -32,8 +32,8 @@ class Cart extends Component{
           const selectedBracket = selectedSeries.bracketOptions[item.activebracketOptionsId].plateType;
           const selectedBraking = selectedSeries.bracketOptions[item.activebracketOptionsId].brakingType;
           //const selectedProductImageUrl = selectedSeries.materialOptions[item.activematerialOptionsId].image;
-          const selectedProductImageUrl = productImgPath[selectedDuty.code][selectedSeries.code][materialOptions[item.activematerialOptionsId].code][bracketOptions[item.activebracketOptionsId].code];
-
+          const selectedProductImageUrl = productImgPath[selectedDuty.code][selectedSeries.code][materialOptions[item.activematerialOptionsId].code][bracketOptions[item.activebracketOptionsId].code]["464"];
+          
           return(
             <div key={index} className="cartItemBlock">
               <div className="cartItemBlock__header">

@@ -14,25 +14,74 @@ class ConfigureCastor extends Component{
   constructor(props){
     super(props)
 
-
     var itemCode = this.props.match.params.itemCode;
     var itemCodeSplits = itemCode.split("-");
 
-    var activeMaterialId = this.props.location.state.activeMaterialId;
+    var activeMaterialId;
+    var vitalsOptionsId = 0;
+    var bracketOptionsId = 0;
+    var activeGrooveOptionsId = data[itemCodeSplits[0]][itemCodeSplits[1]].hasOwnProperty("grooveOptions") === true ? 0 : null;
+    var configurable = data[itemCodeSplits[0]][itemCodeSplits[1]].configurable;
+    console.log("configurable: "+configurable);
+
+    var urlParts = this.props.location.pathname.split("/");
+    var configCode = urlParts[urlParts.length - 1];
+
+    if(this.props.location.state != undefined){
+      activeMaterialId = this.props.location.state.activeMaterialId;
+      this.props.history.push(configCode+"-materialOptions:"+activeMaterialId);
+    }else{
+
+    }
+
+
+    if(itemCodeSplits.length >= 3){
+      for(let i = 0; i < itemCodeSplits.length; i++){
+      console.log(itemCodeSplits[i]);
+        if(itemCodeSplits[i].includes("vitalsOptions")){
+          vitalsOptionsId = itemCodeSplits[i].split(":")[1];
+          break;
+        }
+      };
+
+      for(let i = 0; i < itemCodeSplits.length; i++){
+      console.log(itemCodeSplits[i]);
+        if(itemCodeSplits[i].includes("bracketOptions")){
+          bracketOptionsId = itemCodeSplits[i].split(":")[1];
+          break;
+        }
+      };
+
+      if(activeGrooveOptionsId !== null){
+        for(let i = 0; i < itemCodeSplits.length; i++){
+        console.log(itemCodeSplits[i]);
+          if(itemCodeSplits[i].includes("grooveOptions")){
+            activeGrooveOptionsId = itemCodeSplits[i].split(":")[1];
+            break;
+          }
+        };
+      }
+    }
+
+
+
+
 
 
     this.state = {
       activeDutyId:itemCodeSplits[0],
       activeSeriesId:itemCodeSplits[1],
-      activematerialOptionsId: activeMaterialId,
-      activevitalsOptionsId: 0,
-      activebracketOptionsId: 0,
+      activematerialOptionsId: itemCodeSplits.length >= 3 ? itemCodeSplits[2].split(":")[1] : activeMaterialId,
+      activevitalsOptionsId: vitalsOptionsId,
+      activebracketOptionsId: bracketOptionsId,
+      activegrooveOptionsId: activeGrooveOptionsId,
       braking: false,
       quantity: 0
     }
     this.updateWheelConfig = this.updateWheelConfig.bind(this);
     this.updateInput = this.updateInput.bind(this);
     this.validateAndAddToCart = this.validateAndAddToCart.bind(this);
+
 
   }
 
@@ -42,6 +91,44 @@ class ConfigureCastor extends Component{
     console.log("id "+evt.currentTarget.dataset.id);
     key === "bracketOptions" && evt.currentTarget.dataset.id === "0" &&
     this.setState({braking: false})
+
+    //url update
+    var urlUpdateText;
+    var urlParts = this.props.location.pathname.split("/");
+    var configCode = urlParts[urlParts.length - 1];
+
+    if(key !== "vitalsOptions"){
+        urlUpdateText = key+":"+data[this.state.activeDutyId][this.state.activeSeriesId][key][evt.currentTarget.dataset.id].id;
+    }else{
+      urlUpdateText = key+":"+data[this.state.activeDutyId][this.state.activeSeriesId].materialOptions[this.state.activematerialOptionsId][key][evt.currentTarget.dataset.id].id;
+    }
+
+
+    var configCodeParts = configCode.split("-");
+    var isConfigCodeUpdated = false;
+    var updatedUrl = "";
+    for(var i = 0; i < configCodeParts.length; i++){
+      if(configCodeParts[i].includes(key)){
+        configCodeParts[i] = urlUpdateText;
+        isConfigCodeUpdated = true;
+      }
+    }
+    if(isConfigCodeUpdated){
+      for(var i = 0; i < configCodeParts.length; i++){
+        updatedUrl += configCodeParts[i];
+        console.log("i is: "+i);
+        if(i !== configCodeParts.length-1){
+          updatedUrl += "-";
+        }
+
+      }
+    }else{
+        updatedUrl = configCode+"-"+urlUpdateText;
+    }
+
+    this.props.history.push(updatedUrl);
+    // console.log(urlUpdateText);
+
   }
 
   updateInput(evt){
@@ -58,36 +145,41 @@ class ConfigureCastor extends Component{
 
   render(){
 
-    const{activeDutyId, activeSeriesId, activematerialOptionsId, activevitalsOptionsId, activebracketOptionsId, braking, quantity} = this.state;
+
+    console.log("vmo: "+this.state.activevitalsOptionsId);
+    const{activeDutyId, activeSeriesId, activematerialOptionsId, activevitalsOptionsId, activebracketOptionsId, activegrooveOptionsId, braking, quantity} = this.state;
+
 
     const activeDuty = data[activeDutyId];
+    const activeDutyName = activeDuty.duty;
     const activeSeries = data[activeDutyId][activeSeriesId];
     const activeSeriesName = activeSeries.series;
     const bracketOptions = activeSeries.bracketOptions;
     const materialOptions = activeSeries.materialOptions;
+    const grooveOptions = activegrooveOptionsId !== null ? activeSeries.grooveOptions : null;
     const vitalsOptions = materialOptions[activematerialOptionsId].vitalsOptions;
     // const activeProductImage = materialOptions[activematerialOptionsId].image+bracketOptions[activebracketOptionsId].code+".png";
     // const activeProductImage = "/product-images/"+activeSeries.code+"/"+activeSeries.code+"_"+materialOptions[activematerialOptionsId].code+"_"+bracketOptions[activebracketOptionsId].code+".png";
     const activeProductImage = productImgPath[activeDuty.code][activeSeries.code][materialOptions[activematerialOptionsId].code][bracketOptions[activebracketOptionsId].code]["712"];
     // const activeProductImage = "";
-    console.log("active product img: "+activeProductImage);
-
-    console.log("activeDuty: " +activeDutyId);
-    console.log("activeSeries: " +activeSeriesId);
-    console.log("activeMaterial: " +materialOptions[activematerialOptionsId].material);
-    console.log("activeMaterial: " +materialOptions[activematerialOptionsId].material);
-    console.log("activeWheelDia: " +vitalsOptions[activevitalsOptionsId].wheelDiameter);
-    console.log("activeLoadCap: " +vitalsOptions[activevitalsOptionsId].loadCapacity);
-    console.log("activeBracketOps: " +bracketOptions[activebracketOptionsId].plateType);
-    console.log("quantity: " + this.state.quantity);
-    console.log("braking: " + this.state.braking);
+    // console.log("active product img: "+activeProductImage);
+    //
+    // console.log("activeDuty: " +activeDutyId);
+    // console.log("activeSeries: " +activeSeriesId);
+    // console.log("activeMaterial: " +materialOptions[activematerialOptionsId].material);
+    // console.log("activeMaterial: " +materialOptions[activematerialOptionsId].material);
+    // console.log("activeWheelDia: " +vitalsOptions[activevitalsOptionsId].wheelDiameter);
+    // console.log("activeLoadCap: " +vitalsOptions[activevitalsOptionsId].loadCapacity);
+    // console.log("activeBracketOps: " +bracketOptions[activebracketOptionsId].plateType);
+    // console.log("quantity: " + this.state.quantity);
+    // console.log("braking: " + this.state.braking);
     return(
 
-      <div className="config-castor-wrapper">
+      <div className="config-castor-wrapper container">
         <h4 className="black medium section__title">Build Your Castor</h4>
         <div className="config-panel">
           <div className="series-bar">
-            <h4 className="black medium">{activeSeriesName}</h4>
+            <h4 className="black medium"><span className="black regular">{activeDutyName+" Castors"}</span>{activeSeriesName}</h4>
           </div>
           <div className="config-panel__body row">
             <div className="image-wrapper col-lg-7 col-md-6 col-sm-6 col-12">
@@ -105,7 +197,7 @@ class ConfigureCastor extends Component{
 
               <div className="config-field-dd-wheel-dia">
                 <DropdownWheelDia
-                  activeOptionId= {0} //this will become a state variable
+                  activeOptionId= {vitalsOptions[activevitalsOptionsId].id  } //this will become a state variable
                   label="WHEEL DIAMETER <----> LOAD CAPACITY"
                   list={vitalsOptions}
                   updateWheelConfig={this.updateWheelConfig}
@@ -128,7 +220,7 @@ class ConfigureCastor extends Component{
 
                 <div className="config-fields-bracket">
                   <Radio
-                    activeOptionId= {0} //this will become a state variable
+                    activeOptionId= {bracketOptions[activebracketOptionsId].id} //this will become a state variable
                     label="BRACKET TYPE"
                     list={bracketOptions}
                     updateWheelConfig={this.updateWheelConfig}
@@ -143,8 +235,20 @@ class ConfigureCastor extends Component{
                     updateInput ={this.updateInput}
                     />
                   </div>
-
                 </div>
+
+                {
+                  grooveOptions !== null &&
+
+                  <div className="config-fields-groove">
+                    <Radio
+                      activeOptionId= {grooveOptions[activegrooveOptionsId].id} //this will become a state variable
+                      label="GROOVE TYPE"
+                      list={grooveOptions}
+                      updateWheelConfig={this.updateWheelConfig}
+                    />
+                  </div>
+                }
 
                 <div className="config-fields-quantity">
                   <InputField

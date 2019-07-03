@@ -1,13 +1,15 @@
 // main: App.scss
 
 .config-castor-wrapper{
-  margin-left: 10vw;
-  margin-right: 10vw;
-  margin-top: 150px;
+  margin-top: 124px;
+
+  h4.section__title{
+    margin-top: 0;
+  }
 }
 
 h3.config-castor__title{
-margin-top: 150px;
+margin-top: 144px;
 }
 
 div.config-panel{
@@ -23,6 +25,11 @@ div.config-panel .series-bar{
 
   h4{
     padding: 6px 0 0 15px;
+
+    span{
+      margin-right: 12px;
+      text-transform: capitalize;
+    }
   }
 }
 
@@ -39,23 +46,46 @@ div.config-panel .series-bar{
   img{
     display: block;
     margin: auto;
-    // height: 432px;
-    width: 50%;
+    height: 80%
+    // width: 50%;
+
+
+  }
+}
+
+@media screen and (max-width: 991px){
+  .config-panel__body .image-wrapper{
+
+    img{
+      height: 60%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px){
+  .config-panel__body .image-wrapper{
+
+    height: 220px;
+    img{
+      height: 90%;
+    }
   }
 }
 
 .config-fields{
   position: relative;
-  padding: 15px 15px 0 0;
-  height: 546px;
+  padding-top: 15px ;
+  // height: 546px;
+  overflow: auto
   // width: 40%;
 }
 
 .config-field-dd-material, .config-field-dd-wheel-dia,
 .config-fields-vitalsMeta-bracket-quantity{
-  position: absolute;
-  right: 15px;
+  // position: absolute;
+  // right: 15px;
   width: 100%;
+  // padding-left: 30px;
 }
 
 .config-field-dd-material{
@@ -71,7 +101,7 @@ div.config-panel .series-bar{
   top: 257px;
 
   &>div{
-      margin-bottom: 15px;
+      margin: 0 15px 15px 15px;
 
       &:last-of-type{
         margin-bottom: 0px;

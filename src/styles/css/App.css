@@ -405,10 +405,10 @@ header {
 }
 
 header.expand {
-  height: 84px;
+  height: 74px;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 991px) {
   header.expand {
     height: 48px;
   }
@@ -443,7 +443,7 @@ header .logo {
   top: 7px;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 480px) {
   header .logo {
     display: none;
   }
@@ -479,7 +479,7 @@ header ul.secondaryLinks li.reg a:hover {
   background-color: rgba(254, 78, 51, 0.25);
 }
 
-@media (max-width: 640px) {
+@media (max-width: 991px) {
   header ul.secondaryLinks {
     display: none;
   }
@@ -525,7 +525,7 @@ header ul.primaryLinks.expand {
   bottom: 8px;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 991px) {
   header ul.primaryLinks.expand {
     opacity: 0;
     bottom: 20px;
@@ -600,7 +600,7 @@ header ul li.cart.active span:hover span {
   -webkit-transform: translateY(-50%);
 }
 
-@media (max-width: 640px) {
+@media (max-width: 480px) {
   .logo-small {
     display: block;
   }
@@ -617,7 +617,7 @@ header ul li.cart.active span:hover span {
   z-index: 1001;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 991px) {
   .mobile-header-icons {
     display: block;
   }
@@ -980,7 +980,7 @@ h3.best-sellers__title {
 }
 
 .category-page-content {
-  margin-top: 144px;
+  margin-top: 124px;
 }
 
 .category-page-content .series-block {
@@ -1080,6 +1080,10 @@ h3.best-sellers__title {
   bottom: 63px;
 }
 
+.category-page-content .series-block .container.product-cards .product-cards__card-grid .product-card .product-card__content-wrapper .product-data .product-data__load-capacity {
+  margin-top: 10px;
+}
+
 .category-page-content .series-block .container.product-cards .product-cards__card-grid .product-card .product-card__content-wrapper .product-data h5 {
   text-transform: uppercase;
   letter-spacing: 0.03em;
@@ -1111,17 +1115,19 @@ h3.best-sellers__title {
 
 .category-page-content .series-block-anchor {
   position: absolute;
-  top: -144px;
+  top: -124px;
 }
 
 .config-castor-wrapper {
-  margin-left: 10vw;
-  margin-right: 10vw;
-  margin-top: 150px;
+  margin-top: 124px;
+}
+
+.config-castor-wrapper h4.section__title {
+  margin-top: 0;
 }
 
 h3.config-castor__title {
-  margin-top: 150px;
+  margin-top: 144px;
 }
 
 div.config-panel {
@@ -1139,6 +1145,11 @@ div.config-panel .series-bar h4 {
   padding: 6px 0 0 15px;
 }
 
+div.config-panel .series-bar h4 span {
+  margin-right: 12px;
+  text-transform: capitalize;
+}
+
 .config-panel__body .image-wrapper {
   display: flex;
   position: relative;
@@ -1148,19 +1159,32 @@ div.config-panel .series-bar h4 {
 .config-panel__body .image-wrapper img {
   display: block;
   margin: auto;
-  width: 50%;
+  height: 80%;
+}
+
+@media screen and (max-width: 991px) {
+  .config-panel__body .image-wrapper img {
+    height: 60%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .config-panel__body .image-wrapper {
+    height: 220px;
+  }
+  .config-panel__body .image-wrapper img {
+    height: 90%;
+  }
 }
 
 .config-fields {
   position: relative;
-  padding: 15px 15px 0 0;
-  height: 546px;
+  padding-top: 15px;
+  overflow: auto;
 }
 
 .config-field-dd-material, .config-field-dd-wheel-dia,
 .config-fields-vitalsMeta-bracket-quantity {
-  position: absolute;
-  right: 15px;
   width: 100%;
 }
 
@@ -1178,7 +1202,7 @@ div.config-panel .series-bar h4 {
 }
 
 .config-fields-vitalsMeta-bracket-quantity > div {
-  margin-bottom: 15px;
+  margin: 0 15px 15px 15px;
 }
 
 .config-fields-vitalsMeta-bracket-quantity > div:last-of-type {
@@ -1196,14 +1220,14 @@ div.config-panel .series-bar h4 {
 .dd-wrapper.dd-material {
   right: 50px;
   z-index: 1000;
-  margin-right: 15px;
+  margin: 0 15px 15px 15px;
 }
 
 .dd-wrapper.dd-wheel-dia {
   right: 50px;
   top: 300px;
   z-index: 999;
-  margin-right: 15px;
+  margin: 0 15px 10px 15px;
 }
 
 .radio-label, .dd-label, .input-label {
@@ -1213,6 +1237,7 @@ div.config-panel .series-bar h4 {
 .dd-select {
   border: 0.5px solid #B5A98C;
   width: 100%;
+  position: relative;
 }
 
 .dd-select:hover {
@@ -1247,17 +1272,26 @@ div.config-panel .series-bar h4 {
   list-style-type: none;
   padding-left: 0px;
   margin-bottom: 0px;
-  width: 435px;
+  position: absolute;
+  left: 0;
+  background-color: #ffffff;
+  outline: 0.5px solid #B5A98C;
+  z-index: 100;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
 }
 
 .dd-list.dd-material {
   max-height: 345px;
   overflow-y: scroll;
+  top: 103px;
+  width: 100%;
 }
 
 .dd-list.dd-wheel-dia {
   max-height: 345px;
   overflow-y: scroll;
+  width: 100%;
+  top: 49px;
 }
 
 .dd-list-item {
@@ -1288,34 +1322,44 @@ div.config-panel .series-bar h4 {
   list-style-type: none;
   padding-left: 0px;
   display: flex;
-  margin-right: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 0;
 }
 
 .radio-list-item {
-  border: 0.5px solid #B5A98C;
   width: 50%;
+}
+
+.radio-list-item > div {
+  border: 0.5px solid #B5A98C;
+  height: 50px;
   padding-left: 10px;
   padding-top: 6px;
-  height: 50px;
+  margin-bottom: 12px;
 }
 
-.radio-list-item:last-of-type {
-  margin-left: 12px;
-}
-
-.radio-list-item:hover {
+.radio-list-item > div:hover {
   background-color: rgba(181, 169, 140, 0.15);
   cursor: pointer;
 }
 
-.radio-list-item.active {
+.radio-list-item:nth-child(2n+1) > div {
+  margin-right: 6px;
+}
+
+.radio-list-item:nth-child(2n) > div {
+  margin-left: 6px;
+}
+
+.radio-list-item.active > div {
   background-color: rgba(181, 169, 140, 0.3);
 }
 
 /* Create a custom checkbox */
 .checkbox {
-  position: absolute;
   opacity: 0;
+  height: 0;
+  margin: 0 !important;
 }
 
 .checkbox + label {
@@ -1391,10 +1435,6 @@ div.config-panel .series-bar h4 {
 
 .wheel-config-meta h4 {
   margin-top: 6px;
-}
-
-.input-block {
-  margin-right: 15px;
 }
 
 input {

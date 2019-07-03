@@ -2,10 +2,10 @@
 
 
 .category-page-content{
-    margin-top: 144px;
+    margin-top: 124px;
 
   .series-block{
-    position: relative; 
+    position: relative;
 
     .overview{
       background-color: rgba(181,169,140,0.1);
@@ -17,6 +17,7 @@
 
 
           margin-top: 16px;
+          // margin-bottom: 16px;
         }
 
         .overview__data__block{
@@ -111,6 +112,10 @@
           position: absolute;
           bottom: 63px;
 
+          .product-data__load-capacity{
+            margin-top:10px;
+          }
+
           h5{
             text-transform: uppercase;
             letter-spacing: 0.03em;
@@ -159,6 +164,6 @@
 
   .series-block-anchor{
     position: absolute;
-    top: -144px;
+    top: -124px;
   }
 }
