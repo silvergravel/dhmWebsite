@@ -23,13 +23,13 @@ header{
   .hamburger-menu{
 
     position: absolute;
-    width: 50vw;
+    width: 100vw;
     height: 100vh;
-    background-color: aqua;
-    right: -50vw;
+    background-color: rgba(255,255,255,0.97);
+    right: -100vw;
     top: 0px;
     opacity: 0.5;
-    @include doubleTransition(right 0.2s ease-out, opacity 0.2s ease-out);
+    @include doubleTransition(right 0.4s ease-out, opacity 0.4s ease-out);
 
 
     &.show{
@@ -45,6 +45,7 @@ header{
   }
 
   .logo{
+    z-index: 1;
     font-size: 20px;
     position: absolute;
     left: 15px;
@@ -95,6 +96,7 @@ header{
       left: 49%;
       bottom: 20px;
       opacity: 0;
+      display: none;
       white-space: nowrap;
       z-index: 999;
       @include translateX(-50%);
@@ -117,10 +119,12 @@ header{
       }
 
       &.expand{
+        display: block;
         opacity: 1;
         bottom: 8px;
 
         @include breakpoint($tab_991){
+          display: none;
           opacity: 0;
           bottom: 20px;
         }

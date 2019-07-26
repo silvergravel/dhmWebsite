@@ -943,6 +943,186 @@
           ]
         }
       ]
+    },
+    "dxm":{
+      "series":"DXM Series",
+      "code":"dxm",
+      "configurable": true,
+      "bracketOptions":[
+        {
+        "id": 0,
+        "key": "bracketOptions",
+        "code": "s",
+        "plateType" : "Swivel",
+        "brakingDescp" : "Add Braking System ( Wheel + Swivel Lock )",
+        "brakingType" : "Wheel + Swivel Lock",
+        "image" : "/product-images/swivel-plate.png"
+        },
+        {
+        "id": 1,
+        "key": "bracketOptions",
+        "code": "f",
+        "plateType" : "Fixed",
+        "brakingDescp" : "No braking options available for fixed bracket" ,
+        "brakingType" : null,
+        "image" : "/product-images/fixed-plate.png"
+        }
+      ],
+      "materialOptions":[
+        {
+          "id": 0,
+          "key": "materialOptions",
+          "code": "r",
+          "material": "Rubber",
+          "materialDescp": "It offers superior resistance to most oils, chemicals and acids.",
+          "image": "/product-images/best-sellers-temp.png",
+          "vitalsOptions":[
+            {
+            "id": 0,
+            "key": "vitalsOptions",
+            "wheelDiameter": "75 mm",
+            "totalHeight": "115 mm",
+            "treadWidth": "31 mm",
+            "loadCapacity": "70 kgs"
+            },
+            {
+            "id": 1,
+            "key": "vitalsOptions",
+            "wheelDiameter": "100 mm",
+            "totalHeight": "139 mm",
+            "treadWidth": "31 mm",
+            "loadCapacity": "100 kgs"
+            },
+            {
+            "id": 2,
+            "key": "vitalsOptions",
+            "wheelDiameter": "125 mm",
+            "totalHeight": "166 mm",
+            "treadWidth": "31 mm",
+            "loadCapacity": "130 kgs"
+            },
+            {
+            "id": 3,
+            "key": "vitalsOptions",
+            "wheelDiameter": "150 mm",
+            "totalHeight": "195 mm",
+            "treadWidth": "31 mm",
+            "loadCapacity": "150 kgs"
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "key": "materialOptions",
+          "code": "pun",
+          "material": "PU Tyred On Nylon",
+          "materialDescp": "It offers superior resistance to most oils, chemicals and acids.",
+          "image": "/product-images/best-sellers-temp.png",
+          "vitalsOptions":[
+            {
+            "id": 0,
+            "key": "vitalsOptions",
+            "wheelDiameter": "75 mm",
+            "totalHeight": "115 mm",
+            "treadWidth": "31 mm",
+            "loadCapacity": "70 kgs"
+            },
+            {
+            "id": 1,
+            "key": "vitalsOptions",
+            "wheelDiameter": "100 mm",
+            "totalHeight": "139 mm",
+            "treadWidth": "31 mm",
+            "loadCapacity": "100 kgs"
+            },
+            {
+            "id": 2,
+            "key": "vitalsOptions",
+            "wheelDiameter": "125 mm",
+            "totalHeight": "166 mm",
+            "treadWidth": "31 mm",
+            "loadCapacity": "130 kgs"
+            }
+          ]
+        }
+      ]
+    },
+    "rg":{
+      "series":"RG Series",
+      "code":"rg",
+      "configurable": true,
+      "bracketOptions":[
+        {
+        "id": 0,
+        "key": "bracketOptions",
+        "code": "s",
+        "plateType" : "Swivel",
+        "brakingDescp" : "Add Braking System ( Wheel + Swivel Lock )",
+        "brakingType" : "Wheel + Swivel Lock",
+        "image" : "/product-images/swivel-plate.png"
+        },
+        {
+        "id": 1,
+        "key": "bracketOptions",
+        "code": "f",
+        "plateType" : "Fixed",
+        "brakingDescp" : "No braking options available for fixed bracket" ,
+        "brakingType" : null,
+        "image" : "/product-images/fixed-plate.png"
+        }
+      ],
+      "materialOptions":[
+        {
+          "id": 0,
+          "key": "materialOptions",
+          "code": "r",
+          "material": "Rubber",
+          "materialDescp": "It offers superior resistance to most oils, chemicals and acids.",
+          "image": "/product-images/best-sellers-temp.png",
+          "vitalsOptions":[
+            {
+            "id": 0,
+            "key": "vitalsOptions",
+            "wheelDiameter": "100 mm",
+            "totalHeight": "120 mm",
+            "treadWidth": "32 mm",
+            "loadCapacity": "70 kgs"
+            },
+            {
+            "id": 1,
+            "key": "vitalsOptions",
+            "wheelDiameter": "125 mm",
+            "totalHeight": "161 mm",
+            "treadWidth": "38 mm",
+            "loadCapacity": "100 kgs"
+            },
+            {
+            "id": 2,
+            "key": "vitalsOptions",
+            "wheelDiameter": "160 mm",
+            "totalHeight": "190 mm",
+            "treadWidth": "40 mm",
+            "loadCapacity": "135 kgs"
+            },
+            {
+            "id": 3,
+            "key": "vitalsOptions",
+            "wheelDiameter": "200 mm",
+            "totalHeight": "232 mm",
+            "treadWidth": "50 mm",
+            "loadCapacity": "205 kgs"
+            },
+            {
+            "id": 4,
+            "key": "vitalsOptions",
+            "wheelDiameter": "250 mm",
+            "totalHeight": "297 mm",
+            "treadWidth": "60 mm",
+            "loadCapacity": "290 kgs"
+            }
+          ]
+        }
+      ]
     }
   },
   "hd":{
@@ -1194,10 +1374,10 @@
         {
         "id": 3,
         "key": "materialOptions",
-        "code": "puci",
-        "material": "PU Tyred On Cast Iron",
+        "code": "rci",
+        "material": "Rubber Tyred On Cast Iron",
         "materialDescp": "lorem Ipsum dolor set amet",
-
+        "image": "/product-images/best-sellers-temp.png",
         "vitalsOptions": [
           {
           "id": 0,
@@ -1214,32 +1394,6 @@
           "totalHeight": "243 mm",
           "treadWidth": "50 mm",
           "loadCapacity": "820 kgs"
-          }
-        ]
-        },
-        {
-        "id": 4,
-        "key": "materialOptions",
-        "code": "rci",
-        "material": "Rubber Tyred On Cast Iron",
-        "materialDescp": "lorem Ipsum dolor set amet",
-        "image": "/product-images/best-sellers-temp.png",
-        "vitalsOptions": [
-          {
-          "id": 0,
-          "key": "vitalsOptions",
-          "wheelDiameter": "150 mm",
-          "totalHeight": "204 mm",
-          "treadWidth": "44.5 mm",
-          "loadCapacity": "410 kgs"
-          },
-          {
-          "id": 1,
-          "key": "vitalsOptions",
-          "wheelDiameter": "200 mm",
-          "totalHeight": "250 mm",
-          "treadWidth": "50 mm",
-          "loadCapacity": "410 kgs"
           }
         ]
         }
@@ -1739,7 +1893,7 @@
         }
       ]
     },
-    "hsc":{
+    "hsctw":{
       "series": "HSC/TW Series",
       "code":"hsctw",
       "configurable": true,
@@ -2105,6 +2259,448 @@
           "treadWidth": "50 mm",
           "loadCapacity": "230 kgs"
           }
+        ]
+        }
+      ]
+    }
+  },
+  "t":{
+    "duty": "trolleys",
+    "code":"t",
+    "pt1":{
+      "series":"Platform Trolley 7146",
+      "code":"pt1",
+      "configurable": false,
+      "vitalsOptions":[
+        {
+        "vitals":[
+          {
+           "tag": "Load Capacity",
+           "value": "Upto 150 kgs"
+          },
+          {
+           "tag": "Dimensions",
+           "value": "L: 710 mm | B: 460 mm "
+          }
+        ]
+        }
+      ]
+    },
+    "pt2":{
+      "series":"Platform Trolley 9060",
+      "code":"pt2",
+      "configurable": false,
+      "vitalsOptions":[
+        {
+        "vitals":[
+          {
+           "tag": "Load Capacity",
+           "value": "Upto 350 kgs"
+          },
+          {
+           "tag": "Dimensions",
+           "value": "L: 900 mm | B: 600 mm "
+          }
+        ]
+        }
+      ]
+    },
+    "pt3":{
+      "series":"Platform Trolley 1275",
+      "code":"pt3",
+      "configurable": false,
+      "vitalsOptions":[
+        {
+        "vitals":[
+          {
+           "tag": "Load Capacity",
+           "value": "Upto 350 kgs"
+          },
+          {
+           "tag": "Dimensions",
+           "value": "L: 1200 mm | B: 750 mm "
+          }
+        ]
+        }
+      ]
+    },
+    "pt4":{
+      "series":"Platform Trolley 1590",
+      "code":"pt4",
+      "configurable": false,
+      "vitalsOptions":[
+        {
+        "vitals":[
+          {
+           "tag": "Load Capacity",
+           "value": "Upto 1000 kgs"
+          },
+          {
+           "tag": "Dimensions",
+           "value": "L: 1500 mm | B: 900 mm "
+          }
+        ]
+        }
+      ]
+    },
+    "dgct":{
+      "series":"Double Gas Cylinder Trolley",
+      "code":"dgct",
+      "configurable": false,
+      "vitalsOptions":[
+        {
+        "vitals":[
+          {
+           "tag": "Load Capacity",
+           "value": "80 litres"
+          },
+          {
+           "tag": "Dimensions",
+           "value": "L: 620 mm | B: 570 mm | H: 1270 mm"
+          }
+        ]
+        }
+      ]
+    },
+    "swb":{
+      "series":"Single Wheel Barrow",
+      "code":"swb",
+      "configurable": false,
+      "vitalsOptions":[
+        {
+        "vitals":[
+          {
+           "tag": "Load Capacity",
+           "value": "Upto 80 kgs"
+          },
+          {
+           "tag": "Dimensions",
+           "value": "L: 470 mm | B: 385 mm | H: 1080 mm"
+          }
+        ]
+        }
+      ]
+    },
+    "dwb":{
+      "series":"Double Wheel Barrow",
+      "code":"dwb",
+      "configurable": false,
+      "vitalsOptions":[
+        {
+        "vitals":[
+          {
+           "tag": "Load Capacity",
+           "value": "Upto 130 kgs"
+          },
+          {
+           "tag": "Dimensions",
+           "value": "L: 710 mm | B: 570 mm | H: 1270 mm"
+          }
+        ]
+        }
+      ]
+    },
+    "dst":{
+      "series":"Drum Standard Trolley",
+      "code":"dst",
+      "configurable": false,
+      "vitalsOptions":[
+        {
+        "vitals":[
+          {
+           "tag": "Load Capacity",
+           "value": "Upto 205 kgs"
+          },
+          {
+           "tag": "Dimensions",
+           "value": "L: 1440 mm | B: 700 mm | H: 900 mm"
+          }
+        ]
+        }
+      ]
+    },
+    "h9t":{
+      "series":"Hess 9 Trolley",
+      "code":"h9t",
+      "configurable": false,
+      "vitalsOptions":[
+        {
+        "vitals":[
+          {
+           "tag": "Load Capacity",
+           "value": "Upto 200 kgs"
+          },
+          {
+           "tag": "Dimensions",
+           "value": "L: 508 mm | B: 205 mm | H: 1220 mm"
+          }
+        ]
+        }
+      ]
+    },
+    "sft":{
+      "series":"Sack Folding Trolley",
+      "code":"sft",
+      "configurable": false,
+      "vitalsOptions":[
+        {
+        "vitals":[
+          {
+           "tag": "Load Capacity",
+           "value": "Upto 100 kgs"
+          },
+          {
+           "tag": "Dimensions",
+           "value": "L: 530 mm | B: 437 mm | H: 1245 mm"
+          }
+        ]
+        }
+      ]
+    }
+  },
+  "xp":{
+    "duty": "exclusive products",
+    "code":"xp",
+    "dr":{
+      "series":"Door Runners",
+      "code":"dr",
+      "configurable": false,
+      "vitalsOptions":[
+        {
+        "id": 0,
+        "key": "vitalsOptions",
+        "vitals":[
+          {
+           "tag": "Height",
+           "value": "25 mm"
+          },
+          {
+           "tag": "Load Capacity",
+           "value": "Upto 40 kgs"
+          }
+        ]
+        },
+        {
+        "id": 1,
+        "key": "vitalsOptions",
+        "vitals":[
+          {
+           "tag": "Height",
+           "value": "40 mm"
+          },
+          {
+           "tag": "Load Capacity",
+           "value": "Upto 150 kgs"
+          }
+        ]
+        },
+        {
+        "id": 2,
+        "key": "vitalsOptions",
+        "vitals":[
+          {
+           "tag": "Height",
+           "value": "55 mm"
+          },
+          {
+           "tag": "Load Capacity",
+           "value": "Upto 350 kgs"
+          }
+        ]
+        }
+      ]
+    },
+    "fl":{
+      "series":"Foot Lock",
+      "code":"fl",
+      "configurable": false,
+      "vitalsOptions":[
+        {
+        "id": 0,
+        "key": "vitalsOptions",
+        "vitals":[
+          {
+           "tag": "Height Without Raise",
+           "value": "125 mm"
+          },
+          {
+           "tag": "Raised Height",
+           "value": "150 mm"
+          },
+          {
+           "tag": "Plate Size",
+           "value": "120 * 120 mm"
+          }
+        ]
+        },
+        {
+        "id": 1,
+        "key": "vitalsOptions",
+        "vitals":[
+          {
+           "tag": "Height Without Raise",
+           "value": "170 mm"
+          },
+          {
+           "tag": "Raised Height",
+           "value": "210 mm"
+          },
+          {
+           "tag": "Plate Size",
+           "value": "120 * 120 mm"
+          }
+        ]
+        }
+      ]
+    },
+    "gc":{
+      "series":"Glass Castor",
+      "code":"gc",
+      "configurable": false,
+      "vitalsOptions":[
+        {
+        "id": 0,
+        "key": "vitalsOptions",
+        "vitals":[
+          {
+           "tag": "Wheel Diameter",
+           "value": "35 mm"
+          },
+          {
+           "tag": "Load Capacity",
+           "value": "Upto 12 kgs"
+           },
+           {
+            "tag": "Total Height",
+            "value": "54 mm"
+           }
+        ]
+        },
+        {
+        "id": 1,
+        "key": "vitalsOptions",
+        "vitals":[
+          {
+           "tag": "Wheel Diameter",
+           "value": "50 mm"
+          },
+          {
+           "tag": "Load Capacity",
+           "value": "Upto 20 kgs"
+           },
+           {
+            "tag": "Total Height",
+            "value": "69 mm"
+           }
+        ]
+        }
+      ]
+    },
+    "rc":{
+      "series":"Rubber Chowk",
+      "code":"rc",
+      "configurable": false,
+      "vitalsOptions":[
+        {
+        "id": 0,
+        "key": "vitalsOptions",
+        "vitals":[
+          {
+           "tag": "Size",
+           "value": "100 mm"
+          }
+        ]
+        },
+        {
+        "id": 1,
+        "key": "vitalsOptions",
+        "vitals":[
+          {
+           "tag": "Size",
+           "value": "175 mm"
+          }
+        ]
+      },
+      {
+      "id": 2,
+      "key": "vitalsOptions",
+      "vitals":[
+        {
+         "tag": "Size",
+         "value": "250 mm"
+        }
+      ]
+      }
+      ]
+    },
+    "btu":{
+      "series":"Ball Transfer Unit",
+      "code":"btu",
+      "configurable": false,
+      "vitalsOptions":[
+        {
+        "id": 0,
+        "key": "vitalsOptions",
+        "vitals":[
+          {
+           "tag": "Ball Diameter",
+           "value": "19 mm"
+          }
+        ]
+        },
+        {
+        "id": 1,
+        "key": "vitalsOptions",
+        "vitals":[
+          {
+           "tag": "Ball Diameter",
+           "value": "25 mm"
+          }
+        ]
+      },
+      {
+      "id": 2,
+      "key": "vitalsOptions",
+      "vitals":[
+        {
+         "tag": "Ball Diameter",
+         "value": "31 mm"
+        }
+      ]
+      },
+      {
+      "id": 3,
+      "key": "vitalsOptions",
+      "vitals":[
+        {
+         "tag": "Ball Diameter",
+         "value": "58 mm"
+        }
+      ]
+      }
+      ]
+    },
+    "cr":{
+      "series":"Conveyor Roller",
+      "code":"cr",
+      "configurable": false,
+      "vitalsOptions":[
+        {
+        "id": 0,
+        "key": "vitalsOptions",
+        "vitals":[
+          {
+           "tag": "Length",
+           "value": "??"
+           },
+           {
+            "tag": "Load Capacity",
+            "value": "Upto 200 kgs"
+            },
+            {
+             "tag": "Roller Diameter",
+             "value": "38/57/63 mm"
+            }
         ]
         }
       ]

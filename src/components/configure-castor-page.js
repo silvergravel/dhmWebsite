@@ -76,7 +76,8 @@ class ConfigureCastor extends Component{
       activebracketOptionsId: bracketOptionsId,
       activegrooveOptionsId: activeGrooveOptionsId,
       braking: false,
-      quantity: 0
+      quantity: 0,
+      configurable: true
     }
     this.updateWheelConfig = this.updateWheelConfig.bind(this);
     this.updateInput = this.updateInput.bind(this);
@@ -136,8 +137,8 @@ class ConfigureCastor extends Component{
     this.setState({[evt.target.name]: value});
   }
 
-  validateAndAddToCart(wheelConfig){
-    this.state.quantity > 0 ? this.props.updateCart(wheelConfig) : alert("you need to select a quantity to add this item to cart");
+  validateAndAddToCart(wheelConfig, configurableStatus){
+    this.state.quantity > 0 ? this.props.updateCart(wheelConfig, configurableStatus) : alert("you need to select a quantity to add this item to cart");
   }
 
 
@@ -149,7 +150,7 @@ class ConfigureCastor extends Component{
     console.log("vmo: "+this.state.activevitalsOptionsId);
     const{activeDutyId, activeSeriesId, activematerialOptionsId, activevitalsOptionsId, activebracketOptionsId, activegrooveOptionsId, braking, quantity} = this.state;
 
-
+    const configurableStatus = data[activeDutyId][activeSeriesId].configurable;
     const activeDuty = data[activeDutyId];
     const activeDutyName = activeDuty.duty;
     const activeSeries = data[activeDutyId][activeSeriesId];
@@ -160,7 +161,10 @@ class ConfigureCastor extends Component{
     const vitalsOptions = materialOptions[activematerialOptionsId].vitalsOptions;
     // const activeProductImage = materialOptions[activematerialOptionsId].image+bracketOptions[activebracketOptionsId].code+".png";
     // const activeProductImage = "/product-images/"+activeSeries.code+"/"+activeSeries.code+"_"+materialOptions[activematerialOptionsId].code+"_"+bracketOptions[activebracketOptionsId].code+".png";
-    const activeProductImage = productImgPath[activeDuty.code][activeSeries.code][materialOptions[activematerialOptionsId].code][bracketOptions[activebracketOptionsId].code]["712"];
+    var activeProductImage;
+    activegrooveOptionsId !== null ?
+    activeProductImage = productImgPath[activeDuty.code][activeSeries.code][materialOptions[activematerialOptionsId].code][bracketOptions[activebracketOptionsId].code][grooveOptions[activegrooveOptionsId].code]["712"] :
+    activeProductImage = productImgPath[activeDuty.code][activeSeries.code][materialOptions[activematerialOptionsId].code][bracketOptions[activebracketOptionsId].code]["712"];
     // const activeProductImage = "";
     // console.log("active product img: "+activeProductImage);
     //
@@ -266,7 +270,7 @@ class ConfigureCastor extends Component{
             <button><h4 className="black antique">DOWNLOAD TECHNICAL SPECIIFCATIONS</h4></button>
             <button><h4 className="black antique">SHARE</h4></button>
             <button><h4 className="black antique">REQUEST QUOTE NOW</h4></button>
-            <button onClick={() => this.validateAndAddToCart(this.state)}><h4 className="black antique">ADD TO QUOTE CART</h4></button>
+            <button onClick={() => this.validateAndAddToCart(this.state, configurableStatus)}><h4 className="black antique">ADD TO QUOTE CART</h4></button>
           </div>
         </div>
       </div>

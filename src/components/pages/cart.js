@@ -21,19 +21,22 @@ class Cart extends Component{
             <h4 className="black medium section__title section__title--quoteCart">Quote Cart</h4>
         {this.props.cartItems.map((item, index) => {
 
-          const selectedDuty = data[item.activeDutyId];
-          const selectedSeries = data[item.activeDutyId][item.activeSeriesId];
-          const selectedSeriesName = selectedSeries.series;
-          const materialOptions = selectedSeries.materialOptions;
-          const selectedMaterial = selectedSeries.materialOptions[item.activematerialOptionsId].material;
-          const selectedWheelDia = selectedSeries.materialOptions[item.activematerialOptionsId].vitalsOptions[item.activevitalsOptionsId].wheelDiameter;
-          const selectedLoadCap = selectedSeries.materialOptions[item.activematerialOptionsId].vitalsOptions[item.activevitalsOptionsId].loadCapacity;
-          const bracketOptions = selectedSeries.bracketOptions;
-          const selectedBracket = selectedSeries.bracketOptions[item.activebracketOptionsId].plateType;
-          const selectedBraking = selectedSeries.bracketOptions[item.activebracketOptionsId].brakingType;
-          //const selectedProductImageUrl = selectedSeries.materialOptions[item.activematerialOptionsId].image;
-          const selectedProductImageUrl = productImgPath[selectedDuty.code][selectedSeries.code][materialOptions[item.activematerialOptionsId].code][bracketOptions[item.activebracketOptionsId].code]["464"];
-          
+          if(item.configurable === true){
+            const selectedDuty = data[item.activeDutyId];
+            const selectedSeries = data[item.activeDutyId][item.activeSeriesId];
+            const selectedSeriesName = selectedSeries.series;
+            const materialOptions = selectedSeries.materialOptions;
+            const selectedMaterial = selectedSeries.materialOptions[item.activematerialOptionsId].material;
+            const selectedWheelDia = selectedSeries.materialOptions[item.activematerialOptionsId].vitalsOptions[item.activevitalsOptionsId].wheelDiameter;
+            const selectedLoadCap = selectedSeries.materialOptions[item.activematerialOptionsId].vitalsOptions[item.activevitalsOptionsId].loadCapacity;
+            const bracketOptions = selectedSeries.bracketOptions;
+            const selectedBracket = selectedSeries.bracketOptions[item.activebracketOptionsId].plateType;
+            const selectedBraking = selectedSeries.bracketOptions[item.activebracketOptionsId].brakingType;
+            //const selectedProductImageUrl = selectedSeries.materialOptions[item.activematerialOptionsId].image;
+            const selectedProductImageUrl = productImgPath[selectedDuty.code][selectedSeries.code][materialOptions[item.activematerialOptionsId].code][bracketOptions[item.activebracketOptionsId].code]["464"];
+
+
+
           return(
             <div key={index} className="cartItemBlock">
               <div className="cartItemBlock__header">
@@ -80,6 +83,18 @@ class Cart extends Component{
               </div>
             </div>
           )
+        }else if(item.configurable === false){
+
+          const selectedDuty = data[item.activeDutyId];
+          const selectedSeries = data[item.activeDutyId][item.activeSeriesId];
+          const selectedSeriesName = selectedSeries.series;
+
+          return(
+            <div key={index} className="cartItemBlock">
+              <p>{selectedSeriesName}</p>
+            </div>
+          )
+        }
 
         })}
         <button className="primary confirmCartBtn"><h4 className="black antique">CONFIRM AND PROCEED TO REQUEST QUOTE</h4></button>

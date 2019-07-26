@@ -13,13 +13,19 @@ import About from './components/pages/about'
 import Cart from './components/pages/cart'
 import Footer from './components/footer'
 import CategoryPage from './components/pages/category-page'
+import TrolleyCategoryPage from './components/pages/trolley-category-page'
+import XhdCategoryPage from './components/pages/xhd-category-page'
 import ConfigureCastor from './components/configure-castor-page'
+import ProductDetails from './components/product-details-page'
 import ScrollToTop from './components/scroll-to-top'
 
 
 
 //stylesheets
 import './styles/css/App.css';
+
+var listingTypeData = require('./data/page-listing-type.json');
+var configData = require('./data/configure-castor-content.json');
 
 class App extends Component {
 
@@ -62,13 +68,16 @@ class App extends Component {
     // - Material op
     var repeat = 0;
 
-    this.state.cartItems.map(item => {
-      item.activeDutyId === configObject.activeDutyId &&
-      item.activeSeriesId === configObject.activeSeriesId &&
-      item.activematerialOptionsId === configObject.activematerialOptionsId &&
-      repeat++;
-    });
-
+    if(configObject.configurable === true){
+      this.state.cartItems.map(item => {
+        item.activeDutyId === configObject.activeDutyId &&
+        item.activeSeriesId === configObject.activeSeriesId &&
+        item.activematerialOptionsId === configObject.activematerialOptionsId &&
+        repeat++;
+      });
+    }else if(configObject.configurable === false){
+      console.log("this is a non configurable product, and we are currently not checking for a cart repeat for it.");
+    }
 
     if(repeat > 0){
       alert("this item already exists in the cart");
@@ -134,9 +143,20 @@ class App extends Component {
                 <Route exact path='/my-quote-cart' render={() => <Cart cartItems={this.state.cartItems} deleteCartItem={this.deleteCartItem} /> } />
                 <Route
                   path='/configure/:itemCode'
-                  render={props => <ConfigureCastor {...props} updateCart={this.updateCart} /> }
+                  render={props =>
+                          configData[props.match.params.itemCode.split("-")[0]][props.match.params.itemCode.split("-")[1]].configurable === true ?
+                          <ConfigureCastor {...props} updateCart={this.updateCart} /> :
+                          <ProductDetails {...props} updateCart={this.updateCart} />
+
+                         }
                 />
-                <Route path='/:categoryName' render={props => <CategoryPage {...props} /> } />
+                <Route path='/:categoryName' render={props =>
+                                                     listingTypeData[props.match.params.categoryName] === "series-list" ?
+                                                     <CategoryPage {...props} /> :
+                                                     listingTypeData[props.match.params.categoryName] === "singles-list" ?
+                                                     <TrolleyCategoryPage {...props} /> :
+                                                     <XhdCategoryPage {...props} />
+                                                    } />
               </Switch>
             <Footer/>
           </div>

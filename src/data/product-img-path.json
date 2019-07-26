@@ -109,8 +109,8 @@
           "712":"/product-images/01_rd2/swivel/712/FAKE_rd1_rci_s__712.png"
         },
         "f":{
-          "464":"",
-          "712":""
+          "464":"/product-images/01_rd2/fixed/464/FAKE_rd2_rci_f__464.png",
+          "712":"/product-images/01_rd2/fixed/712/FAKE_rd2_rci_f__712.png"
         }
       }
     },
@@ -239,6 +239,40 @@
           "712":"/product-images/03_rd4/fixed/712/FAKE_rd3_rci_f__712.png"
         }
       }
+    },
+    "dxm":{
+      "r":{
+        "s":{
+          "464":"/product-images/04_dxm/swivel/464/dxm_r_s__464.png",
+          "712":"/product-images/04_dxm/swivel/712/dxm_r_s__712.png"
+        },
+        "f":{
+          "464":"/product-images/04_dxm/fixed/464/dxm_r_f__464.png",
+          "712":"/product-images/04_dxm/fixed/712/dxm_r_f__712.png"
+        }
+      },
+      "pun":{
+          "s":{
+            "464":"/product-images/04_dxm/swivel/464/dxm_pun_s__464.png",
+            "712":"/product-images/04_dxm/swivel/712/dxm_pun_s__712.png"
+          },
+          "f":{
+            "464":"/product-images/04_dxm/fixed/464/dxm_pun_f__464.png",
+            "712":"/product-images/04_dxm/fixed/712/dxm_pun_f__712.png"
+        }
+      }
+    },
+    "rg":{
+      "r":{
+        "s":{
+          "464":"/product-images/05_rg/swivel/464/rg_r_s__464.png",
+          "712":"/product-images/05_rg/swivel/712/rg_r_s__712.png"
+        },
+        "f":{
+          "464":"/product-images/05_rg/fixed/464/rg_r_f__464.png",
+          "712":"/product-images/05_rg/fixed/712/rg_r_f__712.png"
+        }
+      }
     }
   },
   "hd":{
@@ -297,38 +331,50 @@
     "scaf":{
       "ci":{
         "s":{
-          "464":"",
-          "712":""
+          "464":"/product-images/07_scafold/swivel/464/scaf_ci_s__464.png",
+          "712":"/product-images/07_scafold/swivel/712/scaf_ci_s__712.png"
         }
       },
       "n":{
         "s":{
-          "464":"",
-          "712":""
+          "464":"/product-images/07_scafold/swivel/464/scaf_n_s__464.png",
+          "712":"/product-images/07_scafold/swivel/712/scaf_n_s__712.png"
         }
       },
       "p":{
         "s":{
-          "464":"",
-          "712":""
+          "464":"/product-images/07_scafold/swivel/464/scaf_p_s__464.png",
+          "712":"/product-images/07_scafold/swivel/712/scaf_p_s__712.png"
         }
       },
-      "puci":{
+      "rci":{
         "s":{
-          "464":"",
-          "712":""
+          "464":"/product-images/07_scafold/swivel/464/scaf_rci_s__464.png",
+          "712":"/product-images/07_scafold/swivel/712/scaf_rci_s__712.png"
         }
       }
     },
     "track":{
       "ci":{
         "s":{
-          "464":"",
-          "712":""
+          "v":{
+            "464":"/product-images/09_hsc_track/swivel/563/hsctrack_ci_s_vgroove__563.png",
+            "712":"/product-images/09_hsc_track/swivel/864/hsctrack_ci_s_vgroove__864.png"
+          },
+          "t":{
+            "464":"",
+            "712":"/product-images/09_hsc_track/swivel/864/hsctrack_ci_s_tgroove__864.png"
+          }
         },
         "f":{
-          "464":"",
-          "712":""
+          "v":{
+            "464":"/product-images/09_hsc_track/fixed/563/hsctrack_ci_f_vgroove__563.png",
+            "712":"/product-images/09_hsc_track/fixed/864/hsctrack_ci_f_vgroove__864.png"
+          },
+          "t":{
+            "464":"",
+            "712":"/product-images/09_hsc_track/fixed/864/hsctrack_ci_f_tgroove__864.png"
+          }
         }
       }
     },
@@ -384,7 +430,7 @@
         }
       }
     },
-    "hsctW":{
+    "hsctw":{
       "ci":{
         "s":{
           "464":"",
@@ -467,6 +513,74 @@
           "712":""
         }
       }
+    }
+  },
+  "t":{
+    "pt1":{
+      "464":"/product-images/13_trolleys/563/pt_7146__563.png",
+      "712":"/product-images/13_trolleys/864/pt_7146__864.png"
+    },
+    "pt2":{
+      "464":"/product-images/13_trolleys/563/pt_9060__563.png",
+      "712":"/product-images/13_trolleys/864/pt_9060__864.png"
+    },
+    "pt3":{
+      "464":"/product-images/13_trolleys/563/pt_1275__563.png",
+      "712":"/product-images/13_trolleys/864/pt_1275__864.png"
+    },
+    "pt4":{
+      "464":"/product-images/13_trolleys/563/pt_1590__563.png",
+      "712":"/product-images/13_trolleys/864/pt_1590__864.png"
+    },
+    "dgct":{
+      "464":"/product-images/13_trolleys/563/dgct__563.png",
+      "712":"/product-images/13_trolleys/864/dgct__864.png"
+    },
+    "swb":{
+      "464":"",
+      "712":""
+    },
+    "dwb":{
+      "464":"",
+      "712":""
+    },
+    "dst":{
+      "464":"",
+      "712":""
+    },
+    "h9t":{
+      "464":"",
+      "712":""
+    },
+    "sft":{
+      "464":"",
+      "712":""
+    }
+  },
+  "xp":{
+    "dr":{
+      "464":"",
+      "712":""
+    },
+    "fl":{
+      "464":"",
+      "712":""
+    },
+    "gc":{
+      "464":"",
+      "712":""
+    },
+    "rc":{
+      "464":"",
+      "712":""
+    },
+    "btu":{
+      "464":"",
+      "712":""
+    },
+    "cr":{
+      "464":"",
+      "712":""
     }
   }
 }

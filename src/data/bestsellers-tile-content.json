@@ -6,7 +6,7 @@
     "heading": "RG Series",
     "code":"rg",
     "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-    "image": "product-images/best-sellers-temp.png",
+    "image": "product-images/05_rg/swivel/464/rg_r_s__464.png",
     "loadCapacity":{
       "tag": "load capacity",
       "quantity": "Upto 120 kgs"
@@ -15,7 +15,7 @@
       "tag" :"wheel diameter",
       "quantity": "80 - 100 mm"
       },
-    "redirectUrl": "/",
+    "redirectUrl": "/medium-duty-castors#rg-anchor",
     "meta":{
       "configurable": true,
       "groupType": "series"
@@ -26,13 +26,13 @@
     "heading": "DXM Series",
     "code":"dxm",
     "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-    "image": "product-images/best-sellers-temp.png",
+    "image": "product-images/04_dxm/fixed/464/dxm_r_f__464.png",
     "loadCapacity":{
       "tag": "load capacity",
       "quantity": "Upto 120 kgs"
       } ,
     "wheelDiameter": null,
-    "redirectUrl": "/",
+    "redirectUrl": "/medium-duty-castors#dxm-anchor",
     "meta":{
       "configurable": false,
       "groupType": "series"

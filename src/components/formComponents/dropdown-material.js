@@ -54,7 +54,7 @@ class DropdownMaterial extends Component{
     return(
 
       <div className="dd-wrapper dd-material">
-        <label htmlFor="dd-select-material"className="beige antique dd-label">{label}</label>
+        <label htmlFor="dd-select-material" className="beige antique dd-label">{label}</label>
           <div id="dd-select-material"className="dd-select dd-material" onClick={() => this.toggleList()}>
               <div className="dd-activeOption dd-material">
                 <div className="dd-flex-wrapper dd-material">

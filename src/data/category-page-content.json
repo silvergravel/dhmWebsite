@@ -11,14 +11,14 @@
           "quantity": "38 - 50 mm"
         },
         "treadWidth": {
-          "tag": "wheel thickness",
+          "tag": "tread width",
           "quantity": "22 mm"
         },
         "bracketOptions": {
           "tag": "bracket options",
           "options": [
-            "fixed plate",
-            "swivel plate"
+            "fixed",
+            "swivel"
           ],
           "wheelLock": [
             "wheel lock"
@@ -95,14 +95,14 @@
           "quantity": "50 - 100 mm"
         },
         "treadWidth": {
-          "tag": "wheel thickness",
+          "tag": "tread width",
           "quantity": "22 mm"
         },
         "bracketOptions": {
           "tag": "bracket options",
           "options": [
-            "fixed plate",
-            "swivel plate"
+            "fixed",
+            "swivel"
           ],
           "wheelLock": [
             "wheel lock"
@@ -188,14 +188,14 @@
           "quantity": "63 - 125 mm"
         },
         "treadWidth": {
-          "tag": "wheel thickness",
+          "tag": "tread width",
           "quantity": "28 mm"
         },
         "bracketOptions": {
           "tag": "bracket options",
           "options": [
-            "fixed plate",
-            "swivel plate"
+            "fixed",
+            "swivel"
           ],
           "wheelLock": [
             "wheel lock"
@@ -281,14 +281,14 @@
           "quantity": "75 - 125 mm"
         },
         "treadWidth": {
-          "tag": "wheel thickness",
+          "tag": "tread width",
           "quantity": "38 mm"
         },
         "bracketOptions": {
           "tag": "bracket options",
           "options": [
-            "fixed plate",
-            "swivel plate"
+            "fixed",
+            "swivel"
           ],
           "wheelLock": [
             "wheel lock"
@@ -363,6 +363,92 @@
               "redirectUrl": "/md-rd4"
             }
           ]
+      },
+      {
+        "series": "DXM Series",
+        "code": "dxm",
+        "configurable": true,
+        "groupType": "series",
+        "wheelDiameter": {
+          "tag": "wheel diameter",
+          "quantity": "75 - 150 mm"
+        },
+        "treadWidth": {
+          "tag": "tread width",
+          "quantity": "31 mm"
+        },
+        "bracketOptions": {
+          "tag": "bracket options",
+          "options": [
+            "fixed",
+            "swivel"
+          ],
+          "wheelLock": [
+            "wheel + swivel lock"
+          ]
+        },
+
+          "items": [
+            {
+              "id": 0,
+              "heading": "Rubber",
+              "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+              "image": "product-images/04_dxm/swivel/464/dxm_r_s__464.png",
+              "loadCapacity": {
+                "tag": "load capacity",
+                "quantity": "Upto 150 kgs"
+              },
+              "redirectUrl": "/md-dxm"
+            },
+            {
+              "id": 1,
+              "heading": "PU Tyred On Nylon",
+              "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+              "image": "product-images/04_dxm/swivel/464/dxm_pun_s__464.png",
+              "loadCapacity": {
+                "tag": "load capacity",
+                "quantity": "Upto 150 kgs"
+              },
+              "redirectUrl": "/md-dxm"
+            }
+          ]
+      },
+      {
+        "series": "RG Series",
+        "code": "rg",
+        "configurable": true,
+        "groupType": "series",
+        "wheelDiameter": {
+          "tag": "wheel diameter",
+          "quantity": "100 - 250 mm"
+        },
+        "treadWidth": {
+          "tag": "tread width",
+          "quantity": "32 - 60 mm"
+        },
+        "bracketOptions": {
+          "tag": "bracket options",
+          "options": [
+            "fixed",
+            "swivel"
+          ],
+          "wheelLock": [
+            "wheel + swivel lock"
+          ]
+        },
+          "items": [
+            {
+              "id": 0,
+              "heading": "Rubber",
+              "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
+              "image": "product-images/05_rg/swivel/464/rg_r_s__464.png",
+              "loadCapacity": {
+                "tag": "load capacity",
+                "quantity": "Upto 290 kgs"
+              },
+              "redirectUrl": "/md-rg"
+            }
+          ]
       }
     ],
   "heavy-duty-castors": [
@@ -376,14 +462,14 @@
         "quantity": "150 - 200 mm"
       },
       "treadWidth": {
-        "tag": "wheel thickness",
+        "tag": "tread width",
         "quantity": "45.5 - 50 mm"
       },
       "bracketOptions": {
         "tag": "bracket options",
         "options": [
-          "fixed plate",
-          "swivel plate"
+          "fixed",
+          "swivel"
         ],
         "wheelLock": [
           "wheel lock",
@@ -459,13 +545,13 @@
         "quantity": "150 - 200 mm"
       },
       "treadWidth": {
-        "tag": "wheel thickness",
+        "tag": "tread width",
         "quantity": "50 mm"
       },
       "bracketOptions": {
         "tag": "bracket options",
         "options": [
-          "swivel plate"
+          "swivel"
         ],
         "wheelLock": [
           "wheel & swivel lock combined"
@@ -476,7 +562,7 @@
           "id": 0,
           "heading": "Cast Iron",
           "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-          "image": "product-images/best-sellers-temp.png",
+          "image": "product-images/07_scafold/swivel/464/scaf_ci_s__464.png",
           "loadCapacity": {
             "tag": "load capacity",
             "quantity": "Upto 820 kgs"
@@ -487,7 +573,7 @@
           "id": 1,
           "heading": "Nylon",
           "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-          "image": "product-images/best-sellers-temp.png",
+          "image": "product-images/07_scafold/swivel/464/scaf_n_s__464.png",
           "loadCapacity": {
             "tag": "load capacity",
             "quantity": "Upto 820 kgs"
@@ -498,7 +584,7 @@
           "id": 2,
           "heading": "Phenorex (Fibre)",
           "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-          "image": "product-images/best-sellers-temp.png",
+          "image": "product-images/07_scafold/swivel/464/scaf_p_s__464.png",
           "loadCapacity": {
             "tag": "load capacity",
             "quantity": "Upto 820 kgs"
@@ -507,9 +593,9 @@
         },
         {
           "id": 3,
-          "heading": "PU Tyred On Cast Iron",
+          "heading": "Rubber Tyred On Cast Iron",
           "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-          "image": "product-images/best-sellers-temp.png",
+          "image": "product-images/07_scafold/swivel/464/scaf_rci_s__464.png",
           "loadCapacity": {
             "tag": "load capacity",
             "quantity": "Upto 820 kgs"
@@ -530,14 +616,14 @@
         "quantity": "100 - 250 mm"
       },
       "treadWidth": {
-        "tag": "wheel thickness",
+        "tag": "tread width",
         "quantity": "51 mm"
       },
       "bracketOptions": {
         "tag": "bracket options",
         "options": [
-          "fixed plate",
-          "swivel plate"
+          "fixed",
+          "swivel"
         ],
         "wheelLock": null
       },
@@ -546,7 +632,7 @@
           "id": 0,
           "heading": "Cast Iron",
           "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-          "image": "product-images/best-sellers-temp.png",
+          "image": "product-images/09_hsc_track/swivel/563/hsctrack_ci_s_vgroove__563.png",
           "loadCapacity": {
             "tag": "load capacity",
             "quantity": "Upto 1000 kgs"
@@ -566,14 +652,14 @@
         "quantity": "100 - 300 mm"
       },
       "treadWidth": {
-        "tag": "wheel thickness",
+        "tag": "tread width",
         "quantity": "50 - 75 mm"
       },
       "bracketOptions": {
         "tag": "bracket options",
         "options": [
-          "fixed plate",
-          "swivel plate"
+          "fixed",
+          "swivel"
         ],
         "wheelLock": [
           "wheel & swivel lock combined"
@@ -648,14 +734,14 @@
         "quantity": "100 - 200 mm"
       },
       "treadWidth": {
-        "tag": "wheel thickness",
+        "tag": "tread width",
         "quantity": "50 mm"
       },
       "bracketOptions": {
         "tag": "bracket options",
         "options": [
-          "fixed plate",
-          "swivel plate"
+          "fixed",
+          "swivel"
         ],
         "wheelLock": [
           "wheel lock",
@@ -698,14 +784,14 @@
         "quantity": "100 - 200 mm"
       },
       "treadWidth": {
-        "tag": "wheel thickness",
+        "tag": "tread width",
         "quantity": "38 - 50 mm"
       },
       "bracketOptions": {
         "tag": "bracket options",
         "options": [
-          "fixed plate",
-          "swivel plate"
+          "fixed",
+          "swivel"
         ],
         "wheelLock": [
           "wheel + swivel lock"
@@ -806,48 +892,250 @@
     }
   ],
 
-
-
-
-
-
-
   "trolleys": [
     {
-      "heading": "**some trolley name**",
-      "code": "**some code**",
+      "heading": "Platform Trolley 7146",
+      "code": "pt1",
       "configurable": false,
       "groupType": "single",
       "id": 0,
       "description": "Some basic description about the trolley application",
+      "image": "product-images/13_trolleys/563/pt_7146__563.png",
+      "wheelDiameter": null,
+      "dimensions": "710 * 460 mm",
+      "loadCapacity": {
+        "tag": "load capacity",
+        "quantity": "Upto 150 kgs"
+      },
+      "redirectUrl": "/t-pt1"
+    },
+    {
+      "heading": "Platform Trolley 9060",
+      "code": "pt2",
+      "configurable": false,
+      "groupType": "single",
+      "id": 1,
+      "description": "Some basic description about the trolley application",
+      "image": "product-images/13_trolleys/563/pt_9060__563.png",
+      "wheelDiameter": null,
+      "dimensions": "900 * 600 mm",
+      "loadCapacity": {
+        "tag": "load capacity",
+        "quantity": "Upto 350 kgs"
+      },
+      "redirectUrl": "/t-pt2"
+    },
+    {
+      "heading": "Platform Trolley 1275",
+      "code": "pt3",
+      "configurable": false,
+      "groupType": "single",
+      "id": 2,
+      "description": "Some basic description about the trolley application",
+      "image": "product-images/13_trolleys/563/pt_1275__563.png",
+      "wheelDiameter": null,
+      "dimensions": "1200 * 750 mm",
+      "loadCapacity": {
+        "tag": "load capacity",
+        "quantity": "Upto 350 kgs"
+      },
+      "redirectUrl": "/t-pt3"
+    },
+    {
+      "heading": "Platform Trolley 1590",
+      "code": "pt4",
+      "configurable": false,
+      "groupType": "single",
+      "id": 3,
+      "description": "Some basic description about the trolley application",
+      "image": "product-images/13_trolleys/563/pt_1590__563.png",
+      "wheelDiameter": null,
+      "dimensions": "1500 * 900 mm",
+      "loadCapacity": {
+        "tag": "load capacity",
+        "quantity": "Upto 1000 kgs"
+      },
+      "redirectUrl": "/t-pt4"
+    },
+    {
+      "heading": "Double Gas Cylinder Trolley",
+      "code": "dgct",
+      "configurable": false,
+      "groupType": "single",
+      "id": 0,
+      "description": "Some basic description about the trolley application",
+      "image": "product-images/13_trolleys/563/dgct__563.png",
+      "wheelDiameter": null,
+      "dimensions": "620 * 570 * 1270 mm",
+      "loadCapacity": {
+        "tag": "load capacity",
+        "quantity": "80 litres"
+      },
+      "redirectUrl": "/t-dgct"
+    },
+    {
+      "heading": "Single Wheel Barrow",
+      "code": "swb",
+      "configurable": false,
+      "groupType": "single",
+      "id": 0,
+      "description": "Some basic description about the trolley application",
+      "image": "product-images/00_rd1/swivel/464/rd1_ci_s__464.png",
+      "wheelDiameter": null,
+      "dimensions": "475 * 385 * 1080 mm",
+      "loadCapacity": {
+        "tag": "load capacity",
+        "quantity": "Upto 80 kgs"
+      },
+      "redirectUrl": "/t-swb"
+    },
+    {
+      "heading": "Double Wheel Barrow",
+      "code": "dwb",
+      "configurable": false,
+      "groupType": "single",
+      "id": 0,
+      "description": "Some basic description about the trolley application",
+      "image": "product-images/00_rd1/swivel/464/rd1_ci_s__464.png",
+      "wheelDiameter": null,
+      "dimensions": "710 * 570 * 1270 mm",
+      "loadCapacity": {
+        "tag": "load capacity",
+        "quantity": "Upto 130 kgs"
+      },
+      "redirectUrl": "/t-dwb"
+    },
+    {
+      "heading": "Drum Standard Trolley",
+      "code": "dst",
+      "configurable": false,
+      "groupType": "single",
+      "id": 0,
+      "description": "Some basic description about the trolley application",
+      "image": "product-images/00_rd1/swivel/464/rd1_ci_s__464.png",
+      "wheelDiameter": null,
+      "dimensions": "1440 * 700 * 900 mm",
+      "loadCapacity": {
+        "tag": "load capacity",
+        "quantity": "Upto 205 kgs"
+      },
+      "redirectUrl": "/t-dst"
+    },
+    {
+      "heading": "Hess 9 Trolley",
+      "code": "h9t",
+      "configurable": false,
+      "groupType": "single",
+      "id": 0,
+      "description": "Some basic description about the trolley application",
+      "image": "product-images/00_rd1/swivel/464/rd1_ci_s__464.png",
+      "wheelDiameter": null,
+      "dimensions": "508 * 205 * 1220 mm",
+      "loadCapacity": {
+        "tag": "load capacity",
+        "quantity": "Upto 200 kgs"
+      },
+      "redirectUrl": "/t-h9t"
+    },
+    {
+      "heading": "Sack Folding Trolley",
+      "code": "sft",
+      "configurable": false,
+      "groupType": "single",
+      "id": 0,
+      "description": "Some basic description about the trolley application",
+      "image": "product-images/00_rd1/swivel/464/rd1_ci_s__464.png",
+      "wheelDiameter": null,
+      "dimensions": "530 * 437 * 1245 mm",
+      "loadCapacity": {
+        "tag": "load capacity",
+        "quantity": "Upto 100 kgs"
+      },
+      "redirectUrl": "/t-sft"
+    }
+  ],
+
+  "exclusive-products": [
+    {
+      "heading": "Door Runners",
+      "code": "dr",
+      "configurable": false,
+      "groupType": "single",
+      "id": 0,
+      "description": "Some basic description about the exc product application",
       "image": "product-images/00_rd1/swivel/464/rd1_ci_s__464.png",
       "wheelDiameter": null,
       "loadCapacity": {
         "tag": "load capacity",
-        "quantity": "Upto 36 kgs"
+        "quantity": "Upto 350 kgs"
       },
-      "redirectUrl": "/ld-rd1"
-    }
-  ],
-
-
-
-
-
-
-
-  "exclusive-products": [
+      "redirectUrl": "/xp-dr"
+    },
     {
-      "heading": "**some exc prod name**",
-      "code": "**some code**",
+      "heading": "Foot Lock",
+      "code": "fl",
       "configurable": false,
       "groupType": "single",
-      "id": 0,
-      "description": "Some basic description about the trolley application",
+      "id": 1,
+      "description": "Some basic description about the exc product application",
       "image": "product-images/00_rd1/swivel/464/rd1_ci_s__464.png",
       "wheelDiameter": null,
       "loadCapacity": null,
-      "redirectUrl": "/ld-rd1"
+      "redirectUrl": "/xp-fl"
+    },
+    {
+      "heading": "Glass Castor",
+      "code": "gc",
+      "configurable": false,
+      "groupType": "single",
+      "id": 2,
+      "description": "Some basic description about the exc product application",
+      "image": "product-images/00_rd1/swivel/464/rd1_ci_s__464.png",
+      "wheelDiameter": null,
+      "loadCapacity": {
+        "tag": "load capacity",
+        "quantity": "Upto 20 kgs"
+      },
+      "redirectUrl": "/xp-gc"
+    },
+    {
+      "heading": "Rubber Chowk",
+      "code": "rc",
+      "configurable": false,
+      "groupType": "single",
+      "id": 3,
+      "description": "Some basic description about the exc product application",
+      "image": "product-images/00_rd1/swivel/464/rd1_ci_s__464.png",
+      "wheelDiameter": null,
+      "loadCapacity": null,
+      "redirectUrl": "/xp-rc"
+    },
+    {
+      "heading": "Ball Transfer Unit",
+      "code": "btu",
+      "configurable": false,
+      "groupType": "single",
+      "id": 4,
+      "description": "Some basic description about the exc product application",
+      "image": "product-images/00_rd1/swivel/464/rd1_ci_s__464.png",
+      "wheelDiameter": null,
+      "loadCapacity": null,
+      "redirectUrl": "/xp-btu"
+    },
+    {
+      "heading": "Conveyor Roller",
+      "code": "cr",
+      "configurable": false,
+      "groupType": "single",
+      "id": 5,
+      "description": "Some basic description about the exc product application",
+      "image": "product-images/00_rd1/swivel/464/rd1_ci_s__464.png",
+      "wheelDiameter": null,
+      "loadCapacity": {
+        "tag": "load capacity",
+        "quantity": "Upto 200 kgs"
+      },
+      "redirectUrl": "/xp-cr"
     }
   ],
 

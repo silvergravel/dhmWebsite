@@ -1,0 +1,9 @@
+{
+  "trolleys":"singles-list",
+  "spare-wheels":"singles-list",
+  "exclusive-products":"singles-list",
+  "light-duty-castors":"series-list",
+  "medium-duty-castors":"series-list",
+  "heavy-duty-castors":"series-list",
+  "extra-heavy-duty-castors":"exception"
+}

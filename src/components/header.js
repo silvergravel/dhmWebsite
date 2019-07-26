@@ -57,7 +57,7 @@ class Header extends Component {
     //using the below two lines, as a quick roll back on the 'hide/show header that i had implemented earlier'
     let primLinks = ["primaryLinks expand"];
     let headerHeight = ["expand"];
-    
+
     let matchId = this.state.pathname.replace('/','');
 
     // if(this.state.pathname !== '/') {
@@ -88,7 +88,7 @@ class Header extends Component {
         <nav>
           <div className="logo">
               <Link to="/">
-                <img src={LogoFull} alt="dhmWheels"/>
+                <img src={LogoFull} alt="dhmWheels" onClick={this.closeHamburger}/>
               </Link>
           </div>
           <ul className="secondaryLinks">
@@ -109,20 +109,27 @@ class Header extends Component {
             </Link>
           </ul>
           <Link to="/">
-            <div className="logo-small">
+            <div className="logo-small" onClick={this.closeHamburger}>
                 <img src={LogoSmall} alt="logo-small"/>
             </div>
           </Link>
 
-          <div className="mobile-header-icons">
-            <div className="cart-icon cart-icon-mobile">
-              <img src={CartWithItems} alt="cartIcon"/>
-              <span className="items-in-cart">{this.props.itemsInCart}</span>
-            </div>
-            {hamburgerElement}
-          </div>
 
-          <HamburgerMenu ishamburgerOpen={this.state.ishamburgerOpen}/>
+            <div className="mobile-header-icons">
+            <Link to="/my-quote-cart">
+              <div className="cart-icon cart-icon-mobile" onClick={this.closeHamburger}>
+                <img src={CartWithItems} alt="cartIcon"/>
+                <span className="items-in-cart">{this.props.itemsInCart}</span>
+              </div>
+            </Link>
+            {hamburgerElement}
+            </div>
+
+
+          <HamburgerMenu
+            ishamburgerOpen={this.state.ishamburgerOpen}
+            matchId = {matchId}
+          />
 
           <ul className={primLinks.join(' ')}>
           <li className="beige">

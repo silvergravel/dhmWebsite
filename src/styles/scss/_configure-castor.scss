@@ -25,11 +25,8 @@ div.config-panel .series-bar{
 
   h4{
     padding: 6px 0 0 15px;
+    text-transform: capitalize;
 
-    span{
-      margin-right: 12px;
-      text-transform: capitalize;
-    }
   }
 }
 
@@ -106,5 +103,49 @@ div.config-panel .series-bar{
       &:last-of-type{
         margin-bottom: 0px;
       }
+  }
+}
+
+//only product details pages
+
+.only-details-pg{
+
+  .config-fields-vitalsMeta-bracket-quantity{
+    top: 257px;
+
+    &>div{
+        margin-bottom: 40px;
+    }
+  }
+
+  .product-name{
+    padding-bottom: 5px;
+    border-bottom: 1px solid $beige-light;
+  }
+
+  .product-descp{
+    padding-top:  9px;
+  }
+
+  table.product-specs{
+    width: 100%;
+
+    tr.table-header{
+      border-bottom: 0.5px solid $beige;
+
+    }
+
+    tr.table-row {
+      border-bottom: 1px solid $beige-light;
+    }
+
+    th{
+      padding-bottom: 5px;
+    }
+
+    td{
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
   }
 }
