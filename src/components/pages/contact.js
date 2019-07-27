@@ -25,6 +25,7 @@ class Contact extends Component{
        be sure to get back to you very soon!</h3>
 
       <form name="contact" method="post">
+          <input type="hidden" name="form-name" value="contact" />
           <p>
             <label class="beige antique">FULL NAME<input type="text" name="name" /></label>
           </p>
