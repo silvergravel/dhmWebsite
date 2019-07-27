@@ -1713,6 +1713,51 @@ h4.section__title--quoteCart {
   display: block;
 }
 
+.contact-page-container {
+  margin-top: 124px;
+}
+
+.contact-page-container .section__title.contact-page {
+  margin-top: 4px;
+}
+
+.contact-page-container .back-to-cart-btn img {
+  margin-top: -2px;
+}
+
+.contact-page-container .back-to-cart-btn h4 {
+  display: inline-block;
+  padding-left: 5px;
+}
+
+.contact-page-container label {
+  width: 50%;
+}
+
+@media (max-width: 767px) {
+  .contact-page-container label {
+    width: 100%;
+  }
+}
+
+.contact-page-container form[name=contact] {
+  padding-top: 20px;
+}
+
+.contact-page-container form[name=contact] input {
+  margin-top: 10px;
+}
+
+.contact-page-container form[name=contact] textarea[name=message] {
+  display: block;
+  width: 100%;
+  min-height: 150px;
+}
+
+.contact-page-container .hidden-field {
+  visibility: hidden;
+}
+
 footer {
   color: #ffffff;
   background-color: #000000;
