@@ -23,24 +23,24 @@ class Contact extends Component{
       <h4 className="black medium section__title">Contact</h4>
       <h3 className="black medium">Please provide us your contact details and we will
        be sure to get back to you very soon!</h3>
-      <form name="contact" method="POST" data-netlify="true">
-        <p>
-        <label class="beige antique">FULL NAME<input type="text" name="name" /></label>
-        </p>
-        <p>
-        <label class="beige antique">PHONE NUMBER<input type="tel" name="tel" /></label>
-        </p>
-        <p>
-        <label class="beige antique">EMAIL ADDRESS<input type="email" name="email" /></label>
-        </p>
-        <p>
-        
-        </p>
-        <p>
-        <label class="beige antique">Message: <textarea name="message"></textarea></label>
-        </p>
-        <button type="submit">Send</button>
-      </form>
+
+      <form name="contact" method="post">
+          <p>
+            <label class="beige antique">FULL NAME<input type="text" name="name" /></label>
+          </p>
+          <p>
+            <label class="beige antique">PHONE NUMBER<input type="tel" name="tel" /></label>
+          </p>
+          <p>
+            <label class="beige antique">EMAIL ADDRESS<input type="email" name="email" /></label>
+          </p>
+          <p>
+            <label class="beige antique">MESSAGE, QUERIES, CONCERNS (optional)<textarea name="message"></textarea></label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
 
 
       </div>
