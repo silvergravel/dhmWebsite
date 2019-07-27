@@ -26,7 +26,45 @@ class Contact extends Component{
   render(props){
 
     console.log("should i create quote cart fields?");
-    console.log(this.props.cartItems);
+    var castorDutyIds = ['ld','md','hd'];
+    var items = this.props.cartItems;
+    var itemStrings =[];
+
+
+    for(var i = 0 ; i < items.length; i++){
+
+      //if it is a castor, then fetch all the 'castor pattern' related details
+      if(castorDutyIds.includes(items[i].activeDutyId)){
+        var it = items[i];
+        const selectedSeries = data[it.activeDutyId][it.activeSeriesId];
+        const selectedSeriesName = selectedSeries.series;
+        const materialOptions = selectedSeries.materialOptions;
+        const selectedMaterial = selectedSeries.materialOptions[it.activematerialOptionsId].material;
+        const selectedWheelDia = selectedSeries.materialOptions[it.activematerialOptionsId].vitalsOptions[it.activevitalsOptionsId].wheelDiameter;
+        const selectedLoadCap = selectedSeries.materialOptions[it.activematerialOptionsId].vitalsOptions[it.activevitalsOptionsId].loadCapacity;
+        const bracketOptions = selectedSeries.bracketOptions;
+        const selectedBracket = selectedSeries.bracketOptions[it.activebracketOptionsId].plateType;
+        const selectedBraking = selectedSeries.bracketOptions[it.activebracketOptionsId].brakingType;
+        const selectedGroove = it.activegrooveOptionsId !== null ? selectedSeries.grooveOptions[it.activebracketOptionsId].plateType : "";
+
+        var temp =  "SERIES: "    + selectedSeriesName + " \n "
+                  + "MATERIAL: "  + selectedMaterial   + " \n "
+                  + "WHEEL DIA: " + selectedWheelDia   + " -----> (" + selectedLoadCap + ") \n "
+                  + "BRACKET: "   + selectedBracket    + " \n "
+                  + "BRAKING: "   + selectedBraking    + " \n "
+                  + "GROOVE: "    + selectedGroove     + " \n "
+                  + "___________________________________________________" + " \n "
+                  + "---------------------------------------------------" + " \n ";
+        itemStrings.push(temp);
+      }else{
+        //else it would be a non-castor, so fetch all 'non-castor pattern' related details.
+      }
+
+
+    }
+    var itemsToForm = itemStrings.join("");
+    console.log("itemStrings");
+    console.log(itemsToForm);
 
     return(
       <div>
@@ -63,35 +101,13 @@ class Contact extends Component{
 
             this.createQuoteCartFields === true &&
               <div>
-              {
-                this.props.cartItems.map((item, index) => {
-                  const selectedDuty = data[item.activeDutyId];
-                  const selectedSeries = data[item.activeDutyId][item.activeSeriesId];
-                  const selectedSeriesName = selectedSeries.series;
-                  const materialOptions = selectedSeries.materialOptions;
-                  const selectedMaterial = selectedSeries.materialOptions[item.activematerialOptionsId].material;
-                  const selectedWheelDia = selectedSeries.materialOptions[item.activematerialOptionsId].vitalsOptions[item.activevitalsOptionsId].wheelDiameter;
-                  const selectedLoadCap = selectedSeries.materialOptions[item.activematerialOptionsId].vitalsOptions[item.activevitalsOptionsId].loadCapacity;
-                  const bracketOptions = selectedSeries.bracketOptions;
-                  const selectedBracket = selectedSeries.bracketOptions[item.activebracketOptionsId].plateType;
-                  const selectedBraking = selectedSeries.bracketOptions[item.activebracketOptionsId].brakingType;
-                  //const selectedProductImageUrl = selectedSeries.materialOptions[item.activematerialOptionsId].image;
-                  const selectedProductImageUrl = productImgPath[selectedDuty.code][selectedSeries.code][materialOptions[item.activematerialOptionsId].code][bracketOptions[item.activebracketOptionsId].code]["464"];
-
-                  return(
-                    <p className="hidden-field">
-                      <label class="beige antique">MESSAGE, QUERIES, QUESTIONS (optional)
-                        <textarea name="cart-items">
-                          {selectedSeriesName
-                            +"\n"
-                            +selectedMaterial
-                          }
-                        </textarea>
-                      </label>
-                    </p>
-                  )
-                })
-              }
+              <p className="hidden-field">
+              <label class="beige antique">MESSAGE, QUERIES, QUESTIONS (optional)
+                <textarea name="cart-items">
+              {itemsToForm}
+              </textarea>
+            </label>
+              </p>
               </div>
 
 
