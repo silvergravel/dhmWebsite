@@ -156,6 +156,8 @@ header{
         }
       }
 
+
+
       &.cart{
         margin-right: 0;
 
@@ -197,6 +199,8 @@ header{
 
     }
   }
+
+
 
 
 
@@ -254,3 +258,47 @@ header{
     }
   }
 }
+
+
+//slight modifications to styling for hamburger menu
+.hamburger-primaryLinks{
+  font-family: 'suisse-antique';
+  font-size: 14px;
+  letter-spacing: 0.01em;
+
+  li.beige{
+    font-family: 'suisse-regular';
+    color: $beige;
+  }
+
+  li a{
+    text-decoration: none;
+    @include transition(background-color 0.4s);
+
+    &:hover{
+      color: $black;
+      background-color: $orange-extra-trans;
+    }
+  }
+
+  li.active a{
+    color: $black;
+    background-color: $orange-trans;
+  }
+}
+
+
+ .hamburger-primaryLinks .menu-block{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   @include translate(-50%,-50%);
+   text-align: center;
+
+   li{
+     margin-right: 0;
+     margin-bottom: 3px;
+   }
+
+
+ }

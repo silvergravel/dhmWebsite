@@ -34,11 +34,13 @@ class Header extends Component {
   openHamburger(){
     console.log("hamburger was clicked");
     this.setState({ishamburgerOpen: true});
+    document.body.style.overflow = 'hidden';
   }
 
   closeHamburger(){
 
     this.setState({ishamburgerOpen: false});
+    document.body.style.overflow = 'unset';
   }
 
 
@@ -96,7 +98,8 @@ class Header extends Component {
               <Link to="/about">About</Link>
             </li>
             <li className="reg">
-              <a href="#">Contact</a>
+            <Link to="/contact">Contact</Link>
+              
             </li>
             <Link to="/my-quote-cart">
               <li className={this.props.itemsInCart > 0 ? 'cart active' : 'cart inactive'}>
@@ -129,6 +132,7 @@ class Header extends Component {
           <HamburgerMenu
             ishamburgerOpen={this.state.ishamburgerOpen}
             matchId = {matchId}
+            closeHamburger ={this.closeHamburger}
           />
 
           <ul className={primLinks.join(' ')}>

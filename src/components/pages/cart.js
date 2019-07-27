@@ -1,5 +1,6 @@
 
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 var data = require('../../data/configure-castor-content.json');
 var productImgPath = require('../../data/product-img-path.json');
@@ -97,7 +98,12 @@ class Cart extends Component{
         }
 
         })}
+        <Link to={{
+          pathname: "/contact",
+          requestQuoteFlow: true
+        }}>
         <button className="primary confirmCartBtn"><h4 className="black antique">CONFIRM AND PROCEED TO REQUEST QUOTE</h4></button>
+        </Link>
         </div>
 
       </div>

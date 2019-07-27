@@ -11,6 +11,7 @@ import Header from './components/header'
 import Home from './components/pages/home'
 import About from './components/pages/about'
 import Cart from './components/pages/cart'
+import Contact from './components/pages/contact'
 import Footer from './components/footer'
 import CategoryPage from './components/pages/category-page'
 import TrolleyCategoryPage from './components/pages/trolley-category-page'
@@ -141,6 +142,9 @@ class App extends Component {
                 <Route exact path='/' component={Home} />
                 <Route exact path='/about' component={About} />
                 <Route exact path='/my-quote-cart' render={() => <Cart cartItems={this.state.cartItems} deleteCartItem={this.deleteCartItem} /> } />
+                <Route exact path='/contact' render={props =>
+                                                     <Contact {...props} cartItems={this.state.cartItems} />
+                                                    } />
                 <Route
                   path='/configure/:itemCode'
                   render={props =>

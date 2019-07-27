@@ -447,6 +447,10 @@ button.tertiary:hover h4.black {
   height: 63px;
 }
 
+.custom-gap-20 {
+  height: 20px;
+}
+
 header {
   position: fixed;
   top: 0px;
@@ -709,6 +713,49 @@ header ul li.cart.active span:hover span {
   font-size: 14px;
 }
 
+.hamburger-primaryLinks {
+  font-family: 'suisse-antique';
+  font-size: 14px;
+  letter-spacing: 0.01em;
+}
+
+.hamburger-primaryLinks li.beige {
+  font-family: 'suisse-regular';
+  color: #B5A98C;
+}
+
+.hamburger-primaryLinks li a {
+  text-decoration: none;
+  transition: background-color 0.4s;
+  -moz-transition: background-color 0.4s;
+  -webkit-transition: background-color 0.4s;
+}
+
+.hamburger-primaryLinks li a:hover {
+  color: #000000;
+  background-color: rgba(254, 78, 51, 0.25);
+}
+
+.hamburger-primaryLinks li.active a {
+  color: #000000;
+  background-color: rgba(254, 78, 51, 0.5);
+}
+
+.hamburger-primaryLinks .menu-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hamburger-primaryLinks .menu-block li {
+  margin-right: 0;
+  margin-bottom: 3px;
+}
+
 .banner {
   display: block;
   position: relative;
@@ -774,6 +821,7 @@ header ul li.cart.active span:hover span {
   font-family: 'suisse-regular';
   font-size: 14px;
   line-height: 18px;
+  white-space: nowrap;
 }
 
 .banner h1.banner__caption span a {
@@ -907,7 +955,6 @@ h3.best-sellers__title {
 
 .best-sellers__card-grid .best-sellers-card {
   padding: 15px;
-  min-width: 360px;
 }
 
 .best-sellers__card-grid .best-sellers-card .best-sellers-card-plus-bar {
@@ -1401,7 +1448,7 @@ div.config-panel .series-bar h4 {
   background-color: #ffffff;
   outline: 0.5px solid #B5A98C;
   z-index: 100;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .dd-list.dd-material {

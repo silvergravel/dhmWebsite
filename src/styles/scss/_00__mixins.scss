@@ -27,6 +27,11 @@
 
 }
 
+@mixin drop-shadow_3{
+  box-shadow: 0px 2px 8px $black-shadow-2;
+
+}
+
 //transformations
 
 @mixin translateY($val){
