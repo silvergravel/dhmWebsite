@@ -55,8 +55,7 @@ class Contact extends Component{
                   + "BRACKET: "   + selectedBracket    + "\n"
                   + "BRAKING: "   + selectedBraking    + "\n"
                   + "GROOVE: "    + selectedGroove     + "\n"
-                  + "___________________________________________________" + "\n"
-                  + "QUANTITY: "  + quantity           + "\n"
+                  + "**QUANTITY**: "  + quantity           + "\n"
                   + "___________________________________________________" + "\n"
                   + "___________________________________________________" + "\n";
 
