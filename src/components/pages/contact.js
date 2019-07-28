@@ -46,15 +46,20 @@ class Contact extends Component{
         const selectedBracket = selectedSeries.bracketOptions[it.activebracketOptionsId].plateType;
         const selectedBraking = selectedSeries.bracketOptions[it.activebracketOptionsId].brakingType;
         const selectedGroove = it.activegrooveOptionsId !== null ? selectedSeries.grooveOptions[it.activebracketOptionsId].plateType : "";
+        const quantity = it.quantity;
 
-        var temp =  "SERIES: "    + selectedSeriesName + " \n "
-                  + "MATERIAL: "  + selectedMaterial   + " \n "
-                  + "WHEEL DIA: " + selectedWheelDia   + " -----> (" + selectedLoadCap + ") \n "
-                  + "BRACKET: "   + selectedBracket    + " \n "
-                  + "BRAKING: "   + selectedBraking    + " \n "
-                  + "GROOVE: "    + selectedGroove     + " \n "
-                  + "___________________________________________________" + " \n "
-                  + "---------------------------------------------------" + " \n ";
+        var temp = "___________________________________________________" + "\n"
+                  + "SERIES: "    + selectedSeriesName + "\n"
+                  + "MATERIAL: "  + selectedMaterial   + "\n"
+                  + "WHEEL DIA: " + selectedWheelDia   + " -----> (" + selectedLoadCap + ") \n"
+                  + "BRACKET: "   + selectedBracket    + "\n"
+                  + "BRAKING: "   + selectedBraking    + "\n"
+                  + "GROOVE: "    + selectedGroove     + "\n"
+                  + "___________________________________________________" + "\n"
+                  + "QUANTITY: "  + quantity           + "\n"
+                  + "___________________________________________________" + "\n"
+                  + "___________________________________________________" + "\n";
+
         itemStrings.push(temp);
       }else{
         //else it would be a non-castor, so fetch all 'non-castor pattern' related details.
@@ -100,15 +105,15 @@ class Contact extends Component{
           {
 
             this.createQuoteCartFields === true &&
-              <div>
-              <p className="hidden-field">
+
+              <div className="hidden-field">
               <label class="beige antique">MESSAGE, QUERIES, QUESTIONS (optional)
                 <textarea name="cart-items">
               {itemsToForm}
               </textarea>
             </label>
-              </p>
               </div>
+
 
 
           }

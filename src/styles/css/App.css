@@ -1756,6 +1756,7 @@ h4.section__title--quoteCart {
 
 .contact-page-container .hidden-field {
   visibility: hidden;
+  height: 0;
 }
 
 footer {
