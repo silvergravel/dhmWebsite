@@ -281,5 +281,16 @@ input{
   font-size: 32px;
   line-height: 36px;
   padding-left: 10px;
-  width: 100%
+  width: 100%;
+  color: $black;
+}
+
+textarea{
+  font-family: 'suisse-light';
+  font-size: 32px;
+  line-height: 36px;
+  padding-left: 10px;
+  padding-top: 5px;
+  border: 0.5 solid $beige;
+
 }

@@ -75,15 +75,23 @@ class Contact extends Component{
       <div className="container contact-page-container">
       <div className="form-header">
       {
-        this.createQuoteCartFields === true &&
+        this.createQuoteCartFields === true ?
+        <div>
         <Link to="/my-quote-cart" className="back-to-cart-btn">
-        <img src={Arrows} alt="arrows"/><h4 className="orange regular">Go Back to Cart</h4>
+        <img src={Arrows} alt="arrows"/><h4 className="orange regular">Go Back to Quote Cart</h4>
         </Link>
-      }
-
-        <h4 className="black medium section__title contact-page">Contact</h4>
+        <h4 className="black medium section__title contact-page">Quotation Request Form</h4>
         <h3 className="black medium">Please provide a few contact details below,
         so that we know how to get back to you.</h3>
+        </div> :
+        <div>
+        <h4 className="black medium section__title contact-page">Contact</h4>
+        <h3 className="black medium">Have any questions or queries? Please get in touch with us by filling out some basic details below</h3>
+        </div>
+      }
+
+
+
       </div>
       <form name="contact" method="post">
           <input type="hidden" name="form-name" value="contact" />
@@ -103,23 +111,31 @@ class Contact extends Component{
           </p>
           {
 
-            this.createQuoteCartFields === true &&
-
+            this.createQuoteCartFields === true ?
+            <div>
               <div className="hidden-field">
-              <label class="beige antique">MESSAGE, QUERIES, QUESTIONS (optional)
-                <textarea name="cart-items">
-              {itemsToForm}
-              </textarea>
-            </label>
+                <label class="beige antique">
+                  <textarea name="cart-items">
+                    {itemsToForm}
+                  </textarea>
+                </label>
               </div>
-
-
+              <p>
+                <button class="primary" type="submit">
+                  <h4 class="black antique">REQUEST QUOTE NOW</h4>
+                </button>
+              </p>
+            </div> :
+            <p>
+              <button class="primary" type="submit">
+                <h4 class="black antique">SEND MESSAGE</h4>
+              </button>
+            </p>
 
           }
 
-          <p>
-            <button type="submit">Send</button>
-          </p>
+
+
         </form>
         </div>
 

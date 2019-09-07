@@ -267,10 +267,22 @@ class ConfigureCastor extends Component{
             </div>
           </div>
           <div className= "configure-panel__cta row">
-            // <button><h4 className="black antique">DOWNLOAD TECHNICAL SPECIIFCATIONS</h4></button>
-            <button><h4 className="black antique">SHARE</h4></button>
-            <button><h4 className="black antique">REQUEST QUOTE NOW</h4></button>
-            <button onClick={() => this.validateAndAddToCart(this.state, configurableStatus)}><h4 className="black antique">ADD TO QUOTE CART</h4></button>
+            <div className="col-lg-7 col-md-6 col-sm-6 col-12 secondary_cta_wrapper">
+              <div className="cta_cont">
+                <button class="secondary"><h4 className="black antique">DOWNLOAD TECHNICAL SPECIFICATIONS</h4></button>
+              </div>
+              <div className="cta_cont">
+                <button class="secondary"><h4 className="black antique">SHARE</h4></button>
+              </div>
+            </div>
+            <div className="col-lg-5 col-md-6 col-sm-6 col-12 primary_cta_wrapper">
+              <div className="cta_cont">
+                <button class="primary"><h4 className="black antique">REQUEST QUOTE NOW</h4></button>
+              </div>
+              <div className="cta_cont">
+                <button class="primary" onClick={() => this.validateAndAddToCart(this.state, configurableStatus)}><h4 className="black antique">ADD TO QUOTE CART</h4></button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

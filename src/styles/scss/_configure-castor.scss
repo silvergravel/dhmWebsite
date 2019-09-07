@@ -149,3 +149,35 @@ div.config-panel .series-bar{
     }
   }
 }
+
+.configure-panel__cta{
+
+  .primary_cta_wrapper, .secondary_cta_wrapper{
+    display: flex;
+    padding: 15px 30px;
+  }
+
+  .primary_cta_wrapper{
+    .cta_cont{
+      width: 50%;
+
+
+      &:last-of-type{
+        padding-right: 0px;
+      }
+
+      button{
+        width: 100%;
+
+      }
+    }
+  }
+
+  .cta_cont{
+    padding-right: 15px;
+
+    &:last-of-type{
+      padding-right: 0px;
+    }
+  }
+}

@@ -300,7 +300,7 @@
               "id": 0,
               "heading": "Cast Iron",
               "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-              "image": "product-images/best-sellers-temp.png",
+              "image": "product-images/03_rd4/swivel/563/rd4_ci_s__563.png",
               "loadCapacity": {
                 "tag": "load capacity",
                 "quantity": "Upto 210 kgs"
@@ -311,7 +311,7 @@
               "id": 1,
               "heading": "Nylon",
               "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-              "image": "product-images/best-sellers-temp.png",
+              "image": "product-images/03_rd4/swivel/563/rd4_n_s__563.png",
               "loadCapacity": {
                 "tag": "load capacity",
                 "quantity": "Upto 210 kgs"
@@ -322,7 +322,7 @@
               "id": 2,
               "heading": "Phenorex (Fibre)",
               "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-              "image": "product-images/best-sellers-temp.png",
+              "image": "product-images/03_rd4/swivel/563/rd4_p_s__563.png",
               "loadCapacity": {
                 "tag": "load capacity",
                 "quantity": "Upto 210 kgs"
@@ -333,7 +333,7 @@
               "id": 3,
               "heading": "PU Tyred On Nylon",
               "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-              "image": "product-images/best-sellers-temp.png",
+              "image": "product-images/03_rd4/swivel/563/rd4_pun_s__563.png",
               "loadCapacity": {
                 "tag": "load capacity",
                 "quantity": "Upto 160 kgs"
@@ -344,7 +344,7 @@
               "id": 4,
               "heading": "PU Tyred On Cast Iron",
               "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-              "image": "product-images/best-sellers-temp.png",
+              "image": "product-images/03_rd4/swivel/563/rd4_puci_s__563.png",
               "loadCapacity": {
                 "tag": "load capacity",
                 "quantity": "Upto 170 kgs"
@@ -355,7 +355,7 @@
               "id": 5,
               "heading": "Rubber Tyred On Cast Iron",
               "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-              "image": "product-images/best-sellers-temp.png",
+              "image": "product-images/03_rd4/swivel/563/rd4_rci_s__563.png",
               "loadCapacity": {
                 "tag": "load capacity",
                 "quantity": "Upto 160 kgs"
@@ -980,7 +980,7 @@
       "groupType": "single",
       "id": 0,
       "description": "Some basic description about the trolley application",
-      "image": "product-images/00_rd1/swivel/464/rd1_ci_s__464.png",
+      "image": "product-images/13_trolleys/563/swb__563.png",
       "wheelDiameter": null,
       "dimensions": "475 * 385 * 1080 mm",
       "loadCapacity": {
@@ -996,7 +996,7 @@
       "groupType": "single",
       "id": 0,
       "description": "Some basic description about the trolley application",
-      "image": "product-images/00_rd1/swivel/464/rd1_ci_s__464.png",
+      "image": "product-images/13_trolleys/563/dwb__563.png",
       "wheelDiameter": null,
       "dimensions": "710 * 570 * 1270 mm",
       "loadCapacity": {
@@ -1012,7 +1012,7 @@
       "groupType": "single",
       "id": 0,
       "description": "Some basic description about the trolley application",
-      "image": "product-images/00_rd1/swivel/464/rd1_ci_s__464.png",
+      "image": "product-images/13_trolleys/563/dst__563.png",
       "wheelDiameter": null,
       "dimensions": "1440 * 700 * 900 mm",
       "loadCapacity": {
@@ -1028,7 +1028,7 @@
       "groupType": "single",
       "id": 0,
       "description": "Some basic description about the trolley application",
-      "image": "product-images/00_rd1/swivel/464/rd1_ci_s__464.png",
+      "image": "product-images/13_trolleys/563/h9t__563.png",
       "wheelDiameter": null,
       "dimensions": "508 * 205 * 1220 mm",
       "loadCapacity": {
@@ -1044,7 +1044,7 @@
       "groupType": "single",
       "id": 0,
       "description": "Some basic description about the trolley application",
-      "image": "product-images/00_rd1/swivel/464/rd1_ci_s__464.png",
+      "image": "product-images/13_trolleys/563/sft__563.png",
       "wheelDiameter": null,
       "dimensions": "530 * 437 * 1245 mm",
       "loadCapacity": {

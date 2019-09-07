@@ -71,7 +71,7 @@ class BestSellers extends Component {
         <div className="row best-sellers__card-grid">
           {this.state.bestSellersTileContent}
         </div>
-        <div className="custom-gap-63"></div>
+        
       </div>
 
     );
