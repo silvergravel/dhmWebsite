@@ -958,11 +958,27 @@
       "redirectUrl": "/t-pt4"
     },
     {
+      "heading": "Single Gas Cylinder Trolley",
+      "code": "sgct",
+      "configurable": false,
+      "groupType": "single",
+      "id": 4,
+      "description": "Some basic description about the trolley application",
+      "image": "product-images/13_trolleys/563/sgct__563.png",
+      "wheelDiameter": null,
+      "dimensions": "480 * 300 * 410 mm",
+      "loadCapacity": {
+        "tag": "load capacity",
+        "quantity": "80 kgs"
+      },
+      "redirectUrl": "/t-sgct"
+    },
+    {
       "heading": "Double Gas Cylinder Trolley",
       "code": "dgct",
       "configurable": false,
       "groupType": "single",
-      "id": 0,
+      "id": 5,
       "description": "Some basic description about the trolley application",
       "image": "product-images/13_trolleys/563/dgct__563.png",
       "wheelDiameter": null,
@@ -978,7 +994,7 @@
       "code": "swb",
       "configurable": false,
       "groupType": "single",
-      "id": 0,
+      "id": 6,
       "description": "Some basic description about the trolley application",
       "image": "product-images/13_trolleys/563/swb__563.png",
       "wheelDiameter": null,
@@ -994,7 +1010,7 @@
       "code": "dwb",
       "configurable": false,
       "groupType": "single",
-      "id": 0,
+      "id": 7,
       "description": "Some basic description about the trolley application",
       "image": "product-images/13_trolleys/563/dwb__563.png",
       "wheelDiameter": null,
@@ -1010,7 +1026,7 @@
       "code": "dst",
       "configurable": false,
       "groupType": "single",
-      "id": 0,
+      "id": 8,
       "description": "Some basic description about the trolley application",
       "image": "product-images/13_trolleys/563/dst__563.png",
       "wheelDiameter": null,
@@ -1026,7 +1042,7 @@
       "code": "h9t",
       "configurable": false,
       "groupType": "single",
-      "id": 0,
+      "id": 9,
       "description": "Some basic description about the trolley application",
       "image": "product-images/13_trolleys/563/h9t__563.png",
       "wheelDiameter": null,
@@ -1042,7 +1058,7 @@
       "code": "sft",
       "configurable": false,
       "groupType": "single",
-      "id": 0,
+      "id": 10,
       "description": "Some basic description about the trolley application",
       "image": "product-images/13_trolleys/563/sft__563.png",
       "wheelDiameter": null,
@@ -1136,6 +1152,36 @@
         "quantity": "Upto 200 kgs"
       },
       "redirectUrl": "/xp-cr"
+    },
+    {
+      "heading": "*Long Castor*",
+      "code": "code?*",
+      "configurable": false,
+      "groupType": "single",
+      "id": 6,
+      "description": "Some basic description about the exc product application",
+      "image": "product-images/00_rd1/swivel/464/rd1_ci_s__464.png",
+      "wheelDiameter": null,
+      "loadCapacity": {
+        "tag": "load capacity",
+        "quantity": "Upto ? kgs"
+      },
+      "redirectUrl": "/xp-cr??"
+    },
+    {
+      "heading": "*Small Castor*",
+      "code": "code?*",
+      "configurable": false,
+      "groupType": "single",
+      "id": 6,
+      "description": "Some basic description about the exc product application",
+      "image": "product-images/00_rd1/swivel/464/rd1_ci_s__464.png",
+      "wheelDiameter": null,
+      "loadCapacity": {
+        "tag": "load capacity",
+        "quantity": "Upto ? kgs"
+      },
+      "redirectUrl": "/xp-cr??"
     }
   ],
 
@@ -1147,8 +1193,8 @@
 
   "spare-wheels": [
     {
-      "heading": "**some material name**",
-      "code": "**some code**",
+      "heading": "Cast Iron",
+      "code": "ci",
       "configurable": true,
       "groupType": "single",
       "id": 0,
@@ -1156,13 +1202,139 @@
       "image": "product-images/00_rd1/swivel/464/rd1_ci_s__464.png",
       "wheelDiameter": {
         "tag" :"wheel diameter",
-        "quantity": "80 - 100 mm"
+        "quantity": "50 - 200 mm"
         },
       "loadCapacity": {
         "tag": "load capacity",
-        "quantity": "Upto 36 kgs"
+        "quantity": "Upto 700 kgs"
       },
-      "redirectUrl": "/ld-rd1"
+      "redirectUrl": "/sw-sw"
+    },
+    {
+      "heading": "Rubber Tyred On Cast Iron",
+      "code": "rci",
+      "configurable": true,
+      "groupType": "single",
+      "id": 1,
+      "description": "Excellent durability. Ideal for rugged factory spaces.",
+      "image": "product-images/00_rd1/swivel/464/rd1_ci_s__464.png",
+      "wheelDiameter": {
+        "tag" :"wheel diameter",
+        "quantity": "50 - 200 mm"
+        },
+      "loadCapacity": {
+        "tag": "load capacity",
+        "quantity": "Upto 500 kgs"
+      },
+      "redirectUrl": "/sw-sw"
+    },
+    {
+      "heading": "PU Tyred On Cast Iron",
+      "code": "puci",
+      "configurable": true,
+      "groupType": "single",
+      "id": 2,
+      "description": "Excellent durability. Ideal for rugged factory spaces.",
+      "image": "product-images/00_rd1/swivel/464/rd1_ci_s__464.png",
+      "wheelDiameter": {
+        "tag" :"wheel diameter",
+        "quantity": "100 - 300 mm"
+        },
+      "loadCapacity": {
+        "tag": "load capacity",
+        "quantity": "Upto 2000 kgs"
+      },
+      "redirectUrl": "/sw-sw"
+    },
+    {
+      "heading": "Phenorex",
+      "code": "p",
+      "configurable": true,
+      "groupType": "single",
+      "id": 3,
+      "description": "Excellent durability. Ideal for rugged factory spaces.",
+      "image": "product-images/00_rd1/swivel/464/rd1_ci_s__464.png",
+      "wheelDiameter": {
+        "tag" :"wheel diameter",
+        "quantity": "50 - 200 mm"
+        },
+      "loadCapacity": {
+        "tag": "load capacity",
+        "quantity": "Upto 630 kgs"
+      },
+      "redirectUrl": "/sw-sw"
+    },
+    {
+      "heading": "Nylon",
+      "code": "n",
+      "configurable": true,
+      "groupType": "single",
+      "id": 4,
+      "description": "Excellent durability. Ideal for rugged factory spaces.",
+      "image": "product-images/00_rd1/swivel/464/rd1_ci_s__464.png",
+      "wheelDiameter": {
+        "tag" :"wheel diameter",
+        "quantity": "50 - 200 mm"
+        },
+      "loadCapacity": {
+        "tag": "load capacity",
+        "quantity": "Upto 500 kgs"
+      },
+      "redirectUrl": "/sw-sw"
+    },
+    {
+      "heading": "PU Tyred On Nylon",
+      "code": "pun",
+      "configurable": true,
+      "groupType": "single",
+      "id": 5,
+      "description": "Excellent durability. Ideal for rugged factory spaces.",
+      "image": "product-images/00_rd1/swivel/464/rd1_ci_s__464.png",
+      "wheelDiameter": {
+        "tag" :"wheel diameter",
+        "quantity": "50 - 200 mm"
+        },
+      "loadCapacity": {
+        "tag": "load capacity",
+        "quantity": "Upto 450 kgs"
+      },
+      "redirectUrl": "/sw-sw"
+    },
+    {
+      "heading": "Cushion Tyred With Yellow Lines",
+      "code": "cy",
+      "configurable": true,
+      "groupType": "single",
+      "id": 6,
+      "description": "Excellent durability. Ideal for rugged factory spaces.",
+      "image": "product-images/00_rd1/swivel/464/rd1_ci_s__464.png",
+      "wheelDiameter": {
+        "tag" :"wheel diameter",
+        "quantity": "75 - 400 mm"
+        },
+      "loadCapacity": {
+        "tag": "load capacity",
+        "quantity": "Upto 500 kgs"
+      },
+      "redirectUrl": "/sw-sw"
+    },
+    {
+      "heading": "Cushion Tyred",
+      "code": "c",
+      "configurable": true,
+      "groupType": "single",
+      "id": 7,
+      "description": "Excellent durability. Ideal for rugged factory spaces.",
+      "image": "product-images/00_rd1/swivel/464/rd1_ci_s__464.png",
+      "wheelDiameter": {
+        "tag" :"wheel diameter",
+        "quantity": "150 - 350 mm"
+        },
+      "loadCapacity": {
+        "tag": "load capacity",
+        "quantity": "Upto 350 kgs"
+      },
+      "redirectUrl": "/sw-sw"
     }
   ]
 }

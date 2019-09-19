@@ -19,7 +19,8 @@ class ConfigureCastor extends Component{
 
     var activeMaterialId;
     var vitalsOptionsId = 0;
-    var bracketOptionsId = 0;
+
+    var bracketOptionsId = data[itemCodeSplits[0]][itemCodeSplits[1]].hasOwnProperty("bracketOptions") === true ? 0 : null;
     var activeGrooveOptionsId = data[itemCodeSplits[0]][itemCodeSplits[1]].hasOwnProperty("grooveOptions") === true ? 0 : null;
     var configurable = data[itemCodeSplits[0]][itemCodeSplits[1]].configurable;
     console.log("configurable: "+configurable);
@@ -31,9 +32,10 @@ class ConfigureCastor extends Component{
       activeMaterialId = this.props.location.state.activeMaterialId;
       this.props.history.push(configCode+"-materialOptions:"+activeMaterialId);
     }else{
-
+      activeMaterialId = "chello";
     }
 
+    console.log("active material id: "+activeMaterialId);
 
     if(itemCodeSplits.length >= 3){
       for(let i = 0; i < itemCodeSplits.length; i++){
@@ -155,7 +157,7 @@ class ConfigureCastor extends Component{
     const activeDutyName = activeDuty.duty;
     const activeSeries = data[activeDutyId][activeSeriesId];
     const activeSeriesName = activeSeries.series;
-    const bracketOptions = activeSeries.bracketOptions;
+    const bracketOptions = activebracketOptionsId !== null ? activeSeries.bracketOptions : null;
     const materialOptions = activeSeries.materialOptions;
     const grooveOptions = activegrooveOptionsId !== null ? activeSeries.grooveOptions : null;
     const vitalsOptions = materialOptions[activematerialOptionsId].vitalsOptions;
@@ -164,7 +166,10 @@ class ConfigureCastor extends Component{
     var activeProductImage;
     activegrooveOptionsId !== null ?
     activeProductImage = productImgPath[activeDuty.code][activeSeries.code][materialOptions[activematerialOptionsId].code][bracketOptions[activebracketOptionsId].code][grooveOptions[activegrooveOptionsId].code]["712"] :
-    activeProductImage = productImgPath[activeDuty.code][activeSeries.code][materialOptions[activematerialOptionsId].code][bracketOptions[activebracketOptionsId].code]["712"];
+    activebracketOptionsId !== null ?
+    activeProductImage = productImgPath[activeDuty.code][activeSeries.code][materialOptions[activematerialOptionsId].code][bracketOptions[activebracketOptionsId].code]["712"]:
+    activeProductImage = productImgPath[activeDuty.code][activeSeries.code][materialOptions[activematerialOptionsId].code]["712"];
+    ;
     // const activeProductImage = "";
     // console.log("active product img: "+activeProductImage);
     //
@@ -222,6 +227,9 @@ class ConfigureCastor extends Component{
                   </div>
                 </div>
 
+                {
+                  bracketOptions !== null &&
+
                 <div className="config-fields-bracket">
                   <Radio
                     activeOptionId= {bracketOptions[activebracketOptionsId].id} //this will become a state variable
@@ -240,6 +248,7 @@ class ConfigureCastor extends Component{
                     />
                   </div>
                 </div>
+                }
 
                 {
                   grooveOptions !== null &&

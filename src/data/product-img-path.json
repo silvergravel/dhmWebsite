@@ -532,6 +532,10 @@
       "464":"/product-images/13_trolleys/563/pt_1590__563.png",
       "712":"/product-images/13_trolleys/864/pt_1590__864.png"
     },
+    "sgct":{
+      "464":"/product-images/13_trolleys/563/sgct__563.png",
+      "712":"/product-images/13_trolleys/864/sgct__864.png"
+    },
     "dgct":{
       "464":"/product-images/13_trolleys/563/dgct__563.png",
       "712":"/product-images/13_trolleys/864/dgct__864.png"
@@ -581,6 +585,42 @@
     "cr":{
       "464":"",
       "712":""
+    }
+  },
+  "sw":{
+    "sw":{
+      "ci":{
+        "464":"/product-images/03_rd4/swivel/563/rd4_ci_s__563.png",
+        "712":"/product-images/03_rd4/swivel/864/rd4_ci_s__864.png"
+      },
+      "rci":{
+        "464":"/product-images/03_rd4/swivel/563/rd4_ci_s__563.png",
+        "712":"/product-images/03_rd4/swivel/864/rd4_ci_s__864.png"
+      },
+      "puci":{
+        "464":"/product-images/03_rd4/swivel/563/rd4_ci_s__563.png",
+        "712":"/product-images/03_rd4/swivel/864/rd4_ci_s__864.png"
+      },
+      "p":{
+        "464":"/product-images/03_rd4/swivel/563/rd4_ci_s__563.png",
+        "712":"/product-images/03_rd4/swivel/864/rd4_ci_s__864.png"
+      },
+      "n":{
+        "464":"/product-images/03_rd4/swivel/563/rd4_ci_s__563.png",
+        "712":"/product-images/03_rd4/swivel/864/rd4_ci_s__864.png"
+      },
+      "pun":{
+        "464":"/product-images/03_rd4/swivel/563/rd4_ci_s__563.png",
+        "712":"/product-images/03_rd4/swivel/864/rd4_ci_s__864.png"
+      },
+      "cy":{
+        "464":"/product-images/03_rd4/swivel/563/rd4_ci_s__563.png",
+        "712":"/product-images/03_rd4/swivel/864/rd4_ci_s__864.png"
+      },
+      "c":{
+        "464":"/product-images/03_rd4/swivel/563/rd4_ci_s__563.png",
+        "712":"/product-images/03_rd4/swivel/864/rd4_ci_s__864.png"
+      }
     }
   }
 }

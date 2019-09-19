@@ -12,7 +12,6 @@ class TrolleyCategoryPage extends Component{
 
 
   render(){
-
     var categoryNameString = this.props.match.params.categoryName.split("#");
     var categoryName = categoryNameString[0];
 
@@ -25,8 +24,10 @@ class TrolleyCategoryPage extends Component{
         { data[categoryName].map((content, index) => {
             return(
                       <Link key={index} to={{
-                        pathname: "/configure" + content.redirectUrl
-
+                        pathname: "/configure" + content.redirectUrl,
+                        state: {
+                          activeMaterialId: content.id
+                        }
                       }}>
                       <div className = "col-lg-4 col-sm-6 product-card" >
                         <div className="product-card__content-wrapper">
