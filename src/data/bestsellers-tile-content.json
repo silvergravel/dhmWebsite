@@ -29,9 +29,12 @@
     "image": "product-images/04_dxm/fixed/464/dxm_r_f__464.png",
     "loadCapacity":{
       "tag": "load capacity",
+      "quantity": "75 - 150 mm"
+      } ,
+    "wheelDiameter": {
+      "tag" :"wheel diameter",
       "quantity": "Upto 120 kgs"
       } ,
-    "wheelDiameter": null,
     "redirectUrl": "/medium-duty-castors#dxm-anchor",
     "meta":{
       "configurable": false,

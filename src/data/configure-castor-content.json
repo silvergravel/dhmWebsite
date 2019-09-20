@@ -2723,6 +2723,31 @@
         ]
         }
       ]
+    },
+    "scs":{
+      "series":"**Long Castor**",
+      "code":"scs",
+      "configurable": false,
+      "vitalsOptions":[
+        {
+        "id": 0,
+        "key": "vitalsOptions",
+        "vitals":[
+          {
+           "tag": "Length??*",
+           "value": "??* mm"
+           },
+           {
+            "tag": "Load Capacity??*",
+            "value": "??* kgs"
+            },
+            {
+             "tag": "Wheel Diameter??*",
+             "value": "??* mm"
+            }
+        ]
+        }
+      ]
     }
   },
   "sw":{
@@ -3011,7 +3036,7 @@
           ]
         },
         {
-          "id": 1,
+          "id": 2,
           "key": "materialOptions",
           "code": "puci",
           "material": "PU Tyred On Cast Iron",
@@ -3534,7 +3559,7 @@
           "id": 6,
           "key": "materialOptions",
           "code": "cy",
-          "material": "Cushion Tyred With Yellow Lines",
+          "material": "Cushion Tyred : Yellow Lines",
           "materialDescp": "It offers superior resistance to most oils, chemicals and acids.",
           "image": "/product-images/best-sellers-temp.png",
           "vitalsOptions":[

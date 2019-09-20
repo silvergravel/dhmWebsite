@@ -73,7 +73,7 @@ div.config-panel .series-bar{
   position: relative;
   padding-top: 15px ;
   // height: 546px;
-  overflow: auto
+  // overflow: auto
   // width: 40%;
 }
 
@@ -178,6 +178,30 @@ div.config-panel .series-bar{
 
     &:last-of-type{
       padding-right: 0px;
+    }
+  }
+}
+
+
+.image-wrapper .thumbnailSet{
+  position: absolute;
+  margin: 15px;
+
+  .thumbnail{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+
+    &:hover{
+      border: 1px solid $beige;
+    }
+
+    &.active{
+      border: 2px solid $beige;
+    }
+
+    img{
+      height: 100%;
     }
   }
 }

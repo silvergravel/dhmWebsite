@@ -1293,7 +1293,6 @@ div.config-panel .series-bar h4 {
 .config-fields {
   position: relative;
   padding-top: 15px;
-  overflow: auto;
 }
 
 .config-field-dd-material, .config-field-dd-wheel-dia,
@@ -1383,6 +1382,29 @@ div.config-panel .series-bar h4 {
 
 .configure-panel__cta .cta_cont:last-of-type {
   padding-right: 0px;
+}
+
+.image-wrapper .thumbnailSet {
+  position: absolute;
+  margin: 15px;
+}
+
+.image-wrapper .thumbnailSet .thumbnail {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.image-wrapper .thumbnailSet .thumbnail:hover {
+  border: 1px solid #B5A98C;
+}
+
+.image-wrapper .thumbnailSet .thumbnail.active {
+  border: 2px solid #B5A98C;
+}
+
+.image-wrapper .thumbnailSet .thumbnail img {
+  height: 100%;
 }
 
 .dd-wrapper {

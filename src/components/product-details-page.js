@@ -75,12 +75,14 @@ class ProductDetails extends Component{
       // activebracketOptionsId: bracketOptionsId, //no
       // activegrooveOptionsId: activeGrooveOptionsId, //no
       // braking: false, //no
+      activeProductImageIndex: 0,
       quantity: 0,
       configurable: false
     }
     this.updateWheelConfig = this.updateWheelConfig.bind(this); //prob not
     this.updateInput = this.updateInput.bind(this);
     this.validateAndAddToCart = this.validateAndAddToCart.bind(this);
+    this.changeActiveProductImage = this.changeActiveProductImage.bind(this);
 
 
   }
@@ -124,7 +126,6 @@ class ProductDetails extends Component{
     }
 
     this.props.history.push(updatedUrl);
-    // console.log(urlUpdateText);
 
   }
 
@@ -137,28 +138,45 @@ class ProductDetails extends Component{
     this.state.quantity > 0 ? this.props.updateCart(wheelConfig) : alert("you need to select a quantity to add this item to cart");
   }
 
-
+  changeActiveProductImage(imageIndex){
+    this.setState({activeProductImageIndex:imageIndex})
+  }
 
 
   render(){
 
 
-
-    // const{activeDutyId, activeSeriesId, activematerialOptionsId, activevitalsOptionsId, activebracketOptionsId, activegrooveOptionsId, braking, quantity} = this.state; //prob not all vars
     const{activeDutyId, activeSeriesId, quantity} = this.state; //prob not all vars
-
-    console.log("configurable?");
-    console.log(data[activeDutyId][activeSeriesId].configurable);
 
     const activeDuty = data[activeDutyId];
     const activeDutyName = activeDuty.duty;
     const activeSeries = data[activeDutyId][activeSeriesId];
     const activeSeriesName = activeSeries.series;
-    // const bracketOptions = activeSeries.bracketOptions; //no
-    // const materialOptions = activeSeries.materialOptions; //no
-    // const grooveOptions = activegrooveOptionsId !== null ? activeSeries.grooveOptions : null; //no
-    // const vitalsOptions = materialOptions[activematerialOptionsId].vitalsOptions; //no
-    const activeProductImage = productImgPath[activeDuty.code][activeSeries.code]["712"];
+    const productImageSet = productImgPath[activeDuty.code][activeSeries.code]["712"];
+    console.log("productImageSet");
+    console.log(productImageSet);
+    var activeProductImage;
+    var imgThumbnails;
+
+    //if multiple images are available for display, then create thumbnails.
+    if(Array.isArray(productImageSet)){
+      activeProductImage = productImageSet[this.state.activeProductImageIndex];
+      const productThumbSet = productImgPath[activeDuty.code][activeSeries.code]["200"];
+      imgThumbnails = productThumbSet.map((img, i) =>
+
+        <button class={"thumbnail"+(this.state.activeProductImageIndex === i ? " active" : "")}
+                key={i}
+                onClick={()=>this.changeActiveProductImage(i)}>
+          <img src={process.env.PUBLIC_URL + img} alt="" />
+        </button>
+
+      );
+    }else{
+      activeProductImage = productImageSet;
+      imgThumbnails = null;
+    }
+
+
 
     return(
 
@@ -170,6 +188,15 @@ class ProductDetails extends Component{
           </div>
           <div className="config-panel__body row">
             <div className="image-wrapper col-lg-7 col-md-6 col-sm-6 col-12">
+
+                {
+                  imgThumbnails !== null &&
+                  <div class="thumbnailSet">
+                  {imgThumbnails}
+                  </div>
+                }
+
+
               <img src={process.env.PUBLIC_URL + activeProductImage} alt="" />
             </div>
             <div className="config-fields col-lg-5 col-md-6 col-sm-6 col-12">
@@ -226,7 +253,7 @@ class ProductDetails extends Component{
               </div>
             </div>
           </div>
-          
+
           <div className= "configure-panel__cta row">
             <div className="col-lg-7 col-md-6 col-sm-6 col-12 secondary_cta_wrapper">
               <div className="cta_cont">

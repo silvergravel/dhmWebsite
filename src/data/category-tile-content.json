@@ -111,16 +111,16 @@
     {
     "heading": "Spare Wheels",
     "subHeading": "Across a wide range of sizes and materials",
-    "image": "product-images/light-duty-temp.png",
+    "image": "product-images/15_spare_wheels/563/puci__563.png",
 
     "loadCapacity":{
         "tag": "load capacity",
-        "quantity": "Upto 1,000 kgs"
+        "quantity": "Upto 2000 kgs"
       },
 
     "wheelDiameter":{
       "tag" :"wheel diameter",
-      "quantity" :"100 - 300 mm"
+      "quantity" :"50 - 400 mm"
     },
 
     "redirectUrl": "/spare-wheels",
