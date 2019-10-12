@@ -840,6 +840,41 @@ header ul li.cart.active span:hover span {
   margin: 0 0 2px 4px;
 }
 
+.skeletonBlock {
+  z-index: 10;
+  width: 40%;
+  height: 73%;
+  background: linear-gradient(-90deg, #F0F0F0 0%, #F8F8F8 50%, #F0F0F0 100%);
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  background-size: 400% 400%;
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: -135% 0%;
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: -135% 0%;
+  }
+}
+
+.category-card__sub-title {
+  z-index: 100;
+  position: relative;
+}
+
 h4.section__title {
   text-transform: uppercase;
   margin-top: 63px;

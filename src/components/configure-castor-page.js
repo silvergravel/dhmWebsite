@@ -161,8 +161,7 @@ class ConfigureCastor extends Component{
     const materialOptions = activeSeries.materialOptions;
     const grooveOptions = activegrooveOptionsId !== null ? activeSeries.grooveOptions : null;
     const vitalsOptions = materialOptions[activematerialOptionsId].vitalsOptions;
-    // const activeProductImage = materialOptions[activematerialOptionsId].image+bracketOptions[activebracketOptionsId].code+".png";
-    // const activeProductImage = "/product-images/"+activeSeries.code+"/"+activeSeries.code+"_"+materialOptions[activematerialOptionsId].code+"_"+bracketOptions[activebracketOptionsId].code+".png";
+    
     var activeProductImage;
     activegrooveOptionsId !== null ?
     activeProductImage = productImgPath[activeDuty.code][activeSeries.code][materialOptions[activematerialOptionsId].code][bracketOptions[activebracketOptionsId].code][grooveOptions[activegrooveOptionsId].code]["712"] :
@@ -170,18 +169,7 @@ class ConfigureCastor extends Component{
     activeProductImage = productImgPath[activeDuty.code][activeSeries.code][materialOptions[activematerialOptionsId].code][bracketOptions[activebracketOptionsId].code]["712"]:
     activeProductImage = productImgPath[activeDuty.code][activeSeries.code][materialOptions[activematerialOptionsId].code]["712"];
     ;
-    // const activeProductImage = "";
-    // console.log("active product img: "+activeProductImage);
-    //
-    // console.log("activeDuty: " +activeDutyId);
-    // console.log("activeSeries: " +activeSeriesId);
-    // console.log("activeMaterial: " +materialOptions[activematerialOptionsId].material);
-    // console.log("activeMaterial: " +materialOptions[activematerialOptionsId].material);
-    // console.log("activeWheelDia: " +vitalsOptions[activevitalsOptionsId].wheelDiameter);
-    // console.log("activeLoadCap: " +vitalsOptions[activevitalsOptionsId].loadCapacity);
-    // console.log("activeBracketOps: " +bracketOptions[activebracketOptionsId].plateType);
-    // console.log("quantity: " + this.state.quantity);
-    // console.log("braking: " + this.state.braking);
+
     return(
 
       <div className="config-castor-wrapper container">
