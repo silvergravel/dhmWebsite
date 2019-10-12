@@ -753,7 +753,7 @@
           "id": 0,
           "heading": "Cast Iron",
           "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-          "image": "product-images/best-sellers-temp.png",
+          "image": "product-images/11_hsc_twin/swivel/563/hsctw_ci_s__563.png",
           "loadCapacity": {
             "tag": "load capacity",
             "quantity": "Upto 1800 kgs"
@@ -764,7 +764,7 @@
           "id": 1,
           "heading": "PU Tyred On Cast Iron",
           "subHeading": "Excellent durability. Ideal for rugged factory spaces.",
-          "image": "product-images/best-sellers-temp.png",
+          "image": "product-images/11_hsc_twin/swivel/563/hsctw_puci_s__563.png",
           "loadCapacity": {
             "tag": "load capacity",
             "quantity": "Upto 1500 kgs"
@@ -1154,7 +1154,7 @@
       "redirectUrl": "/xp-cr"
     },
     {
-      "heading": "*Long Castor*",
+      "heading": "SCS Castor",
       "code": "scs",
       "configurable": false,
       "groupType": "single",
@@ -1164,7 +1164,7 @@
       "wheelDiameter": null,
       "loadCapacity": {
         "tag": "load capacity",
-        "quantity": "Upto ? kgs"
+        "quantity": "Upto 500 kgs"
       },
       "redirectUrl": "/xp-scs"
     }

@@ -30,13 +30,41 @@ class Cart extends Component{
             const selectedMaterial = selectedSeries.materialOptions[item.activematerialOptionsId].material;
             const selectedWheelDia = selectedSeries.materialOptions[item.activematerialOptionsId].vitalsOptions[item.activevitalsOptionsId].wheelDiameter;
             const selectedLoadCap = selectedSeries.materialOptions[item.activematerialOptionsId].vitalsOptions[item.activevitalsOptionsId].loadCapacity;
-            const bracketOptions = selectedSeries.bracketOptions;
-            const selectedBracket = selectedSeries.bracketOptions[item.activebracketOptionsId].plateType;
-            const selectedBraking = selectedSeries.bracketOptions[item.activebracketOptionsId].brakingType;
-            //const selectedProductImageUrl = selectedSeries.materialOptions[item.activematerialOptionsId].image;
-            const selectedProductImageUrl = productImgPath[selectedDuty.code][selectedSeries.code][materialOptions[item.activematerialOptionsId].code][bracketOptions[item.activebracketOptionsId].code]["464"];
+            var bracketOptions;
+            var selectedBracket;
+            var selectedBraking;
+            var imageSet;
+            var selectedProductImageUrl;
 
+            if("bracketOptions" in selectedSeries){
+              bracketOptions = selectedSeries.bracketOptions;
+              selectedBracket = selectedSeries.bracketOptions[item.activebracketOptionsId].plateType;
+              selectedBraking = selectedSeries.bracketOptions[item.activebracketOptionsId].brakingType;
+              imageSet = productImgPath[selectedDuty.code][selectedSeries.code][materialOptions[item.activematerialOptionsId].code][bracketOptions[item.activebracketOptionsId].code]["464"];
 
+              Array.isArray(imageSet) ?
+                selectedProductImageUrl = imageSet[0] :
+                selectedProductImageUrl = imageSet;
+
+            }else{
+              imageSet = productImgPath[selectedDuty.code][selectedSeries.code][materialOptions[item.activematerialOptionsId].code]["464"];
+              Array.isArray(imageSet) ?
+                selectedProductImageUrl = imageSet[0] :
+                selectedProductImageUrl = imageSet;
+            }
+
+            var grooveOptions;
+            var selectedGroove;
+            if("grooveOptions" in selectedSeries){
+                grooveOptions = selectedSeries.grooveOptions;
+                selectedGroove = selectedSeries.grooveOptions[item.activegrooveOptionsId].plateType;
+                imageSet = productImgPath[selectedDuty.code][selectedSeries.code][materialOptions[item.activematerialOptionsId].code][bracketOptions[item.activebracketOptionsId].code][grooveOptions[item.activegrooveOptionsId].code]["464"];
+                Array.isArray(imageSet) ?
+                  selectedProductImageUrl = imageSet[0] :
+                  selectedProductImageUrl = imageSet;
+            }
+
+            console.log(selectedProductImageUrl);
 
           return(
             <div key={index} className="cartItemBlock">
@@ -59,13 +87,24 @@ class Cart extends Component{
                     </div>
                     <div className="LoadCapConfig config">
                     <h4 className="beige antique">LOAD CAPACITY</h4>
-                    <h4 className="black medium">{selectedLoadCap}</h4>
+                    <h4 className="black medium">Upto {selectedLoadCap}</h4>
                     </div>
-                    <div className="BracketConfig config">
-                    <h4 className="beige antique">BRACKET TYPE</h4>
-                    <h4 className="black medium">{selectedBracket}</h4>
-                    {selectedBraking !== null && <h4 className="black medium"><span className="regular">with </span>{selectedBraking}</h4>}
-                    </div>
+                    {
+                      "bracketOptions" in selectedSeries === true &&
+                        <div className="BracketConfig config">
+                        <h4 className="beige antique">BRACKET TYPE</h4>
+                        <h4 className="black medium">{selectedBracket}</h4>
+                        {selectedBraking !== null && <h4 className="black medium"><span className="regular">with </span>{selectedBraking}</h4>}
+                        </div>
+                    }
+                    {
+                      "grooveOptions" in selectedSeries === true &&
+                        <div className="config">
+                        <h4 className="beige antique">GROOVE TYPE</h4>
+                        <h4 className="black medium">{selectedGroove}</h4>
+                        </div>
+                    }
+
                   </div>
                   <div className="itemActions">
                     <button className="tertiary">
@@ -73,7 +112,7 @@ class Cart extends Component{
                     </button>
                     <div className="divider"></div>
                     <button className="tertiary" data-id={index} onClick={(e) => this.props.deleteCartItem(e.currentTarget.dataset.id)}>
-                      <h4 className="orange regular">delete</h4>
+                      <h4 className="orange regular">remove</h4>
                     </button>
                   </div>
                 </div>
@@ -87,12 +126,71 @@ class Cart extends Component{
         }else if(item.configurable === false){
 
           const selectedDuty = data[item.activeDutyId];
+          const selectedDutyName = selectedDuty.duty;
           const selectedSeries = data[item.activeDutyId][item.activeSeriesId];
           const selectedSeriesName = selectedSeries.series;
+          const productImageSet = productImgPath[selectedDuty.code][selectedSeries.code]["464"];
+          var selectedProductImageUrl;
+          Array.isArray(productImageSet) ?
+            selectedProductImageUrl = productImageSet[0] :
+            selectedProductImageUrl = productImageSet;
+          var selectedLoadCap;
+          var selectedDimensions;
+          if(selectedDutyName === "trolleys"){
+            selectedLoadCap = selectedSeries.vitalsOptions[0].vitals[0].value;
+            selectedDimensions = selectedSeries.vitalsOptions[0].vitals[1].value;
+          }
+
 
           return(
             <div key={index} className="cartItemBlock">
-              <p>{selectedSeriesName}</p>
+              <div className="cartItemBlock__header">
+                <h4 className="black medium seriesName">{selectedSeriesName}</h4>
+              </div>
+              <div className="cartItemBlock__body">
+                <div className="itemImgWrapper body__element">
+                  <img src={process.env.PUBLIC_URL + selectedProductImageUrl} alt="" />
+                </div>
+                <div className="itemConfigAndActionsWrapper body__element">
+                  <div className="itemConfig">
+                    {
+                      selectedDutyName === "trolleys" &&
+
+
+                            <div className="LoadCapConfig trolleysConfig">
+                            <h4 className="beige antique">LOAD CAPACITY</h4>
+                            <h4 className="black medium">{selectedLoadCap}</h4>
+                            </div>
+
+
+                    }
+                    {
+                      selectedDutyName === "trolleys" &&
+
+
+
+                            <div className="DimensionsConfig trolleysConfig">
+                            <h4 className="beige antique">DIMENSIONS</h4>
+                            <h4 className="black medium">{selectedDimensions}</h4>
+                            </div>
+
+                    }
+                  </div>
+                  <div className="itemActions">
+                    <button className="tertiary">
+                      <h4 className="black regular">edit</h4>
+                    </button>
+                    <div className="divider"></div>
+                    <button className="tertiary" data-id={index} onClick={(e) => this.props.deleteCartItem(e.currentTarget.dataset.id)}>
+                      <h4 className="orange regular">remove</h4>
+                    </button>
+                  </div>
+                </div>
+                <div className="itemQtyWrapper body__element">
+                  <h4 className="beige antique">QUANTITY</h4>
+                  <h2 className="black light">{item.quantity}</h2>
+                </div>
+              </div>
             </div>
           )
         }

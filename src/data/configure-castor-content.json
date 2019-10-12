@@ -1950,7 +1950,7 @@
         ]
         },
         {
-        "id": 0,
+        "id": 1,
         "key": "materialOptions",
         "code": "puci",
         "material": "PU Tyred On Cast Iron",
@@ -2725,7 +2725,7 @@
       ]
     },
     "scs":{
-      "series":"**Long Castor**",
+      "series":"SCS Castor",
       "code":"scs",
       "configurable": false,
       "vitalsOptions":[
@@ -2734,16 +2734,16 @@
         "key": "vitalsOptions",
         "vitals":[
           {
-           "tag": "Length??*",
-           "value": "??* mm"
+           "tag": "Wheel Diameter",
+           "value": "200 mm"
            },
            {
-            "tag": "Load Capacity??*",
-            "value": "??* kgs"
+            "tag": "Load Capacity",
+            "value": "Upto 500 kgs"
             },
             {
-             "tag": "Wheel Diameter??*",
-             "value": "??* mm"
+             "tag": "Rod Height",
+             "value": "500 mm"
             }
         ]
         }
@@ -2751,10 +2751,10 @@
     }
   },
   "sw":{
-    "duty": "spare wheels",
+    "duty": "Spare Wheels",
     "code":"sw",
     "sw":{
-      "series":"spare wheels",
+      "series":"Spare Wheels",
       "code":"sw",
       "configurable": true,
 
