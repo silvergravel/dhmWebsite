@@ -6,17 +6,73 @@ import {
 
 var data = require('../../data/category-page-content.json');
 var websiteCopy = require('../../data/website-copy.json');
-
+var categoryName;
 
 class CategoryPage extends Component{
+
+  constructor(){
+    super();
+    this.state = {
+       imageReadyStatus: {}
+    };
+  }
+
+  componentDidMount(){
+
+    var categoryNameString = this.props.match.params.categoryName.split("#");
+    categoryName = categoryNameString[0];
+
+    console.log("component did mount!!!!");
+
+    data[categoryName].map(content => {
+      content.items.map(product =>{
+          var img = {};
+          img[product.code+"_img"] = new Image();
+          img[product.code+"_img"].src = product.image; // by setting an src, you trigger browser download
+
+          img[product.code+"_img"].onload = () => {
+            // when it finishes loading, update the component state
+            this.setState({ imageReadyStatus: {...this.state.imageReadyStatus, [product.code+"_img"]: true} });
+          }
+        }
+      )
+    })
+  }
+
+  componentDidUpdate(){
+
+    var updatedCategoryName = this.props.match.params.categoryName.split("#")[0];
+    if(updatedCategoryName !== categoryName){
+      console.log("WE HAVE A PAGE CHANGE");
+      categoryName = updatedCategoryName;
+
+      data[categoryName].map(content => {
+        content.items.map(product =>{
+            var img = {};
+            img[product.code+"_img"] = new Image();
+            img[product.code+"_img"].src = product.image; // by setting an src, you trigger browser download
+
+            img[product.code+"_img"].onload = () => {
+              // when it finishes loading, update the component state
+              this.setState({ imageReadyStatus: {...this.state.imageReadyStatus, [product.code+"_img"]: true} });
+            }
+          }
+        )
+      })
+    }
+
+
+  }
+
 
 
   render(){
 
     var categoryNameString = this.props.match.params.categoryName.split("#");
     var categoryName = categoryNameString[0];
-    console.log("catname");
-    console.log(data[categoryName].groupType);
+
+    const { imageReadyStatus } = this.state;
+
     return(
       <div className="category-page-content">
         { data[categoryName].map((content, index) => {
@@ -83,7 +139,11 @@ class CategoryPage extends Component{
                                       </div>
                                     }
                                   </div>
-                                  <img className="product-card__image" src={product.image} alt="" />
+                                  {
+                                    imageReadyStatus[product.code+"_img"] === true ?
+                                    <img className="product-card__image" src={product.image} alt="" /> :
+                                    <div className="skeletonBlock prod_card"></div>
+                                  }
                                   <button className="secondary">
                                     <h4 className="black antique">
                                     { content.configurable === true ?

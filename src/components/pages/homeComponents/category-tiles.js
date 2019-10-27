@@ -18,7 +18,7 @@ class CategoryTiles extends Component {
   }
 
   componentDidMount(){
-    let categoryTileContent = data.content.map(content => {
+    data.content.map(content => {
 
 
         var img = {};
@@ -83,7 +83,7 @@ class CategoryTiles extends Component {
                           {
                             imageReadyStatus[content.code+"_img"] === true ?
                             <img className="category-card__image" src={content.image} alt="" /> :
-                            <div className="skeletonBlock"></div>
+                            <div className="skeletonBlock cat_tile"></div>
                           }
                         </div>
                       </div>

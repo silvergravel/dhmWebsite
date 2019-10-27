@@ -38,6 +38,46 @@ a:hover {
   text-decoration: none;
 }
 
+.skeletonBlock {
+  z-index: 10;
+  background: linear-gradient(-90deg, #F0F0F0 0%, #F8F8F8 50%, #F0F0F0 100%);
+  position: absolute;
+  background-size: 400% 400%;
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: -135% 0%;
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: -135% 0%;
+  }
+}
+
+.skeletonBlock.cat_tile {
+  right: 15px;
+  bottom: 15px;
+  width: 40%;
+  height: 73%;
+}
+
+.skeletonBlock.prod_card {
+  right: 5px;
+  top: 30px;
+  width: 40%;
+  height: 63%;
+}
+
 h1.black.light {
   font-family: 'suisse-light';
   font-size: 50px;
@@ -838,36 +878,6 @@ header ul li.cart.active span:hover span {
 
 .banner h1.banner__caption span img {
   margin: 0 0 2px 4px;
-}
-
-.skeletonBlock {
-  z-index: 10;
-  width: 40%;
-  height: 73%;
-  background: linear-gradient(-90deg, #F0F0F0 0%, #F8F8F8 50%, #F0F0F0 100%);
-  position: absolute;
-  right: 15px;
-  bottom: 15px;
-  background-size: 400% 400%;
-  animation: pulse 1.2s ease-in-out infinite;
-}
-
-@keyframes pulse {
-  0% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: -135% 0%;
-  }
-}
-
-@-webkit-keyframes pulse {
-  0% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: -135% 0%;
-  }
 }
 
 .category-card__sub-title {
