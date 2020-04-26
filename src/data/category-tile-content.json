@@ -30,12 +30,12 @@
 
       "loadCapacity": {
         "tag": "load capacity",
-        "quantity": "Upto 210 kgs"
+        "quantity": "Upto 280 kgs"
       },
 
       "wheelDiameter": {
         "tag": "wheel diameter",
-        "quantity": "75 - 125 mm"
+        "quantity": "75 - 250 mm"
       },
 
       "redirectUrl": "/medium-duty-castors",
@@ -47,7 +47,7 @@
       "code": "hd",
       "heading": "Heavy Duty Castors",
       "subHeading": "For construction sites, warehouses, factories and more",
-      "image": "product-images/light-duty-temp.png",
+      "image": "product-images/12_hsc/hsc_home__712.png",
 
       "loadCapacity": {
         "tag": "load capacity",
@@ -68,7 +68,7 @@
       "code": "xhd",
       "heading": "Extra Heavy Duty Castors",
       "subHeading": "For specialized usage on construction sites, warehouses, oil rigs and a lot more",
-      "image": "product-images/light-duty-temp.png",
+      "image": "product-images/xhd/464/xhd__464.png",
 
       "loadCapacity": {
         "tag": "load capacity",
@@ -105,8 +105,8 @@
     {
       "code": "xp",
       "heading": "Exclusive Products",
-      "subHeading": "Ball transfer units, conveyer rollers, sliding door gear system and more",
-      "image": "product-images/light-duty-temp.png",
+      "subHeading": "Industrial track & runner, scaffold caster and more",
+      "image": "product-images/14_exclusive_products/excl_home__712.png",
       "loadCapacity": null,
       "wheelDiameter": null,
       "redirectUrl": "/exclusive-products",
