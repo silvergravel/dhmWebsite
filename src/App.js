@@ -23,7 +23,7 @@ import ScrollToTop from './components/scroll-to-top'
 
 
 //stylesheets
-import './styles/css/App.css';
+import './styles/scss/App.scss';
 
 var listingTypeData = require('./data/page-listing-type.json');
 var configData = require('./data/configure-castor-content.json');

@@ -96,20 +96,21 @@
 
             @include breakpoint($tab_767){
 
-            max-width: 232px;
+            // max-width: 232px;
+
 
 
             }
 
             @include breakpoint($mob_480){
-
-              max-width: 220px;
+              height: 65%;
+              // max-width: 220px;
 
             }
 
             @include breakpoint($mob_400){
-
-              max-width: 142px;
+              height: 65%;
+              // max-width: 142px;
 
             }
           }

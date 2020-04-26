@@ -89,7 +89,7 @@
       "code": "t",
       "heading": "Trolleys",
       "subHeading": "Platform trolleys, gas trolleys, drum trolleys and more",
-      "image": "product-images/13_trolleys/563/pt_7146__563.png",
+      "image": "product-images/13_trolleys/trolleys_home__712.png",
 
       "loadCapacity": {
         "tag": "load capacity",
@@ -105,7 +105,7 @@
     {
       "code": "xp",
       "heading": "Exclusive Products",
-      "subHeading": "Industrial track & runner, scaffold caster and more",
+      "subHeading": "Industrial track & runner, scaffold caster, footlock, ball transfer units and more",
       "image": "product-images/14_exclusive_products/excl_home__712.png",
       "loadCapacity": null,
       "wheelDiameter": null,
