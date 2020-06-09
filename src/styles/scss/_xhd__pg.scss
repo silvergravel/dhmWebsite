@@ -1,0 +1,36 @@
+.xhd-page-content{
+  // margin-top: 64px !important;
+  .row{
+    display: block;
+
+    @media screen and (min-width: 992px) {
+      display: flex;
+      
+    }
+  }
+
+  .xhd-page-content__img-wrapper img{
+    max-height: 400px;
+
+    @media screen and (min-width: 992px) {
+      max-height: unset;
+      
+    }
+  }
+
+  .xhd-page-content__text-group{
+    text-align: center;
+
+    @media screen and (min-width: 992px) {
+      text-align: left;
+    }
+  }
+
+  h1{
+    padding-bottom: 20px;
+  }
+  h2{
+    padding-bottom: 20px;
+    line-height: 1.4em;
+  }
+}

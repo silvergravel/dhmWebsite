@@ -161,7 +161,7 @@ class ConfigureCastor extends Component{
     const materialOptions = activeSeries.materialOptions;
     const grooveOptions = activegrooveOptionsId !== null ? activeSeries.grooveOptions : null;
     const vitalsOptions = materialOptions[activematerialOptionsId].vitalsOptions;
-    
+
     var activeProductImage;
     activegrooveOptionsId !== null ?
     activeProductImage = productImgPath[activeDuty.code][activeSeries.code][materialOptions[activematerialOptionsId].code][bracketOptions[activebracketOptionsId].code][grooveOptions[activegrooveOptionsId].code]["712"] :
@@ -270,6 +270,9 @@ class ConfigureCastor extends Component{
               </div>
               <div className="cta_cont">
                 <button class="secondary"><h4 className="black antique">SHARE</h4></button>
+              </div>
+              <div className="cta_cont">
+                <button class="secondary"><h4 className="black antique">PRINT PAGE</h4></button>
               </div>
             </div>
             <div className="col-lg-5 col-md-6 col-sm-6 col-12 primary_cta_wrapper">

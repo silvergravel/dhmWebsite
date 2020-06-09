@@ -205,8 +205,9 @@ class ProductDetails extends Component{
                 <div>
                   <h2 className="black light product-name">{activeSeriesName}</h2>
                   <div className="product-descp">
-                    <h4 className="black medium">sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</h4>
+                    <h4 className="black medium">
+                      {data[activeDutyId][activeSeriesId].description}
+                    </h4>
                   </div>
                 </div>
                 <div>
@@ -261,6 +262,9 @@ class ProductDetails extends Component{
               </div>
               <div className="cta_cont">
                 <button class="secondary"><h4 className="black antique">SHARE</h4></button>
+              </div>
+              <div className="cta_cont">
+                <button class="secondary"><h4 className="black antique">PRINT PAGE</h4></button>
               </div>
             </div>
             <div className="col-lg-5 col-md-6 col-sm-6 col-12 primary_cta_wrapper">

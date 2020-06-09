@@ -17,23 +17,28 @@ class XhdCategoryPage extends Component{
     var categoryName = categoryNameString[0];
 
     return(
-      <div className="category-page-content">
+      <div className="category-page-content xhd-page-content">
         { data[categoryName].map((content, index) => {
             return(
 
                   <div className="series-block" key={index}>      
                    <div>
                     <div className="container">
-                      <div className="row">
-                        <div className = "col-lg-6">
-                          <img src={content.image} alt="" />
+                      <div className="row" style={{alignItems: 'center'}}>
+                        <div className = "col-lg-6 xhd-page-content__img-wrapper" style={{display: 'flex', justifyContent: 'center'}}>
+                          <img src={content.image} alt=""/>
                         </div>
-                        <div className = "col-lg-6">
-                          <h2 className="black light">{content.heading}</h2>
-                          <h4 className="black medium">{content.description}</h4>
+                        <div className = "col-lg-6 xhd-page-content__text-group">
+                          <h1 className="black light">{content.heading}</h1>
+                          <h2 className="black regular">{content.description}</h2>
+                          <Link to='/contact'>
+                            <button className="primary">
+                              <h4 class="black antique">MAKE AN ENQUIRY</h4>
+                            </button>
+                          </Link>
                         </div>
                       </div>
-                      <button className="primary">MAKE AN ENQUIRY</button>
+                      
                     </div>
                    </div>
                 </div>
