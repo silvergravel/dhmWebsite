@@ -170,6 +170,8 @@ class ConfigureCastor extends Component{
     activeProductImage = productImgPath[activeDuty.code][activeSeries.code][materialOptions[activematerialOptionsId].code]["712"];
     ;
 
+    let activeVital = vitalsOptions[activevitalsOptionsId] ? vitalsOptions[activevitalsOptionsId] : vitalsOptions[0];
+
     return(
 
       <div className="config-castor-wrapper container">
@@ -194,7 +196,7 @@ class ConfigureCastor extends Component{
 
               <div className="config-field-dd-wheel-dia">
                 <DropdownWheelDia
-                  activeOptionId= {vitalsOptions[activevitalsOptionsId].id  } //this will become a state variable
+                  activeOptionId= {activeVital ? activeVital.id : vitalsOptions[0].id   } //this will become a state variable
                   label="WHEEL DIAMETER <----> LOAD CAPACITY"
                   list={vitalsOptions}
                   updateWheelConfig={this.updateWheelConfig}
@@ -206,12 +208,12 @@ class ConfigureCastor extends Component{
                   <div>
                   <h5 className="beige antique">TOTAL HEIGHT</h5>
                   <h5 className="beige antique">(wheel + bracket)</h5>
-                  <h4 className="black medium">{vitalsOptions[activevitalsOptionsId].totalHeight}</h4>
+                  <h4 className="black medium">{activeVital.totalHeight}</h4>
                   </div>
                   <div>
                   <h5 className="beige antique">WHEEL</h5>
                   <h5 className="beige antique">THICKNESS</h5>
-                  <h4 className="black medium">{vitalsOptions[activevitalsOptionsId].treadWidth}</h4>
+                  <h4 className="black medium">{activeVital.treadWidth}</h4>
                   </div>
                 </div>
 

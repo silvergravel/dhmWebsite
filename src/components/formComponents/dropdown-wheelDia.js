@@ -51,6 +51,8 @@ class DropdownWheelDia extends Component{
     const{list, label} = this.props
     const{listOpen, activeOptionId} = this.state
 
+    let activeListOp = list[activeOptionId] ? list[activeOptionId] : list[0];
+
     return(
 
       <div className="dd-wrapper dd-wheel-dia">
@@ -58,8 +60,8 @@ class DropdownWheelDia extends Component{
           <div id="dd-select-wheel-dia" className="dd-select dd-wheel-dia" onClick={() => this.toggleList()}>
 
                 <div className="dd-activeOption dd-flex-wrapper dd-wheel-dia">
-                  <h2 className="black light dd-activeTitle dd-wheel-dia">{list[activeOptionId].wheelDiameter}</h2>
-                  <h2 className="black light dd-activeSubTitle dd-wheel-dia">{list[activeOptionId].loadCapacity}</h2>
+                  <h2 className="black light dd-activeTitle dd-wheel-dia">{activeListOp.wheelDiameter}</h2>
+                  <h2 className="black light dd-activeSubTitle dd-wheel-dia">{activeListOp.loadCapacity}</h2>
                   <div className="dd-chevron dd-wheel-dia">
                      {listOpen
                         ? <img src={ChevronUp} alt=""/>
@@ -71,8 +73,8 @@ class DropdownWheelDia extends Component{
               {listOpen &&
                  <ul className="dd-list dd-wheel-dia">
                   {list.map((option) => (
-                   <li className={list[activeOptionId].wheelDiameter === option.wheelDiameter &&
-                                  list[activeOptionId].loadCapacity === option.loadCapacity ?
+                   <li className={activeListOp.wheelDiameter === option.wheelDiameter &&
+                                  activeListOp.loadCapacity === option.loadCapacity ?
                                   'dd-list-item dd-flex-wrapper dd-wheel-dia active' :
                                   'dd-list-item dd-flex-wrapper dd-wheel-dia'}
                        key={option.wheelDiameter}
