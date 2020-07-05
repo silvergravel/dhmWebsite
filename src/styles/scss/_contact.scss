@@ -23,7 +23,7 @@
 
 
   label{
-    width: 50%;
+    width: 100%;
 
     @include breakpoint($tab_767){
       width: 100%;
@@ -41,8 +41,7 @@
       display: block;
       width:100%;
       min-height: 150px;
-
-
+      color: $black;
     }
   }
 

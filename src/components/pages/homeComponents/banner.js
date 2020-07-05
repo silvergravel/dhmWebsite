@@ -13,10 +13,10 @@ class Banner extends Component {
             Reputed stockists of castor wheels and trolleys for your
             domestic and industrial needs. Since 1952.
             <span>
-              <Link smooth to="/heavy-duty-castors#mrn">
+              {/*<Link smooth to="/heavy-duty-castors#mrn">
                 Learn More
                 <img src={Arrows} alt="arrows"/>
-              </Link>
+              </Link>*/}
             </span>
           </h1>
           </div>

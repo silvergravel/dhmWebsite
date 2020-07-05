@@ -385,8 +385,8 @@
           "712":"/product-images/12_hsc/swivel/864/hsc_ci_s__864.png"
         },
         "f":{
-          "464":"/product-images/12_hsc/swivel/563/hsc_ci_f__563.png",
-          "712":"/product-images/12_hsc/swivel/864/hsc_ci_f__864.png"
+          "464":"/product-images/12_hsc/fixed/563/hsc_ci_f__563.png",
+          "712":"/product-images/12_hsc/fixed/864/hsc_ci_f__864.png"
         }
       },
       "n":{
@@ -395,8 +395,8 @@
           "712":"/product-images/12_hsc/swivel/864/hsc_n_s__864.png"
         },
         "f":{
-          "464":"/product-images/12_hsc/swivel/563/hsc_n_f__563.png",
-          "712":"/product-images/12_hsc/swivel/864/hsc_n_f__864.png"
+          "464":"/product-images/12_hsc/fixed/563/hsc_n_f__563.png",
+          "712":"/product-images/12_hsc/fixed/864/hsc_n_f__864.png"
         }
       },
       "p":{
@@ -405,8 +405,8 @@
           "712":"/product-images/12_hsc/swivel/864/hsc_p_s__864.png"
         },
         "f":{
-          "464":"/product-images/12_hsc/swivel/563/hsc_p_f__563.png",
-          "712":"/product-images/12_hsc/swivel/864/hsc_p_f__864.png"
+          "464":"/product-images/12_hsc/fixed/563/hsc_p_f__563.png",
+          "712":"/product-images/12_hsc/fixed/864/hsc_p_f__864.png"
         }
       },
       "puci":{
@@ -415,8 +415,8 @@
           "712":"/product-images/12_hsc/swivel/864/hsc_puci_s__864.png"
         },
         "f":{
-          "464":"/product-images/12_hsc/swivel/563/hsc_puci_f__563.png",
-          "712":"/product-images/12_hsc/swivel/864/hsc_puci_f__864.png"
+          "464":"/product-images/12_hsc/fixed/563/hsc_puci_f__563.png",
+          "712":"/product-images/12_hsc/fixed/864/hsc_puci_f__864.png"
         }
       },
       "rci":{
@@ -425,8 +425,8 @@
           "712":"/product-images/12_hsc/swivel/864/hsc_rci_s__864.png"
         },
         "f":{
-          "464":"/product-images/12_hsc/swivel/563/hsc_rci_f__563.png",
-          "712":"/product-images/12_hsc/swivel/864/hsc_rci_f__864.png"
+          "464":"/product-images/12_hsc/fixed/563/hsc_rci_f__563.png",
+          "712":"/product-images/12_hsc/fixed/864/hsc_rci_f__864.png"
         }
       }
     },

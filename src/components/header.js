@@ -95,11 +95,8 @@ class Header extends Component {
           </div>
           <ul className="secondaryLinks">
             <li className="reg">
-              <Link to="/about">About</Link>
-            </li>
-            <li className="reg">
             <Link to="/contact">Contact</Link>
-              
+
             </li>
             <Link to="/my-quote-cart">
               <li className={this.props.itemsInCart > 0 ? 'cart active' : 'cart inactive'}>

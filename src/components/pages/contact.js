@@ -73,70 +73,89 @@ class Contact extends Component{
     return(
       <div>
       <div className="container contact-page-container">
-      <div className="form-header">
-      {
-        this.createQuoteCartFields === true ?
-        <div>
-        <Link to="/my-quote-cart" className="back-to-cart-btn">
-        <img src={Arrows} alt="arrows"/><h4 className="orange regular">Go Back to Quote Cart</h4>
-        </Link>
-        <h4 className="black medium section__title contact-page">Quotation Request Form</h4>
-        <h3 className="black medium">Please provide a few contact details below,
-        so that we know how to get back to you.</h3>
-        </div> :
-        <div>
-        <h4 className="black medium section__title contact-page">Contact</h4>
-        <h3 className="black medium">Have any questions or queries? Please get in touch with us by filling out some basic details below</h3>
-        </div>
-      }
-
-
-
-      </div>
-      <form name="contact" method="post">
-          <input type="hidden" name="form-name" value="contact" />
-          <p>
-            <label class="beige antique">FULL NAME*<input type="text" name="name" required="required" placeholder="Ramesh Bharat"/></label>
-          </p>
-          <p>
-            <label class="beige antique">PHONE NUMBER*
-            <input type="tel" name="tel"  required="required" placeholder="99999 99999"/></label>
-          </p>
-          <p>
-            <label class="beige antique">EMAIL ADDRESS*<input type="email" name="email" required="required" placeholder="ramesh@mail.com"/></label>
-          </p>
-          <p>
-            <label class="beige antique">MESSAGE, QUERIES, QUESTIONS (optional)
-            <textarea name="message" placeholder="Write your queries or questions here..."></textarea></label>
-          </p>
-          {
-
-            this.createQuoteCartFields === true ?
-            <div>
-              <div className="hidden-field">
-                <label class="beige antique">
-                  <textarea name="cart-items">
-                    {itemsToForm}
-                  </textarea>
-                </label>
+      <div className='row'>
+        <div className='col-md-6' style={{marginBottom: '64px'}}>
+          <div className="form-header">
+          { this.createQuoteCartFields === true
+            ? <div>
+                <Link to="/my-quote-cart" className="back-to-cart-btn">
+                <img src={Arrows} alt="arrows"/><h4 className="orange regular">Go Back to Quote Cart</h4>
+                </Link>
+                <h4 className="black medium section__title contact-page">Quotation Request Form</h4>
+                <h3 className="black medium">Please provide a few contact details below,
+                so that we know how to get back to you.</h3>
               </div>
+            : <div>
+                <h4 className="black medium section__title contact-page">Contact form</h4>
+                <h3 className="black medium">Have any questions or queries? Please get in touch with us by filling out some basic details below</h3>
+              </div> }
+          </div>
+          <form name="contact" method="post">
+              <input type="hidden" name="form-name" value="contact" />
               <p>
-                <button class="primary" type="submit">
-                  <h4 class="black antique">REQUEST QUOTE NOW</h4>
-                </button>
+                <label class="beige antique">FULL NAME*<input type="text" name="name" required="required" placeholder=""/></label>
               </p>
-            </div> :
-            <p>
-              <button class="primary" type="submit">
-                <h4 class="black antique">SEND MESSAGE</h4>
-              </button>
-            </p>
+              <p>
+                <label class="beige antique">PHONE NUMBER*
+                <input type="tel" name="tel"  required="required" placeholder=""/></label>
+              </p>
+              <p>
+                <label class="beige antique">EMAIL ADDRESS*<input type="email" name="email" required="required" placeholder=""/></label>
+              </p>
+              <p>
+                <label class="beige antique">MESSAGE, QUERIES, QUESTIONS (optional)
+                <textarea name="message" placeholder="Write your queries or questions here..."></textarea></label>
+              </p>
+              {
 
-          }
+                this.createQuoteCartFields === true ?
+                <div>
+                  <div className="hidden-field">
+                    <label class="beige antique">
+                      <textarea name="cart-items">
+                        {itemsToForm}
+                      </textarea>
+                    </label>
+                  </div>
+                  <p>
+                    <button class="primary" type="submit">
+                      <h4 class="black antique">REQUEST QUOTE NOW</h4>
+                    </button>
+                  </p>
+                </div> :
+                <p>
+                  <button class="primary" type="submit">
+                    <h4 class="black antique">SEND MESSAGE</h4>
+                  </button>
+                </p>
+
+              }
 
 
 
-        </form>
+            </form>
+          </div>
+          { !this.createQuoteCartFields &&
+            <div className='col-md-5 col-md-offset-1' >
+              <h4 className="black medium section__title contact-page">CONTACT DETAILS</h4>
+              <h3 className="black medium">Or you can visit our store, or reach us over email or phone</h3>
+              <div style={{paddingTop: '24px'}}>
+                <h4 className="beige antique">Address</h4>
+                <p className='black medium'>DHM Wheels, 84 Bhajipala Street, Mumbai, 400003</p>
+              </div>
+
+              <div style={{paddingTop: '24px'}}>
+                <h4 className="beige antique">EMAIL</h4>
+                <a href='mailto:info@dhmwheels.com' target='_blank'>info@dhmwheels.com</a>
+              </div>
+
+              <div style={{paddingTop: '24px'}}>
+                <h4 className="beige antique">PHONE</h4>
+                <a href='tel:00919821025854' target='_blank'>+91 98 2102 5854</a><br/>
+                <a href='tel:00919820207057' target='_blank'>+91 98 2020 7057</a>
+              </div>
+            </div> }
+        </div>
         </div>
 
       </div>

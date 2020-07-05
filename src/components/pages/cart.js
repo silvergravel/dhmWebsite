@@ -1,5 +1,5 @@
 
-import React, { Component } from 'react';
+import React, { Component,  Fragment } from 'react';
 import { Link } from 'react-router-dom';
 
 var data = require('../../data/configure-castor-content.json');
@@ -196,12 +196,21 @@ class Cart extends Component{
         }
 
         })}
-        <Link to={{
-          pathname: "/contact",
-          requestQuoteFlow: true
-        }}>
-        <button className="primary confirmCartBtn"><h4 className="black antique">CONFIRM AND PROCEED TO REQUEST QUOTE</h4></button>
-        </Link>
+      { this.props.cartItems.length > 0
+        ? <Fragment>
+            <Link to={{
+              pathname: "/contact",
+              requestQuoteFlow: true
+            }}>
+            <button className="primary confirmCartBtn"><h4 className="black antique">CONFIRM AND PROCEED TO REQUEST QUOTE</h4></button>
+            </Link>
+            <div style={{display: 'flex', justifyContent: 'center', paddingTop: '24px'}}>
+              <h5 className="black regular" style={{maxWidth: '500px', textAlign: 'center', fontStyle: 'italic', lineHeight: '1.4em' }}>By proceeding, you will NOT be taken to a payment page where you can buy the products online. this will simply take you to a contact form which will allow you to send your products request to us, and we shall get in touch with you regarding the same as soon as we can!</h5>
+            </div>
+          </Fragment>
+        : <div>
+            <h2 black medium>You have 0 items in your quote cart</h2>
+          </div> }
         </div>
 
       </div>
