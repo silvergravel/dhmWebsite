@@ -1,1 +1,39 @@
-"use strict";var precacheConfig=[["/index.html","6ce32526ffa9beee05e57cf4cdcb8a0c"],["/static/css/main.c47a9ea1.css","fb72a3ebaac3fb84794f3794f2ba45b2"],["/static/js/main.d45cd0d4.js","aeeacbf5c4176f741e7a7e03425095a9"],["/static/media/arrows.b15482ee.svg","b15482ee5f759577060e7a1697067754"],["/static/media/cart-with-items.78a21f0c.svg","78a21f0c6becfd94c631e73353402928"],["/static/media/chevron-down.afc4b52f.svg","afc4b52f912770fd651c73efc333b3bd"],["/static/media/chevron-up.6c86866f.svg","6c86866fe716a7b35cb61ce7ac568989"],["/static/media/close-hamburger.4e9a69d1.svg","4e9a69d1b7bd613591a06f53f09ff59e"],["/static/media/hamburger.4988d233.svg","4988d2336225adbac122a45b7c22c03a"],["/static/media/logo-full.16117025.svg","16117025738235e82a1a7513a756a2ff"],["/static/media/logo-small.184d36f4.svg","184d36f4878205c1dac667324e24d460"],["/static/media/suissebpintl-antique-webfont.133a4361.woff","133a43618c380d0d992b7cf583e83bbe"],["/static/media/suissebpintl-antique-webfont.316d4dae.svg","316d4dae903790a72f9c7520b54b7717"],["/static/media/suissebpintl-antique-webfont.42f9adaf.eot","42f9adaf4c9015e513dee5d81402e317"],["/static/media/suissebpintl-antique-webfont.69e04166.ttf","69e04166fcee951845c4878ecc8f0b73"],["/static/media/suissebpintl-light-webfont.19a8ae66.eot","19a8ae66598ff70d45993dafbc61538a"],["/static/media/suissebpintl-light-webfont.23b34e3d.svg","23b34e3d0773088738dd1fb0c71fc7d2"],["/static/media/suissebpintl-light-webfont.cec30d88.ttf","cec30d88f32c56f47636f453f8ea3040"],["/static/media/suissebpintl-light-webfont.e5b0e2c8.woff","e5b0e2c88aa81163fda99886b0c58755"],["/static/media/suissebpintl-medium-webfont.4ad66390.woff","4ad663906dfd8733d9558cf7c9541c61"],["/static/media/suissebpintl-medium-webfont.6a7a0c70.eot","6a7a0c704484f6dae77326f173b3dfaa"],["/static/media/suissebpintl-medium-webfont.d0a59edc.ttf","d0a59edcebe154aabcbea90de1180ce6"],["/static/media/suissebpintl-medium-webfont.eb5029ae.svg","eb5029aebef2291d1c5ecfb5c4d6c542"],["/static/media/suissebpintl-regular-webfont.2db8084e.eot","2db8084ecb025ddaa176993d184dfbdb"],["/static/media/suissebpintl-regular-webfont.379bb082.woff","379bb08224bdc34604299a6d631471aa"],["/static/media/suissebpintl-regular-webfont.37f99546.svg","37f995463962420d8596de53fc8b276c"],["/static/media/suissebpintl-regular-webfont.e3afbe1a.ttf","e3afbe1a5b1320ca519503c2d7d7299e"]],cacheName="sw-precache-v3-sw-precache-webpack-plugin-"+(self.registration?self.registration.scope:""),ignoreUrlParametersMatching=[/^utm_/],addDirectoryIndex=function(e,t){var a=new URL(e);return"/"===a.pathname.slice(-1)&&(a.pathname+=t),a.toString()},cleanResponse=function(t){return t.redirected?("body"in t?Promise.resolve(t.body):t.blob()).then(function(e){return new Response(e,{headers:t.headers,status:t.status,statusText:t.statusText})}):Promise.resolve(t)},createCacheKey=function(e,t,a,n){var s=new URL(e);return n&&s.pathname.match(n)||(s.search+=(s.search?"&":"")+encodeURIComponent(t)+"="+encodeURIComponent(a)),s.toString()},isPathWhitelisted=function(e,t){if(0===e.length)return!0;var a=new URL(t).pathname;return e.some(function(e){return a.match(e)})},stripIgnoredUrlParameters=function(e,a){var t=new URL(e);return t.hash="",t.search=t.search.slice(1).split("&").map(function(e){return e.split("=")}).filter(function(t){return a.every(function(e){return!e.test(t[0])})}).map(function(e){return e.join("=")}).join("&"),t.toString()},hashParamName="_sw-precache",urlsToCacheKeys=new Map(precacheConfig.map(function(e){var t=e[0],a=e[1],n=new URL(t,self.location),s=createCacheKey(n,hashParamName,a,/\.\w{8}\./);return[n.toString(),s]}));function setOfCachedUrls(e){return e.keys().then(function(e){return e.map(function(e){return e.url})}).then(function(e){return new Set(e)})}self.addEventListener("install",function(e){e.waitUntil(caches.open(cacheName).then(function(n){return setOfCachedUrls(n).then(function(a){return Promise.all(Array.from(urlsToCacheKeys.values()).map(function(t){if(!a.has(t)){var e=new Request(t,{credentials:"same-origin"});return fetch(e).then(function(e){if(!e.ok)throw new Error("Request for "+t+" returned a response with status "+e.status);return cleanResponse(e).then(function(e){return n.put(t,e)})})}}))})}).then(function(){return self.skipWaiting()}))}),self.addEventListener("activate",function(e){var a=new Set(urlsToCacheKeys.values());e.waitUntil(caches.open(cacheName).then(function(t){return t.keys().then(function(e){return Promise.all(e.map(function(e){if(!a.has(e.url))return t.delete(e)}))})}).then(function(){return self.clients.claim()}))}),self.addEventListener("fetch",function(t){if("GET"===t.request.method){var e,a=stripIgnoredUrlParameters(t.request.url,ignoreUrlParametersMatching),n="index.html";(e=urlsToCacheKeys.has(a))||(a=addDirectoryIndex(a,n),e=urlsToCacheKeys.has(a));var s="/index.html";!e&&"navigate"===t.request.mode&&isPathWhitelisted(["^(?!\\/__).*"],t.request.url)&&(a=new URL(s,self.location).toString(),e=urlsToCacheKeys.has(a)),e&&t.respondWith(caches.open(cacheName).then(function(e){return e.match(urlsToCacheKeys.get(a)).then(function(e){if(e)return e;throw Error("The cached response that was expected is missing.")})}).catch(function(e){return console.warn('Couldn\'t serve response for "%s" from cache: %O',t.request.url,e),fetch(t.request)}))}});
+/**
+ * Welcome to your Workbox-powered service worker!
+ *
+ * You'll need to register this file in your web app and you should
+ * disable HTTP caching for this file too.
+ * See https://goo.gl/nhQhGp
+ *
+ * The rest of the code is auto-generated. Please don't update this file
+ * directly; instead, make changes to your Workbox build configuration
+ * and re-run your build process.
+ * See https://goo.gl/2aRDsh
+ */
+
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+
+importScripts(
+  "/precache-manifest.c036eaa9c783290597a544c62bf451ab.js"
+);
+
+self.addEventListener('message', (event) => {
+  if (event.data && event.data.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
+});
+
+workbox.core.clientsClaim();
+
+/**
+ * The workboxSW.precacheAndRoute() method efficiently caches and responds to
+ * requests for URLs in the manifest.
+ * See https://goo.gl/S9QRab
+ */
+self.__precacheManifest = [].concat(self.__precacheManifest || []);
+workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
+
+workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/index.html"), {
+  
+  blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
+});
