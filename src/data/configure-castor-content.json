@@ -2279,7 +2279,7 @@
       "series":"Platform Trolley 7146",
       "code":"pt1",
       "configurable": false,
-      "description": "this is a test",
+      "description": "Manufactured from 18 gauge pressed steel deck, reinforced with running and cross beams. Trolleys fitted with 2 swivel and 2 fixed 100 mm castors",
       "vitalsOptions":[
         {
         "vitals":[
@@ -2299,7 +2299,7 @@
       "series":"Platform Trolley 9060",
       "code":"pt2",
       "configurable": false,
-      "description": "this is a test",
+      "description": "Made from 16 gauge pressed stell deck, reinforced with 16 gauge running and cross beams. Fitted with 2 swivel and 2 fixed castors of diameter 130 mm",
       "vitalsOptions":[
         {
         "vitals":[
@@ -2319,13 +2319,13 @@
       "series":"Platform Trolley 1275",
       "code":"pt3",
       "configurable": false,
-      "description": "this is a test",
+      "description": "Made from 16 gauge corrogated pressed steel deck, reinforced with 16 gauge running and cross beams. Fitted with 2 swivel and 2 fixed 200 mm diamter castors.",
       "vitalsOptions":[
         {
         "vitals":[
           {
            "tag": "Load Capacity",
-           "value": "Upto 350 kgs"
+           "value": "Upto 500 kgs"
           },
           {
            "tag": "Dimensions",
@@ -2339,7 +2339,7 @@
       "series":"Platform Trolley 1590",
       "code":"pt4",
       "configurable": false,
-      "description": "this is a test",
+      "description": "Made from heavy duty corrogated pressed steel deck, reinforced with 16 gauge running and cross beeams. Fitted with 2 swivel and 2 fixed, 200 mm diameter, forged steel castors",
       "vitalsOptions":[
         {
         "vitals":[
@@ -2359,7 +2359,7 @@
       "series":"Single Gas Cylinder Trolley",
       "code":"sgct",
       "configurable": false,
-      "description": "this is a test",
+      "description": "Fitted with 200 mm wheels",
       "vitalsOptions":[
         {
         "vitals":[
@@ -2379,7 +2379,7 @@
       "series":"Double Gas Cylinder Trolley",
       "code":"dgct",
       "configurable": false,
-      "description": "this is a test",
+      "description": "Fitted with 300 mm rubber wheels",
       "vitalsOptions":[
         {
         "vitals":[
@@ -2399,7 +2399,7 @@
       "series":"Single Wheel Barrow",
       "code":"swb",
       "configurable": false,
-      "description": "this is a test",
+      "description": "Fitted with wheels of 300 mm diameter",
       "vitalsOptions":[
         {
         "vitals":[
@@ -2419,7 +2419,7 @@
       "series":"Double Wheel Barrow",
       "code":"dwb",
       "configurable": false,
-      "description": "this is a test",
+      "description": "Fitted with 350 mm rubber wheels",
       "vitalsOptions":[
         {
         "vitals":[
@@ -2439,7 +2439,7 @@
       "series":"Drum Standard Trolley",
       "code":"dst",
       "configurable": false,
-      "description": "this is a test",
+      "description": "Fitted with 3 cushion tyred wheels",
       "vitalsOptions":[
         {
         "vitals":[
@@ -2459,7 +2459,7 @@
       "series":"Hess 9 Trolley",
       "code":"h9t",
       "configurable": false,
-      "description": "this is a test",
+      "description": "Fitted with rubber tyred wheels of 250 mm diameter, with double ball bearing",
       "vitalsOptions":[
         {
         "vitals":[
@@ -2479,7 +2479,7 @@
       "series":"Sack Folding Trolley",
       "code":"sft",
       "configurable": false,
-      "description": "this is a test",
+      "description": "Fitted with cushion tyred wheels of 200 mm diameter",
       "vitalsOptions":[
         {
         "vitals":[
@@ -2503,7 +2503,7 @@
       "series":"Door Runners",
       "code":"dr",
       "configurable": false,
-      "description": "this is a test",
+      "description": "Heavy duty door runner and track for industrial and institutional usage",
       "vitalsOptions":[
         {
         "id": 0,
@@ -2553,7 +2553,7 @@
       "series":"Foot Lock",
       "code":"fl",
       "configurable": false,
-      "description": "this is a test",
+      "description": "Useful for cargo handling in warehouses and industries",
       "vitalsOptions":[
         {
         "id": 0,
@@ -2597,7 +2597,7 @@
       "series":"Glass Castor",
       "code":"gc",
       "configurable": false,
-      "description": "this is a test",
+      "description": "Specialized rubber castors for use in the glass industry",
       "vitalsOptions":[
         {
         "id": 0,
@@ -2641,7 +2641,7 @@
       "series":"Rubber Chowk",
       "code":"rc",
       "configurable": false,
-      "description": "this is a test",
+      "description": "Suitable for usage in airlines, heavy duty tractors, trailers and buses",
       "vitalsOptions":[
         {
         "id": 0,
@@ -2679,7 +2679,7 @@
       "series":"Ball Transfer Unit",
       "code":"btu",
       "configurable": false,
-      "description": "this is a test",
+      "description": "Suitable for moving goods in industries, sheds and institutions",
       "vitalsOptions":[
         {
         "id": 0,
@@ -2727,7 +2727,7 @@
       "series":"Conveyor Roller",
       "code":"cr",
       "configurable": false,
-      "description": "this is a test",
+      "description": "Suitable for moving goods in industries, sheds and institutions",
       "vitalsOptions":[
         {
         "id": 0,
@@ -2753,7 +2753,7 @@
       "series":"SCS Castor",
       "code":"scs",
       "configurable": false,
-      "description": "this is a test",
+      "description": "Suitable for fitting in H-frames, used in the construction industry & docks",
       "vitalsOptions":[
         {
         "id": 0,

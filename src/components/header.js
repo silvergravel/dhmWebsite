@@ -110,7 +110,7 @@ class Header extends Component {
           </ul>
           <Link to="/">
             <div className="logo-small" onClick={this.closeHamburger}>
-                <img src={LogoSmall} alt="logo-small"/>
+                <img src={LogoFull} alt="dhmwheels"/>
             </div>
           </Link>
 
