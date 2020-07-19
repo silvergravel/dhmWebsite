@@ -49,7 +49,7 @@
             "wheelDiameter": "50 mm",
             "totalHeight": "75 mm",
             "treadWidth": "22 mm",
-            "loadCapacity": "36 kgs"
+            "loadCapacity": "40 kgs"
             }
           ]
         },
@@ -137,7 +137,7 @@
             "wheelDiameter": "38 mm",
             "totalHeight": "66.5 mm",
             "treadWidth": "22 mm",
-            "loadCapacity": "16 kgs"
+            "loadCapacity": "20 kgs"
             },
             {
             "id": 1,
@@ -145,7 +145,7 @@
             "wheelDiameter": "50 mm",
             "totalHeight": "75 mm",
             "treadWidth": "22 mm",
-            "loadCapacity": "18 kgs"
+            "loadCapacity": "25 kgs"
             }
           ]
         }
@@ -316,7 +316,7 @@
             "wheelDiameter": "50 mm",
             "totalHeight": "84 mm",
             "treadWidth": "22 mm",
-            "loadCapacity": "45 kgs"
+            "loadCapacity": "25 kgs"
             },
             {
             "id": 1,
@@ -324,7 +324,7 @@
             "wheelDiameter": "63 mm",
             "totalHeight": "88 mm",
             "treadWidth": "22 mm",
-            "loadCapacity": "45 kgs"
+            "loadCapacity": "30 kgs"
             },
             {
             "id": 2,
@@ -332,7 +332,7 @@
             "wheelDiameter": "75 mm",
             "totalHeight": "106 mm",
             "treadWidth": "22 mm",
-            "loadCapacity": "45 kgs"
+            "loadCapacity": "40 kgs"
             },
             {
             "id": 3,
@@ -374,7 +374,7 @@
             "wheelDiameter": "75 mm",
             "totalHeight": "106 mm",
             "treadWidth": "22 mm",
-            "loadCapacity": "27 kgs"
+            "loadCapacity": "35 kgs"
             },
             {
             "id": 3,
@@ -382,7 +382,7 @@
             "wheelDiameter": "100 mm",
             "totalHeight": "132 mm",
             "treadWidth": "22 mm",
-            "loadCapacity": "27 kgs"
+            "loadCapacity": "40 kgs"
             }
           ]
         },
@@ -469,7 +469,7 @@
             "wheelDiameter": "63 mm",
             "totalHeight": "91 mm",
             "treadWidth": "28 mm",
-            "loadCapacity": "90 kgs"
+            "loadCapacity": "80 kgs"
             },
             {
             "id": 1,
@@ -553,7 +553,7 @@
             "wheelDiameter": "63 mm",
             "totalHeight": "91 mm",
             "treadWidth": "28 mm",
-            "loadCapacity": "80 kgs"
+            "loadCapacity": "65 kgs"
             },
             {
             "id": 1,
@@ -561,7 +561,7 @@
             "wheelDiameter": "75 mm",
             "totalHeight": "108.5 mm",
             "treadWidth": "28 mm",
-            "loadCapacity": "80 kgs"
+            "loadCapacity": "70 kgs"
             },
             {
             "id": 2,
@@ -595,7 +595,7 @@
             "wheelDiameter": "63 mm",
             "totalHeight": "91 mm",
             "treadWidth": "28 mm",
-            "loadCapacity": "65 kgs"
+            "loadCapacity": "50 kgs"
             },
             {
             "id": 1,
@@ -603,7 +603,7 @@
             "wheelDiameter": "75 mm",
             "totalHeight": "108.5 mm",
             "treadWidth": "28 mm",
-            "loadCapacity": "65 kgs"
+            "loadCapacity": "50 kgs"
             },
             {
             "id": 2,
@@ -611,7 +611,7 @@
             "wheelDiameter": "100 mm",
             "totalHeight": "132 mm",
             "treadWidth": "28 mm",
-            "loadCapacity": "70 kgs"
+            "loadCapacity": "60 kgs"
             },
             {
             "id": 3,
@@ -679,7 +679,7 @@
             "wheelDiameter": "63 mm",
             "totalHeight": "91 mm",
             "treadWidth": "28 mm",
-            "loadCapacity": "60 kgs"
+            "loadCapacity": "40 kgs"
             },
             {
             "id": 1,
@@ -687,7 +687,7 @@
             "wheelDiameter": "75 mm",
             "totalHeight": "108.5 mm",
             "treadWidth": "28 mm",
-            "loadCapacity": "60 kgs"
+            "loadCapacity": "50 kgs"
             },
             {
             "id": 2,
@@ -1317,7 +1317,7 @@
           "wheelDiameter": "150 mm",
           "totalHeight": "197 mm",
           "treadWidth": "50 mm",
-          "loadCapacity": "820 kgs"
+          "loadCapacity": "410 kgs"
           },
           {
           "id": 1,
@@ -1325,7 +1325,7 @@
           "wheelDiameter": "200 mm",
           "totalHeight": "243 mm",
           "treadWidth": "50 mm",
-          "loadCapacity": "820 kgs"
+          "loadCapacity": "500 kgs"
           }
         ]
         },
@@ -1342,7 +1342,7 @@
           "wheelDiameter": "150 mm",
           "totalHeight": "197 mm",
           "treadWidth": "50 mm",
-          "loadCapacity": "820 kgs"
+          "loadCapacity": "350 kgs"
           },
           {
           "id": 1,
@@ -1350,7 +1350,7 @@
           "wheelDiameter": "200 mm",
           "totalHeight": "243 mm",
           "treadWidth": "50 mm",
-          "loadCapacity": "820 kgs"
+          "loadCapacity": "400 kgs"
           }
         ]
         },
@@ -1367,7 +1367,7 @@
           "wheelDiameter": "150 mm",
           "totalHeight": "197 mm",
           "treadWidth": "50 mm",
-          "loadCapacity": "820 kgs"
+          "loadCapacity": "410 kgs"
           },
           {
           "id": 1,
@@ -1375,7 +1375,7 @@
           "wheelDiameter": "200 mm",
           "totalHeight": "243 mm",
           "treadWidth": "50 mm",
-          "loadCapacity": "820 kgs"
+          "loadCapacity": "500 kgs"
           }
         ]
         },
@@ -1393,7 +1393,7 @@
           "wheelDiameter": "150 mm",
           "totalHeight": "197 mm",
           "treadWidth": "50 mm",
-          "loadCapacity": "820 kgs"
+          "loadCapacity": "350 kgs"
           },
           {
           "id": 1,
@@ -1401,7 +1401,7 @@
           "wheelDiameter": "200 mm",
           "totalHeight": "243 mm",
           "treadWidth": "50 mm",
-          "loadCapacity": "820 kgs"
+          "loadCapacity": "400 kgs"
           }
         ]
         }
@@ -1523,7 +1523,7 @@
           "wheelDiameter": "100 mm",
           "totalHeight": "152 mm",
           "treadWidth": "50 mm",
-          "loadCapacity": "225 kgs"
+          "loadCapacity": "300 kgs"
           },
           {
           "id": 1,
@@ -1531,7 +1531,7 @@
           "wheelDiameter": "125 mm",
           "totalHeight": "178 mm",
           "treadWidth": "50 mm",
-          "loadCapacity": "600 kgs"
+          "loadCapacity": "500 kgs"
           },
           {
           "id": 2,
@@ -1620,7 +1620,7 @@
           "wheelDiameter": "100 mm",
           "totalHeight": "152 mm",
           "treadWidth": "50 mm",
-          "loadCapacity": "200 kgs"
+          "loadCapacity": "250 kgs"
           },
           {
           "id": 1,
@@ -2131,7 +2131,7 @@
           "wheelDiameter": "125 mm",
           "totalHeight": "165 mm",
           "treadWidth": "50 mm",
-          "loadCapacity": "450 kgs"
+          "loadCapacity": "360 kgs"
           },
           {
           "id": 2,
@@ -2139,7 +2139,7 @@
           "wheelDiameter": "150 mm",
           "totalHeight": "191 mm",
           "treadWidth": "50 mm",
-          "loadCapacity": "450 kgs"
+          "loadCapacity": "400 kgs"
           },
           {
           "id": 3,
@@ -2202,7 +2202,7 @@
         "image": "/product-images/best-sellers-temp.png",
         "vitalsOptions": [
           {
-          "id": 1,
+          "id": 0,
           "key": "vitalsOptions",
           "wheelDiameter": "100 mm",
           "totalHeight": "143 mm",
@@ -2210,7 +2210,7 @@
           "loadCapacity": "275 kgs"
           },
           {
-          "id": 3,
+          "id": 1,
           "key": "vitalsOptions",
           "wheelDiameter": "125 mm",
           "totalHeight": "165 mm",
@@ -2218,7 +2218,7 @@
           "loadCapacity": "340 kgs"
           },
           {
-          "id": 5,
+          "id": 2,
           "key": "vitalsOptions",
           "wheelDiameter": "150 mm",
           "totalHeight": "191 mm",
@@ -2226,7 +2226,7 @@
           "loadCapacity": "400 kgs"
           },
           {
-          "id": 6,
+          "id": 3,
           "key": "vitalsOptions",
           "wheelDiameter": "200 mm",
           "totalHeight": "242 mm",
@@ -2244,36 +2244,36 @@
         "image": "/product-images/best-sellers-temp.png",
         "vitalsOptions": [
           {
-          "id": 1,
+          "id": 0,
           "key": "vitalsOptions",
           "wheelDiameter": "100 mm",
           "totalHeight": "143 mm",
           "treadWidth": "50 mm",
-          "loadCapacity": "150 kgs"
+          "loadCapacity": "200 kgs"
           },
           {
-          "id": 3,
+          "id": 1,
           "key": "vitalsOptions",
           "wheelDiameter": "125 mm",
           "totalHeight": "165 mm",
           "treadWidth": "50 mm",
-          "loadCapacity": "180 kgs"
+          "loadCapacity": "225 kgs"
           },
           {
-          "id": 5,
+          "id": 2,
           "key": "vitalsOptions",
           "wheelDiameter": "150 mm",
           "totalHeight": "191 mm",
           "treadWidth": "50 mm",
-          "loadCapacity": "205 kgs"
+          "loadCapacity": "250 kgs"
           },
           {
-          "id": 6,
+          "id": 3,
           "key": "vitalsOptions",
           "wheelDiameter": "200 mm",
           "totalHeight": "242 mm",
           "treadWidth": "50 mm",
-          "loadCapacity": "230 kgs"
+          "loadCapacity": "300 kgs"
           }
         ]
         }

@@ -31,7 +31,7 @@
           "image": "product-images/00_rd1/swivel/464/rd1_ci_s__464.png",
           "loadCapacity": {
             "tag": "load capacity",
-            "quantity": "Upto 36 kgs"
+            "quantity": "Upto 40 kgs"
           },
           "redirectUrl": "/ld-rd1"
         },
@@ -79,7 +79,7 @@
           "image": "product-images/00_rd1/swivel/464/rd1_r_s__464.png",
           "loadCapacity": {
             "tag": "load capacity",
-            "quantity": "Upto 18 kgs"
+            "quantity": "Upto 25 kgs"
           },
           "redirectUrl": "/ld-rd1"
         }
@@ -167,7 +167,7 @@
           "image": "product-images/01_rd2/swivel/464/FAKE_rd1_r_s__464.png",
           "loadCapacity": {
             "tag": "load capacity",
-            "quantity": "Upto 27 kgs"
+            "quantity": "Upto 40 kgs"
           },
           "redirectUrl": "/ld-rd2"
         },
@@ -586,7 +586,7 @@
           "image": "product-images/07_scafold/swivel/464/scaf_ci_s__464.png",
           "loadCapacity": {
             "tag": "load capacity",
-            "quantity": "Upto 820 kgs"
+            "quantity": "Upto 500 kgs"
           },
           "redirectUrl": "/hd-scaf"
         },
@@ -598,7 +598,7 @@
           "image": "product-images/07_scafold/swivel/464/scaf_n_s__464.png",
           "loadCapacity": {
             "tag": "load capacity",
-            "quantity": "Upto 820 kgs"
+            "quantity": "Upto 400 kgs"
           },
           "redirectUrl": "/hd-scaf"
         },
@@ -610,7 +610,7 @@
           "image": "product-images/07_scafold/swivel/464/scaf_p_s__464.png",
           "loadCapacity": {
             "tag": "load capacity",
-            "quantity": "Upto 820 kgs"
+            "quantity": "Upto 500 kgs"
           },
           "redirectUrl": "/hd-scaf"
         },
@@ -622,7 +622,7 @@
           "image": "product-images/07_scafold/swivel/464/scaf_rci_s__464.png",
           "loadCapacity": {
             "tag": "load capacity",
-            "quantity": "Upto 820 kgs"
+            "quantity": "Upto 400 kgs"
           },
           "redirectUrl": "/hd-scaf"
         }
@@ -894,7 +894,7 @@
           "image": "product-images/mrn/swivel/563/mrn_rci_s__563.png",
           "loadCapacity": {
             "tag": "load capacity",
-            "quantity": "Upto 200 kgs"
+            "quantity": "Upto 300 kgs"
           },
           "redirectUrl": "/hd-mrn"
         }
