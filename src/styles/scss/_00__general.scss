@@ -92,6 +92,21 @@ h2.black.light{
   }
 }
 
+h2.beige.light{
+
+  font-family: 'suisse-light';
+  font-size: 32px;
+  line-height: 36px;
+  color: $beige;
+
+  @include breakpoint($mob_400){
+
+    font-size: 20px;
+    line-height: 22px;
+
+  }
+}
+
 h2.black.medium{
 
   font-family: 'suisse-medium';
@@ -306,6 +321,13 @@ h6.light.orange{
   //   line-height: 12px;
   //
   // }
+}
+
+.h6.medium.beige{
+  font-family: 'suisse-medium';
+  font-size: 12px;
+  line-height: 16px;
+  color: $beige;
 }
 
 //label

@@ -80,8 +80,20 @@ class DropdownWheelDia extends Component{
                        key={option.wheelDiameter}
                        data-id={option.id}
                        onClick={(evt) => this.activateOption(evt, option.id, option.key)} >
-                   <h2 className="black light dd-list-item--title dd-wheel-dia">{option.wheelDiameter}</h2>
-                   <h2 className="black light dd-list-item--sub-title dd-wheel-dia">{option.loadCapacity}</h2>
+                  <div>
+                    <h2 className="black light dd-list-item--title dd-wheel-dia">
+                      {option.wheelDiameter}
+                      { option.showTreadWidthInDD &&
+                        <span
+                          className='h6 beige medium'
+                          style={{marginLeft: '5px'}}
+                          >{`( ${option.treadWidth} )`}
+                        </span> }
+                    </h2>
+                  </div>
+                   <h2 className="black light dd-list-item--sub-title dd-wheel-dia">
+                     {option.loadCapacity}
+                   </h2>
                    </li>
                   ))}
                 </ul>

@@ -200,7 +200,13 @@ header{
     }
   }
 
-
+  .mail-icon-desktop, .phone-icon-desktop{
+    img{
+      height: 30px;
+      margin-top: -5px;
+      margin-right: 2px;
+    }
+  }
 
 
 
@@ -248,6 +254,12 @@ header{
     position: relative;
     margin-right: 25px;
 
+    img{
+      @include breakpoint($mob_480){
+        width: 80%;
+      }
+    }
+
     span{
       position: absolute;
       right:12px;
@@ -255,8 +267,49 @@ header{
       font-family: 'suisse-regular';
       color: $orange;
       font-size: 14px;
+
+      @include breakpoint($mob_480){
+        right: 17px;
+        top: -3px
+      }
+    }
+
+    @include breakpoint($mob_480){
+      margin-right: 8px;
     }
   }
+
+  .phone-icon-mobile{
+    display: inline-block;
+    margin-right: 8px;
+
+    img{
+      @include breakpoint($mob_480){
+        width: 90%;
+      }
+    }
+
+    @include breakpoint($mob_480){
+      margin-right: 0;
+
+    }
+  }
+
+  .mail-icon-mobile{
+    display: inline-block;
+    margin-right: 16px;
+
+    img{
+      @include breakpoint($mob_480){
+        width: 90%;
+      }
+    }
+
+    @include breakpoint($mob_480){
+      margin-right: 4px;
+    }
+  }
+
 }
 
 

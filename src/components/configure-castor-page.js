@@ -5,6 +5,7 @@ import DropdownWheelDia from './formComponents/dropdown-wheelDia';
 import InputField from './formComponents/input-field';
 import Radio from './formComponents/radio';
 import Checkbox from './formComponents/checkbox';
+import LineArrow from '../images/lineArrow.svg';
 
 var data = require('../data/configure-castor-content.json');
 var productImgPath = require('../data/product-img-path.json');
@@ -197,7 +198,13 @@ class ConfigureCastor extends Component{
               <div className="config-field-dd-wheel-dia">
                 <DropdownWheelDia
                   activeOptionId= {activeVital ? activeVital.id : vitalsOptions[0].id   } //this will become a state variable
-                  label="WHEEL DIAMETER <----> LOAD CAPACITY"
+                  label={
+                    <div style={{display: 'flex', alignItems: 'center'}}>
+                      <div>WHEEL DIAMETER</div>
+                    { vitalsOptions.some(d => d.showTreadWidthInDD === true) && <h6 className='h6 beige medium' style={{marginLeft: '4px'}}>( thickness )</h6>}
+                      <div style={{display: 'flex', alignItems: 'center', margin: '0 4px'}}><img src={LineArrow} alt="<---->"/></div>
+                      <div>LOAD CAPACITY</div>
+                    </div> }
                   list={vitalsOptions}
                   updateWheelConfig={this.updateWheelConfig}
                 />

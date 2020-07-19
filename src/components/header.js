@@ -5,6 +5,8 @@ import { Link, withRouter } from 'react-router-dom';
 import LogoFull from '../images/logo-full.svg';
 import LogoSmall from '../images/logo-small.svg';
 import CartWithItems from '../images/cart-with-items.svg';
+import Mail from '../images/mail.svg';
+import Phone from '../images/phone.svg';
 import Hamburger from '../images/hamburger.svg';
 import CloseHamburger from '../images/close-hamburger.svg';
 
@@ -94,9 +96,19 @@ class Header extends Component {
               </Link>
           </div>
           <ul className="secondaryLinks">
-            <li className="reg">
-            <Link to="/contact">Contact</Link>
+            <li className='reg'>
+              <a className='phone-icon-desktop' href="tel:00919821025854" target="_blank">
+                <span><img src={Phone} alt="email"/></span>+91 98 2102 5854
+              </a>
+            </li>
+            <li className='reg'>
+              <a className='mail-icon-desktop' href="mailto:info@dhmwheels.com" target="_blank">
+                <span><img src={Mail} alt="email"/></span>info@dhmwheels.com
+              </a>
+            </li>
 
+            <li className="reg">
+            <Link to="/contact">Contact Details</Link>
             </li>
             <Link to="/my-quote-cart">
               <li className={this.props.itemsInCart > 0 ? 'cart active' : 'cart inactive'}>
@@ -116,13 +128,19 @@ class Header extends Component {
 
 
             <div className="mobile-header-icons">
-            <Link to="/my-quote-cart">
-              <div className="cart-icon cart-icon-mobile" onClick={this.closeHamburger}>
-                <img src={CartWithItems} alt="cartIcon"/>
-                <span className="items-in-cart">{this.props.itemsInCart}</span>
-              </div>
-            </Link>
-            {hamburgerElement}
+              <a className='phone-icon-mobile' href='tel:00919821025854' target="_blank" >
+                <div><img src={Phone} alt="phone"/></div>
+              </a>
+              <a className='mail-icon-mobile' href='mailto:info@dhmwheels.com' target="_blank" >
+                <div><img src={Mail} alt="email"/></div>
+              </a>
+              <Link to="/my-quote-cart">
+                <div className="cart-icon cart-icon-mobile" onClick={this.closeHamburger}>
+                  <img src={CartWithItems} alt="cartIcon"/>
+                  <span className="items-in-cart">{this.props.itemsInCart}</span>
+                </div>
+              </Link>
+              {hamburgerElement}
             </div>
 
 

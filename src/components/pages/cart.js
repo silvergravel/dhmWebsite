@@ -2,6 +2,8 @@
 import React, { Component,  Fragment } from 'react';
 import { Link } from 'react-router-dom';
 
+import emptyCartImg from '../../images/emptycartimg.svg';
+
 var data = require('../../data/configure-castor-content.json');
 var productImgPath = require('../../data/product-img-path.json');
 
@@ -209,7 +211,8 @@ class Cart extends Component{
             </div>
           </Fragment>
         : <div>
-            <h2 black medium>You have 0 items in your quote cart</h2>
+            <img src={emptyCartImg} alt="" style={{width: '200px', marginLeft: '-65px'}} />
+            <h2 className='beige light' style={{paddingTop: '2rem'}}>You have 0 items in your quote cart</h2>
           </div> }
         </div>
 
