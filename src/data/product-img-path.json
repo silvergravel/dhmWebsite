@@ -279,32 +279,32 @@
     "rd5":{
       "ci":{
         "s":{
-          "464":"/product-images/05_rd5/swivel/464/FAKE_rd1_ci_s__464.png",
-          "712":"/product-images/05_rd5/swivel/712/FAKE_rd1_ci_s__712.png"
+          "464":"/product-images/06_rd5/swivel/464/rd5_ci_s__563.png",
+          "712":"/product-images/06_rd5/swivel/712/rd5_ci_s__864.png"
         },
         "f":{
-          "464":"/product-images/05_rd5/fixed/464/FAKE_rd3_ci_f__464.png",
-          "712":"/product-images/05_rd5/fixed/712/FAKE_rd3_ci_f__712.png"
+          "464":"/product-images/06_rd5/fixed/464/rd5_ci_f__563.png",
+          "712":"/product-images/06_rd5/fixed/712/rd5_ci_f__864.png"
         }
       },
       "n":{
         "s":{
-          "464":"/product-images/05_rd5/swivel/464/FAKE_rd1_n_s__464.png",
-          "712":"/product-images/05_rd5/swivel/712/FAKE_rd1_n_s__712.png"
+          "464":"/product-images/06_rd5/swivel/464/rd5_n_s__563.png",
+          "712":"/product-images/06_rd5/swivel/712/rd5_n_s__864.png"
         },
         "f":{
-          "464":"/product-images/05_rd5/fixed/464/FAKE_rd3_n_f__464.png",
-          "712":"/product-images/05_rd5/fixed/712/FAKE_rd3_n_f__712.png"
+          "464":"/product-images/06_rd5/fixed/464/rd5_n_f__563.png",
+          "712":"/product-images/06_rd5/fixed/712/rd5_n_f__864.png"
         }
       },
       "p":{
         "s":{
-          "464":"/product-images/05_rd5/swivel/464/FAKE_rd1_p_s__464.png",
-          "712":"/product-images/05_rd5/swivel/712/FAKE_rd1_p_s__712.png"
+          "464":"/product-images/06_rd5/swivel/464/rd5_p_s__563.png",
+          "712":"/product-images/06_rd5/swivel/712/rd5_p_s__864.png"
         },
         "f":{
-          "464":"/product-images/05_rd5/fixed/464/FAKE_rd3_p_f__464.png",
-          "712":"/product-images/05_rd5/fixed/712/FAKE_rd3_p_f__712.png"
+          "464":"/product-images/06_rd5/fixed/464/rd5_p_f__563.png",
+          "712":"/product-images/06_rd5/fixed/712/rd5_p_f__864.png"
         }
       },
       "puci":{
@@ -319,12 +319,12 @@
       },
       "rci":{
         "s":{
-          "464":"/product-images/05_rd5/swivel/464/FAKE_rd1_rci_s__464.png",
-          "712":"/product-images/05_rd5/swivel/712/FAKE_rd1_rci_s__712.png"
+          "464":"/product-images/06_rd5/swivel/464/rd5_rci_s__563.png",
+          "712":"/product-images/06_rd5/swivel/712/rd5_rci_s__864.png"
         },
         "f":{
-          "464":"/product-images/05_rd5/fixed/464/FAKE_rd3_rci_f__464.png",
-          "712":"/product-images/05_rd5/fixed/712/FAKE_rd3_rci_f__712.png"
+          "464":"/product-images/06_rd5/fixed/464/rd5_rci_f__563.png",
+          "712":"/product-images/06_rd5/fixed/712/rd5_rci_f__864.png"
         }
       }
     },
