@@ -232,11 +232,26 @@ div.config-panel .series-bar{
   .primary_cta_wrapper, .secondary_cta_wrapper{
     display: flex;
     padding: 15px 30px;
+
+
+  }
+
+  .secondary_cta_wrapper{
+    @media screen and ( max-width: 767px){
+      padding: 30px;
+      padding-bottom: 15px;
+    }
   }
 
   .primary_cta_wrapper{
+    @media screen and ( max-width: 767px){
+      padding: 0 30px;
+      padding-bottom: 15px;
+    }
+
     .cta_cont{
       width: 50%;
+
 
 
       &:last-of-type{
