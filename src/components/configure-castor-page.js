@@ -1,5 +1,5 @@
 
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import ReactToPrint, {PrintContextConsumer} from 'react-to-print';
 import htmlToImage from 'html-to-image';
 
@@ -9,6 +9,7 @@ import InputField from './formComponents/input-field';
 import Radio from './formComponents/radio';
 import Checkbox from './formComponents/checkbox';
 import LineArrow from '../images/lineArrow.svg';
+import Whatsapp from './icons/Whatsapp';
 
 
 var data = require('../data/configure-castor-content.json');
@@ -85,7 +86,8 @@ class ConfigureCastor extends Component{
       braking: false,
       quantity: 0,
       configurable: true,
-      showSavingLoader: false
+      showSavingLoader: false,
+      showPopUp: 'none'
     }
     this.updateWheelConfig = this.updateWheelConfig.bind(this);
     this.updateInput = this.updateInput.bind(this);
@@ -161,6 +163,27 @@ class ConfigureCastor extends Component{
     }.bind(this));
   }
 
+  showPopUp(bool){
+    if(bool === true){
+      this.setState({showPopUp: 'block'});
+    }else{
+      this.setState({showPopUp: 'none'});
+    }
+
+  }
+
+  copyToClipboard(){
+    let textElem = document.getElementById("share_popup__link_text")
+    textElem.select();
+    document.execCommand('copy');
+    alert('link successfully copied to clipboard!');
+  }
+
+  getLinkWhastapp(message) {
+    var url = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(message)
+
+    return url
+  }
 
 
   render(){
@@ -194,155 +217,182 @@ class ConfigureCastor extends Component{
     console.log("SHOW!",this.state.showSavingLoader);
 
     return(
-
-      <div className="config-castor-wrapper container">
-        { this.state.showSavingLoader &&
-          <div style={{
-              position: 'fixed',
-              left: '50%',
-              top: '50%',
-              transform: 'translate(-50%, -50%)',
-              width: '300px',
-              height:"200px",
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              backgroundColor: '#f4f2ed',
-              zIndex: '10000',
-              border: '1px solid #B5A98C',
-              boxShadow: '1px 1px 7px rgba(0,0,0,0.1)'
-            }}>
-            <h3 style={{ padding: '20px'}} className='black medium'>saving this castor as an image...</h3>
-          </div>  }
-        <h4 className="black medium section__title">Build Your Castor</h4>
-        <div className="config-panel">
-          <div id="configContainer" style={{backgroundColor: 'white'}} ref={el => (this.componentRef = el)}>
-            <div className="series-bar">
-              <h4 className="black medium">
-                <span className="black regular" style={{marginRight: '8px'}}>{activeDutyName+" Castors"}</span>
-                {activeSeriesName}
-              </h4>
-            </div>
-            <div className="config-panel__body row">
-            <div className="image-wrapper col-lg-7 col-md-6 col-sm-6 col-12">
-              <img src={process.env.PUBLIC_URL + activeProductImage} alt="" />
-            </div>
-            <div className="config-fields col-lg-5 col-md-6 col-sm-6 col-12">
-              <div className="config-field-dd-material">
-                <DropdownMaterial
-                  activeOptionId= {materialOptions[activematerialOptionsId].id} //this will become a state variable
-                  label="WHEEL MATERIAL"
-                  list={materialOptions}
-                  updateWheelConfig={this.updateWheelConfig}
-                />
-              </div>
-
-              <div className="config-field-dd-wheel-dia">
-                <DropdownWheelDia
-                  activeOptionId= {activeVital ? activeVital.id : vitalsOptions[0].id   } //this will become a state variable
-                  label={
-                    <div style={{display: 'flex', alignItems: 'center'}}>
-                      <div>WHEEL DIAMETER</div>
-                    { vitalsOptions.some(d => d.showTreadWidthInDD === true) && <h6 className='h6 beige medium' style={{marginLeft: '4px'}}>( thickness )</h6>}
-                      <div style={{display: 'flex', alignItems: 'center', margin: '0 4px'}}><img src={LineArrow} alt="<---->"/></div>
-                      <div>LOAD CAPACITY</div>
-                    </div> }
-                  list={vitalsOptions}
-                  updateWheelConfig={this.updateWheelConfig}
-                />
-              </div>
-
-              <div className="config-fields-vitalsMeta-bracket-quantity">
-                <div className="wheel-config-meta">
-                  <div>
-                  <h5 className="beige antique">TOTAL HEIGHT</h5>
-                  <h5 className="beige antique">(wheel + bracket)</h5>
-                  <h4 className="black medium">{activeVital.totalHeight}</h4>
-                  </div>
-                  <div>
-                  <h5 className="beige antique">WHEEL</h5>
-                  <h5 className="beige antique">THICKNESS</h5>
-                  <h4 className="black medium">{activeVital.treadWidth}</h4>
-                  </div>
+      <Fragment>
+        <div className='share-popup-container' style={{display: this.state.showPopUp}}>
+          <div className='share-popup-wrapper'>
+            <div className='share-popup'>
+              <div className='share-popup__text-group'>
+                <h4 className="black medium" style={{paddingBottom:'0.5rem'}}>COPY LINK:</h4>
+                <div style={{display:'flex', paddingBottom: '2rem', width: '100%'}}>
+                  <input type="text" value={window.location.href} id="share_popup__link_text" />
+                  <button className="secondary share-popup__copy-link-btn" onClick={() => this.copyToClipboard()}><h4 className="black regular">COPY</h4></button>
                 </div>
-
-                {
-                  bracketOptions !== null &&
-
-                <div className="config-fields-bracket">
-                  <Radio
-                    activeOptionId= {bracketOptions[activebracketOptionsId].id} //this will become a state variable
-                    label="BRACKET TYPE"
-                    list={bracketOptions}
-                    updateWheelConfig={this.updateWheelConfig}
-                  />
-
-                  <div className="config-fields-bracket-braking">
-                    <Checkbox
-                    label={bracketOptions[activebracketOptionsId].brakingDescp}
-                    disabledClass={bracketOptions[activebracketOptionsId].brakingType === null && "disabled"}
-                    checked={braking}
-                    name="braking"
-                    updateInput ={this.updateInput}
-                    />
-                  </div>
-                </div>
-                }
-
-                {
-                  grooveOptions !== null &&
-
-                  <div className="config-fields-groove">
-                    <Radio
-                      activeOptionId= {grooveOptions[activegrooveOptionsId].id} //this will become a state variable
-                      label="GROOVE TYPE"
-                      list={grooveOptions}
-                      updateWheelConfig={this.updateWheelConfig}
-                    />
-                  </div>
-                }
-
-                <div className="config-fields-quantity">
-                  <InputField
-                  label="QUANTITY"
-                  type="number"
-                  name="quantity"
-                  updateInput ={this.updateInput}
-                  min="1"
-                  />
-                </div>
+                <h4 className="black medium" style={{paddingBottom:'0.5rem'}}>OR</h4>
+                <a
+                  href={this.getLinkWhastapp('I am interested in this product: ' + window.location.href)}
+                  target="_blank"
+                  >
+                  <button className="primary share-popup__whatsapp-share-btn">
+                    <Whatsapp/><h4 className="black antique">SHARE TO WHATSAPP</h4>
+                  </button>
+                </a>
               </div>
-            </div>
-          </div>
-          </div>
-          <div className= "configure-panel__cta row">
-            <div className="col-lg-7 col-md-6 col-sm-6 col-12 secondary_cta_wrapper">
-              <div className="cta_cont">
-                <button className="secondary" onClick={() => this.createImgFromHtml('configContainer')}><h4 className="black antique">SAVE PAGE</h4></button>
-              </div>
-              <ReactToPrint content={() => this.componentRef}>
-                <PrintContextConsumer>
-                  {({ handlePrint }) => (
-                    <div className="cta_cont">
-                      <button className="secondary" onClick={handlePrint}>
-                        <h4 className="black antique">PRINT PAGE</h4>
-                      </button>
-                    </div>
-                  )}
-                </PrintContextConsumer>
-              </ReactToPrint>
-              {/*<div className="cta_cont">
-                <button className="secondary"><h4 className="black antique">SHARE</h4></button>
-              </div>*/}
-            </div>
-            <div className="col-lg-5 col-md-6 col-sm-6 col-12 primary_cta_wrapper">
-              <div className="cta_cont">
-                <button className="primary" onClick={() => this.validateAndAddToCart(this.state, configurableStatus)}><h4 className="black antique">ADD TO QUOTE CART</h4></button>
+              <div className='share-popup__actions-group' style={{width: '100%', display: 'flex', justifyContent: 'center'}}>
+                <button className="secondary" onClick={() => this.showPopUp(false)} ><h4 className="black antique">CLOSE</h4></button>
               </div>
             </div>
           </div>
         </div>
-      </div>
+
+        <div className="config-castor-wrapper container">
+          { this.state.showSavingLoader &&
+            <div style={{
+                position: 'fixed',
+                left: '50%',
+                top: '50%',
+                transform: 'translate(-50%, -50%)',
+                width: '300px',
+                height:"200px",
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                backgroundColor: '#f4f2ed',
+                zIndex: '10000',
+                border: '1px solid #B5A98C',
+                boxShadow: '1px 1px 7px rgba(0,0,0,0.1)'
+              }}>
+              <h3 style={{ padding: '20px'}} className='black medium'>saving this castor as an image...</h3>
+            </div>  }
+          <h4 className="black medium section__title">Build Your Castor</h4>
+          <div className="config-panel">
+            <div id="configContainer" style={{backgroundColor: 'white'}} ref={el => (this.componentRef = el)}>
+              <div className="series-bar">
+                <h4 className="black medium">
+                  <span className="black regular" style={{marginRight: '8px'}}>{activeDutyName+" Castors"}</span>
+                  {activeSeriesName}
+                </h4>
+              </div>
+              <div className="config-panel__body row">
+              <div className="image-wrapper col-lg-7 col-md-6 col-sm-6 col-12">
+                <img src={process.env.PUBLIC_URL + activeProductImage} alt="" />
+              </div>
+              <div className="config-fields col-lg-5 col-md-6 col-sm-6 col-12">
+                <div className="config-field-dd-material">
+                  <DropdownMaterial
+                    activeOptionId= {materialOptions[activematerialOptionsId].id} //this will become a state variable
+                    label="WHEEL MATERIAL"
+                    list={materialOptions}
+                    updateWheelConfig={this.updateWheelConfig}
+                  />
+                </div>
+
+                <div className="config-field-dd-wheel-dia">
+                  <DropdownWheelDia
+                    activeOptionId= {activeVital ? activeVital.id : vitalsOptions[0].id   } //this will become a state variable
+                    label={
+                      <div style={{display: 'flex', alignItems: 'center'}}>
+                        <div>WHEEL DIAMETER</div>
+                      { vitalsOptions.some(d => d.showTreadWidthInDD === true) && <h6 className='h6 beige medium' style={{marginLeft: '4px'}}>( thickness )</h6>}
+                        <div style={{display: 'flex', alignItems: 'center', margin: '0 4px'}}><img src={LineArrow} alt="<---->"/></div>
+                        <div>LOAD CAPACITY</div>
+                      </div> }
+                    list={vitalsOptions}
+                    updateWheelConfig={this.updateWheelConfig}
+                  />
+                </div>
+
+                <div className="config-fields-vitalsMeta-bracket-quantity">
+                  <div className="wheel-config-meta">
+                    <div>
+                    <h5 className="beige antique">TOTAL HEIGHT</h5>
+                    <h5 className="beige antique">(wheel + bracket)</h5>
+                    <h4 className="black medium">{activeVital.totalHeight}</h4>
+                    </div>
+                    <div>
+                    <h5 className="beige antique">WHEEL</h5>
+                    <h5 className="beige antique">THICKNESS</h5>
+                    <h4 className="black medium">{activeVital.treadWidth}</h4>
+                    </div>
+                  </div>
+
+                  {
+                    bracketOptions !== null &&
+
+                  <div className="config-fields-bracket">
+                    <Radio
+                      activeOptionId= {bracketOptions[activebracketOptionsId].id} //this will become a state variable
+                      label="BRACKET TYPE"
+                      list={bracketOptions}
+                      updateWheelConfig={this.updateWheelConfig}
+                    />
+
+                    <div className="config-fields-bracket-braking">
+                      <Checkbox
+                      label={bracketOptions[activebracketOptionsId].brakingDescp}
+                      disabledClass={bracketOptions[activebracketOptionsId].brakingType === null && "disabled"}
+                      checked={braking}
+                      name="braking"
+                      updateInput ={this.updateInput}
+                      />
+                    </div>
+                  </div>
+                  }
+
+                  {
+                    grooveOptions !== null &&
+
+                    <div className="config-fields-groove">
+                      <Radio
+                        activeOptionId= {grooveOptions[activegrooveOptionsId].id} //this will become a state variable
+                        label="GROOVE TYPE"
+                        list={grooveOptions}
+                        updateWheelConfig={this.updateWheelConfig}
+                      />
+                    </div>
+                  }
+
+                  <div className="config-fields-quantity">
+                    <InputField
+                    label="QUANTITY"
+                    type="number"
+                    name="quantity"
+                    updateInput ={this.updateInput}
+                    min="1"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div className= "configure-panel__cta row">
+              <div className="col-lg-7 col-md-6 col-sm-6 col-12 secondary_cta_wrapper">
+                <div className="cta_cont">
+                  <button className="secondary" onClick={() => this.createImgFromHtml('configContainer')}><h4 className="black antique">SAVE PAGE</h4></button>
+                </div>
+                <ReactToPrint content={() => this.componentRef}>
+                  <PrintContextConsumer>
+                    {({ handlePrint }) => (
+                      <div className="cta_cont">
+                        <button className="secondary" onClick={handlePrint}>
+                          <h4 className="black antique">PRINT PAGE</h4>
+                        </button>
+                      </div>
+                    )}
+                  </PrintContextConsumer>
+                </ReactToPrint>
+                <div className="cta_cont">
+                  <button className="secondary" onClick={() => this.showPopUp(true)}><h4 className="black antique">SHARE</h4></button>
+                </div>
+              </div>
+              <div className="col-lg-5 col-md-6 col-sm-6 col-12 primary_cta_wrapper">
+                <div className="cta_cont">
+                  <button className="primary" onClick={() => this.validateAndAddToCart(this.state, configurableStatus)}><h4 className="black antique">ADD TO QUOTE CART</h4></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Fragment>
 
 
 
