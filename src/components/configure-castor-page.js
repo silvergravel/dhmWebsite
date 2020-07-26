@@ -367,14 +367,14 @@ class ConfigureCastor extends Component{
             <div className= "configure-panel__cta row">
               <div className="col-lg-7 col-md-6 col-sm-6 col-12 secondary_cta_wrapper">
                 <div className="cta_cont">
-                  <button className="secondary" onClick={() => this.createImgFromHtml('configContainer')}><h4 className="black antique">SAVE PAGE</h4></button>
+                  <button className="secondary" onClick={() => this.createImgFromHtml('configContainer')}><h4 className="black antique">SAVE</h4></button>
                 </div>
                 <ReactToPrint content={() => this.componentRef}>
                   <PrintContextConsumer>
                     {({ handlePrint }) => (
                       <div className="cta_cont">
                         <button className="secondary" onClick={handlePrint}>
-                          <h4 className="black antique">PRINT PAGE</h4>
+                          <h4 className="black antique">PRINT</h4>
                         </button>
                       </div>
                     )}
